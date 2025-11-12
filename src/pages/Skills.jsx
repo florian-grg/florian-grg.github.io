@@ -140,27 +140,25 @@ const Skills = () => {
                   initial="hidden"
                   animate="visible"
                   transition={{ delay: idx * 0.04, duration: 0.3 }}
+                  whileHover={{ y: -6 }}
+                  whileTap={{ scale: 0.985 }}
                   className="flex items-center gap-4 p-4 rounded-lg bg-white border border-slate-100 hover:shadow transition"
                 >
                   <Logo name={s.name} />
 
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-start justify-between gap-4">
+                      <div className="flex items-start gap-4">
                       <div>
                         <h3 className="text-lg font-semibold text-black leading-tight">{s.name}</h3>
                         <div className="text-xs text-black">Catégorie • {s.category} • {s.years} ans</div>
+                        {/* Decorative horizontal bar under title */}
+                        <div className="mt-3">
+                          <div aria-hidden className="h-0.5 w-20 rounded-full bg-gradient-to-r from-green-300 via-slate-200 to-transparent" />
+                        </div>
                       </div>
-                      <div className="text-sm text-black font-medium">{s.level}%</div>
                     </div>
 
                     <div className="mt-3">
-                      <div className="w-full h-2 rounded-full bg-slate-100 overflow-hidden" aria-hidden>
-                        <div
-                          className="h-2 rounded-full bg-gradient-to-r from-green-400 to-blue-500"
-                          style={{ width: `${s.level}%` }}
-                        />
-                      </div>
-
                       <div className="mt-2 flex flex-wrap gap-2">
                         {s.tech.map((t) => (
                           <span key={t} className="text-xs bg-slate-100 text-black px-2 py-1 rounded-md">
@@ -168,6 +166,32 @@ const Skills = () => {
                           </span>
                         ))}
                       </div>
+                      {/* Examples */}
+                      {s.examples && s.examples.length > 0 && (
+                        <motion.div className="mt-3" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: idx * 0.03 }}>
+                          <div className="text-xs font-medium text-slate-500">Exemples d'utilisation</div>
+                          <ul className="mt-1 text-xs text-slate-700 list-disc list-inside space-y-1">
+                            {s.examples.map((ex) => (
+                              <li key={ex}>{ex}</li>
+                            ))}
+                          </ul>
+                        </motion.div>
+                      )}
+
+                      {/* Certifications */}
+                      {s.certs && s.certs.length > 0 && (
+                        <motion.div className="mt-3" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: idx * 0.04 }}>
+                          <div className="text-xs font-medium text-slate-500">Certifications & formations</div>
+                          <ul className="mt-1 text-xs text-slate-700 space-y-1">
+                            {s.certs.map((c, i) => (
+                              <li key={i}>
+                                <span className="font-medium">{c.title}</span>
+                                <span className="ml-2 text-slate-500">{c.org}{c.year ? ` — ${c.year}` : ""}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </motion.div>
+                      )}
                     </div>
                   </div>
                 </motion.article>
@@ -179,5 +203,7 @@ const Skills = () => {
     </>
   );
 };
+
+// Note: qualitative labels removed by user request; small hover/tap micro-interactions added on cards.
 
 export default Skills;
