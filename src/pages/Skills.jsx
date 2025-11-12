@@ -142,21 +142,21 @@ const Skills = () => {
                   transition={{ delay: idx * 0.04, duration: 0.3 }}
                   whileHover={{ y: -6 }}
                   whileTap={{ scale: 0.985 }}
-                  className="flex items-center gap-4 p-4 rounded-lg bg-white border border-slate-100 hover:shadow transition"
+                  className="flex gap-4 p-4 rounded-lg bg-white border border-slate-100 hover:shadow transition"
                 >
                   <Logo name={s.name} />
 
                   <div className="flex-1 min-w-0">
                       <div className="flex items-start gap-4">
-                      <div>
-                        <h3 className="text-lg font-semibold text-black leading-tight">{s.name}</h3>
-                        <div className="text-xs text-black">Catégorie • {s.category} • {s.years} ans</div>
-                        {/* Decorative horizontal bar under title */}
-                        <div className="mt-3">
-                          <div aria-hidden className="h-0.5 w-20 rounded-full bg-gradient-to-r from-green-300 via-slate-200 to-transparent" />
+                        <div>
+                          <h3 className="text-lg font-semibold text-black leading-tight">{s.name}</h3>
+                          <div className="text-xs text-black">Catégorie • {s.category} • {s.years} ans</div>
+                          {/* Decorative horizontal bar under title */}
+                          <div className="mt-3">
+                            <div aria-hidden className="h-0.5 w-20 rounded-full bg-gradient-to-r from-green-300 via-slate-200 to-transparent" />
+                          </div>
                         </div>
                       </div>
-                    </div>
 
                     <div className="mt-3">
                       <div className="mt-2 flex flex-wrap gap-2">
