@@ -33,6 +33,13 @@ export default function Navbar() {
   const isHome = location.pathname === "/";
   const darkText = scrolled || !isHome; // true => texte noir, false => texte blanc
 
+  // When the route (pathname) changes via the navbar, ensure viewport resets to top.
+  // This guarantees that clicking a navbar tab (navigate) shows the top of the new page.
+  React.useEffect(() => {
+    // use instant jump to top to avoid double animations; smooth option could be used instead
+    window.scrollTo({ top: 0, left: 0 });
+  }, [location.pathname]);
+
   return (
     <nav
       className={`fixed w-full z-20 transition-colors duration-300 ${

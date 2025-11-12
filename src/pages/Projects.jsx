@@ -2,7 +2,7 @@ import React from "react";
 import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
-import projects from "../data/projectsData";
+import projects from "../data/projects.json";
 
 // Données importées depuis src/data/projectsData.js
 

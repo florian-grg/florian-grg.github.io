@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
-import SKILLS from "../data/skillsData";
+import SKILLS from "../data/skills.json";
 
 // Données importées depuis src/data/skillsData.js
 

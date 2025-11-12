@@ -2,12 +2,51 @@ import React from "react";
 import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
-import servicesData from "../data/servicesData";
+import servicesData from "../data/services.json";
 import { useNavigate } from "react-router-dom";
 import { smoothScrollTo } from "../animations/smoothScrollTo";
 
 const Services = () => {
 	const navigate = useNavigate();
+
+	function getServiceIcon(name) {
+		const common = { className: 'w-10 h-10 text-white' };
+		switch (name) {
+			case 'site-web':
+				return (
+					<svg {...common} fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" aria-hidden>
+						<rect x="3" y="4" width="18" height="16" rx="2" />
+						<path d="M3 8h18" />
+					</svg>
+				);
+			case 'application':
+				return (
+					<svg {...common} fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" aria-hidden>
+						<rect x="2" y="7" width="20" height="14" rx="2" />
+						<path d="M16 3v4M8 3v4" />
+					</svg>
+				);
+			case 'ia-optimisation':
+				return (
+					<svg {...common} fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" aria-hidden>
+						<circle cx="12" cy="12" r="10" />
+						<path d="M8 12h8M12 8v8" />
+					</svg>
+				);
+			case 'conseil-accompagnement':
+				return (
+					<svg {...common} fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" aria-hidden>
+						<path d="M12 20v-6M12 4v2M6 12H4M20 12h-2" />
+					</svg>
+				);
+			default:
+				return (
+					<svg {...common} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden>
+						<circle cx="12" cy="12" r="10" />
+					</svg>
+				);
+		}
+	}
 	return (
 		<>
 			<Seo
@@ -37,7 +76,7 @@ const Services = () => {
 							>
 								<div>
 									<div className="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-600 to-purple-500 flex items-center justify-center mb-5 shadow-md group-hover:scale-110 transition-transform">
-										{s.icon}
+										{getServiceIcon(s.icon)}
 									</div>
 									<h3 className="text-2xl font-bold text-black mb-1 group-hover:text-blue-700 transition-colors">{s.title}</h3>
 									<p className="text-base text-black mb-2 font-semibold">{s.subtitle}</p>

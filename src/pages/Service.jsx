@@ -4,7 +4,7 @@ import Seo from '../components/Seo';
 import { motion, AnimatePresence } from 'framer-motion';
 import { fadeIn } from '../animations/fadeIn';
 import { Link, useLocation } from 'react-router-dom';
-import servicesData from '../data/servicesData';
+import servicesData from '../data/services.json';
 
 // Données externalisées depuis src/data/servicesData.js
 

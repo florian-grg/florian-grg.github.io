@@ -2,7 +2,7 @@ import React from "react";
 import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
-import experiences from "../data/experiencesData";
+import experiences from "../data/experiences.json";
 
 // Données importées depuis src/data/experiencesData.js
 
