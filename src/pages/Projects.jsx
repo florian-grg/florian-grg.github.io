@@ -54,22 +54,26 @@ const Projects = () => (
               </div>
 
               <div className="mt-4 flex flex-wrap gap-3">
-                <a
-                  href={project.link}
-                  className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-4 py-2 rounded-lg shadow"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Voir le projet
-                </a>
-                <a
-                  href={project.repo}
-                  className="inline-flex items-center gap-2 border border-slate-200 text-black px-3 py-2 rounded-lg hover:bg-slate-50"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Repo
-                </a>
+                {project.availableProject === "True" && (
+                  <a
+                    href={project.link}
+                    className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-4 py-2 rounded-lg shadow"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Voir le projet
+                  </a>
+                )}
+                {project.availableRepo === "True" && (
+                  <a
+                    href={project.repo}
+                    className="inline-flex items-center gap-2 border border-slate-200 text-black px-3 py-2 rounded-lg hover:bg-slate-50"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Repo
+                  </a>
+                )}
               </div>
             </div>
 

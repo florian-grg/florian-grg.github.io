@@ -9,7 +9,8 @@
     "Documentation et transfert de compétences"
   ],
   "tech": ["SQL", "Python", "Docker"],
-  "link": "#"
+  "link": "#",
+  "more": "False"
 },
 {
   "title": "Inspire, Junior-Entreprise",
@@ -22,7 +23,8 @@
     "Formation interne"
   ],
   "tech": ["Git", "Jira", "Confluence"],
-  "link": "#"
+  "link": "#",
+  "more": "False"
 },
 {
   "title": "Responsable E-Sport",
@@ -35,5 +37,6 @@
     "Coordination logistique et communication"
   ],
   "tech": ["Trello", "Slack"],
-  "link": "#"
+  "link": "#",
+  "more": "False"
 }]

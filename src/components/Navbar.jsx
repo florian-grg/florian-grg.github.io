@@ -36,8 +36,8 @@ export default function Navbar() {
   // When the route (pathname) changes via the navbar, ensure viewport resets to top.
   // This guarantees that clicking a navbar tab (navigate) shows the top of the new page.
   React.useEffect(() => {
-    // use instant jump to top to avoid double animations; smooth option could be used instead
-    window.scrollTo({ top: 0, left: 0 });
+    // use smooth scroll to top for a gentler transition
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   }, [location.pathname]);
 
   return (
@@ -53,7 +53,7 @@ export default function Navbar() {
           {[
             { path: "/", label: "Accueil", hash: "#header" },
             { path: "/portfolio", label: "Portfolio", hash: "#about" },
-            { path: "/service", label: "Services", hash: "#service" },
+            { path: "/service", label: "Services", hash: "#services" },
             { path: "/contact", label: "Contact", hash: "#contact" },
           ].map(({ path, hash, label }) => {
             const isActive = location.pathname === path;
@@ -80,7 +80,7 @@ export default function Navbar() {
                     if (hash) smoothScrollTo(hash);
                   } else {
                     navigate(path);
-                    if (hash) setTimeout(() => smoothScrollTo(hash), 250);
+                    if (hash) smoothScrollTo(hash);
                   }
                 }}
               >

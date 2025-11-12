@@ -12,7 +12,9 @@
       "Pipeline dockerisé pour batch processing"
     ],
     "link": "#",
-    "repo": "#"
+    "repo": "#",
+    "availableProject": "False",
+    "availableRepo": "False"
   },
   {
     "title": "Autoencodeur Variationnel (VAE)",
@@ -27,7 +29,9 @@
       "Visualisation d'attributs et squelettes d'évaluation FID"
     ],
     "link": "#",
-    "repo": "#"
+    "repo": "#",
+    "availableProject": "False",
+    "availableRepo": "False"
   },
   {
     "title": "Système On-Screen Display pour Robot",
@@ -41,7 +45,9 @@
       "UI Qt réactive pour monitoring"
     ],
     "link": "#",
-    "repo": "#"
+    "repo": "#",
+    "availableProject": "False",
+    "availableRepo": "False"
   },
   {
     "title": "Étude qualité de l'air intérieur",
@@ -55,6 +61,8 @@
       "Comparaison expérimentale / modèle"
     ],
     "link": "#",
-    "repo": "#"
+    "repo": "#",
+    "availableProject": "False",
+    "availableRepo": "False"
   }
 ]
