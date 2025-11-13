@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Projet d'ingénierie - Myakiatto",
+    "description": "Détection et géoréférencement de points caractéristiques du paysage à partir d'images satellite via traitement d'images et IA. Pipeline complet : prétraitement, segmentation, matching et post-traitement géospatial.",
+    "date": "03/2025 - 06/2025",
+    "location": "Saint-Étienne (42)",
+    "tech": ["Python", "PyTorch", "OpenCV", "GDAL"],
+    "role": "Lead ML Engineer",
+    "highlights": [
+      "Détection d'objets basée YOLO avec 92% de précision",
+      "Matching d'images via SIFT + homographie (RANSAC)",
+      "Pipeline dockerisé pour batch processing"
+    ],
+    "link": "#",
+    "repo": "#",
+    "availableProject": "False",
+    "availableRepo": "False"
+  },
+  {
+    "title": "Développement Web - Portfolio Personnel",
+    "description": "Site portfolio moderne : design responsive, Tailwind CSS, animations Framer Motion, multilingue (FR/EN) et intégration EmailJS.",
+    "date": "2024 - 2025",
+    "location": "Saint-Étienne (42)",
+    "tech": ["React", "Tailwind CSS", "Framer Motion", "EmailJS"],
+    "role": "Développeur Full-stack",
+    "highlights": [
+      "Structure de page professionnelle et UX épurée",
+      "i18n avec persistence de langue (localStorage)",
+      "Déploiement sur GitHub Pages"
+    ],
+    "link": "https://florian-grg.github.io",
+    "repo": "https://github.com/florian-grg/florian-grg.github.io",
+    "availableProject": "True",
+    "availableRepo": "True"
+  },
+  {
+    "title": "Reconstruction 3D - Photogrammétrie",
+    "description": "Reconstruction 3D et texturage à partir d'images multi-vues. Implémentation d'algorithmes SfM (Structure from Motion) et MVS (Multi-View Stereo).",
+    "date": "2024",
+    "location": "Saint-Étienne (42)",
+    "tech": ["Python", "OpenCV", "NumPy", "Open3D"],
+    "role": "Ingénieur Vision par Ordinateur",
+    "highlights": [
+      "Calibration caméra et estimation de pose",
+      "Génération de nuages de points denses",
+      "Reconstruction de maillage et texturage"
+    ],
+    "link": "#",
+    "repo": "#",
+    "availableProject": "False",
+    "availableRepo": "False"
+  },
+  {
+    "title": "Application Desktop - Traitement Automatisé",
+    "description": "Application C++/Qt pour traitement automatisé par lots d'images médicales : segmentation, mesures et génération de rapports PDF.",
+    "date": "2023",
+    "location": "Saint-Étienne (42)",
+    "tech": ["C++", "Qt", "OpenCV"],
+    "role": "Ingénieur Logiciel",
+    "highlights": [
+      "Interface graphique moderne Qt5",
+      "Intégration OpenCV pour traitement d'images",
+      "Traitement par lots automatisé et rapports"
+    ],
+    "link": "#",
+    "repo": "#",
+    "availableProject": "False",
+    "availableRepo": "False"
+  }
+]

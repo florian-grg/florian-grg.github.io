@@ -1,0 +1,115 @@
+[
+  {
+    "name": "Python",
+    "category": "Languages",
+    "level": 92,
+    "years": 5,
+    "tech": ["PyTorch", "NumPy"],
+    "examples": [
+      "Image classification with CNN",
+      "ETL pipelines for preprocessing"
+    ],
+    "certs": [
+      { "title": "Deep Learning - Intro", "org": "Internal course", "year": 2022 }
+    ]
+  },
+  {
+    "name": "JavaScript",
+    "category": "Languages",
+    "level": 85,
+    "years": 4,
+    "tech": ["React", "Node"],
+    "examples": ["React SPA for portfolio", "REST API with Node.js"],
+    "certs": []
+  },
+  {
+    "name": "Java",
+    "category": "Languages",
+    "level": 78,
+    "years": 4,
+    "tech": ["OOP", "Qt"],
+    "examples": ["Desktop applications with Qt"],
+    "certs": []
+  },
+  {
+    "name": "C/C++",
+    "category": "Languages",
+    "level": 74,
+    "years": 3,
+    "tech": ["Embedded", "Optimization"],
+    "examples": ["Embedded development for sensors"],
+    "certs": []
+  },
+  {
+    "name": "SQL",
+    "category": "Databases",
+    "level": 80,
+    "years": 3,
+    "tech": ["Postgres", "SQLite"],
+    "examples": ["Schema design and complex queries"],
+    "certs": []
+  },
+  {
+    "name": "PyTorch (Deep Learning)",
+    "category": "AI",
+    "level": 88,
+    "years": 3,
+    "tech": ["CNN", "Training"],
+    "examples": ["Model training for object detection"],
+    "certs": []
+  },
+  {
+    "name": "MATLAB",
+    "category": "Tools",
+    "level": 68,
+    "years": 2,
+    "tech": ["Simulations"],
+    "examples": [],
+    "certs": []
+  },
+  {
+    "name": "HTML",
+    "category": "Web",
+    "level": 86,
+    "years": 4,
+    "tech": ["Semantics"],
+    "examples": ["Semantic structuring of articles and landing pages"],
+    "certs": []
+  },
+  {
+    "name": "CSS",
+    "category": "Web",
+    "level": 82,
+    "years": 4,
+    "tech": ["Tailwind", "Responsive"],
+    "examples": ["Responsive design with Tailwind CSS"],
+    "certs": []
+  },
+  {
+    "name": "Qt (GUI)",
+    "category": "Tools",
+    "level": 70,
+    "years": 2,
+    "tech": ["Interfaces"],
+    "examples": [],
+    "certs": []
+  },
+  {
+    "name": "LaTeX",
+    "category": "Tools",
+    "level": 75,
+    "years": 4,
+    "tech": ["Docs", "Reports"],
+    "examples": ["Technical articles and reports writing"],
+    "certs": []
+  },
+  {
+    "name": "Git",
+    "category": "Tools",
+    "level": 90,
+    "years": 5,
+    "tech": ["Workflows"],
+    "examples": ["Branch management and Git workflows (feature/gitflow)"],
+    "certs": []
+  }
+]

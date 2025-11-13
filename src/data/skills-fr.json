@@ -42,7 +42,7 @@
   },
   {
     "name": "SQL",
-    "category": "Databases",
+    "category": "Bases de données",
     "level": 80,
     "years": 3,
     "tech": ["Postgres", "SQLite"],

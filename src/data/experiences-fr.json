@@ -1,0 +1,42 @@
+[{
+  "title": "Stage - Choisir mon Groupement",
+  "description": "Développement informatique et optimisation de base de données. Participation à la refactorisation et à l'amélioration des requêtes pour gains de performance.",
+  "date": "06/2024 - 07/2024",
+  "location": "Schiltigheim (67)",
+  "highlights": [
+    "Optimisation de requêtes SQL (temps d'exécution réduit de 40%)",
+    "Développement de scripts Python pour migration de données",
+    "Documentation et transfert de compétences"
+  ],
+  "tech": ["SQL", "Python", "Docker"],
+  "link": "#",
+  "more": "False"
+},
+{
+  "title": "Inspire, Junior-Entreprise",
+  "description": "Chargé Qualité : mise en place de processus qualité, tests et revue des livrables pour les projets clients.",
+  "date": "09/2023 - 04/2025",
+  "location": "Saint-Étienne (42)",
+  "highlights": [
+    "Définition de standards qualité pour projets web/mobile",
+    "Tests systématiques et validation des livrables",
+    "Suivi de la satisfaction client et amélioration continue"
+  ],
+  "tech": ["Git", "Testing", "Documentation"],
+  "link": "#",
+  "more": "False"
+},
+{
+  "title": "Projets universitaires & initiatives personnelles",
+  "description": "Deep learning, vision par ordinateur et développement full-stack : détection d'objets, appariement d'images, apps React, interfaces Qt.",
+  "date": "2023 - 2025",
+  "location": "Saint-Étienne (42) & Padoue (IT)",
+  "highlights": [
+    "Deep Learning : PyTorch, CNN, détection de features",
+    "Applications desktop (Java/Qt) et sites modernes (React/Tailwind)",
+    "Apprentissage autonome et exploration technique continue"
+  ],
+  "tech": ["PyTorch", "OpenCV", "React", "Java", "Qt"],
+  "link": "#",
+  "more": "False"
+}]

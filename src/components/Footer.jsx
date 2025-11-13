@@ -1,9 +1,11 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaEnvelope, FaArrowUp, FaPhone } from "react-icons/fa";
 import { smoothScrollTo } from "../animations/smoothScrollTo";
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Footer = () => {
     const year = new Date().getFullYear();
+    const { t } = useLanguage();
 
     return (
         <footer className="bg-slate-900 text-slate-300 py-10" role="contentinfo">
@@ -12,7 +14,7 @@ const Footer = () => {
                     {/* Brand */}
                     <div className="space-y-2 text-center">
                         <div className="text-white font-extrabold text-lg md:text-2xl">Florian GIURGIU</div>
-                        <div className="text-sm md:text-base text-slate-400">Développement Web · IA · Applications</div>
+                        <div className="text-sm md:text-base text-slate-400">{t('footer.tagline')}</div>
                     </div>
 
                     {/* Contact */}
@@ -41,7 +43,7 @@ const Footer = () => {
 
                         <div className="flex flex-col items-center space-y-3 text-center">
                             <a href="https://github.com/florian-grg/florian-grg.github.io" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-400 hover:text-slate-200 underline">
-                                Voir le code source
+                                {t('footer.viewSource')}
                             </a>
                         </div>
                     </div>
@@ -51,20 +53,20 @@ const Footer = () => {
                         <button
                             onClick={() => smoothScrollTo()}
                             className="mt-2 w-10 h-10 inline-flex items-center justify-center rounded-full bg-white text-slate-900 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition transform"
-                            aria-label="Retour en haut de la page"
-                            title="Haut de page"
+                            aria-label={t('footer.backToTop')}
+                            title={t('footer.topLabel')}
                         >
                             <FaArrowUp />
                         </button>
-                        <div className="text-xs text-slate-400">Haut de page</div>
+                        <div className="text-xs text-slate-400">{t('footer.topLabel')}</div>
                     </div>
                 </div>
 
                 <div className="mt-8 border-t border-slate-800 pt-6">
-                    <div className="text-center text-xs text-slate-500">© {year} Florian GIURGIU. Tous droits réservés.
+                    <div className="text-center text-xs text-slate-500">© {year} Florian GIURGIU. {t('footer.rights')}
                         <span className="mx-1">|</span>
                         <a href="#/mentions-legales" className="hover:text-slate-200 underline">
-                            Mentions légales
+                            {t('footer.links.legal')}
                         </a>
                     </div>
                 </div>

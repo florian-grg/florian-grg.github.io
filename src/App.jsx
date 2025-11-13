@@ -13,6 +13,7 @@ import MentionsLegales from './pages/MentionsLegales';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { pageTransition } from './animations/pageTransition';
+import { LanguageProvider } from './contexts/LanguageContext';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -112,14 +113,16 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <Router>
-      <Helmet>
-        <title>Portfolio Florian GIURGIU</title>
-        <meta name="description" content="Développeur web, IA, optimisation, portfolio moderne et performant." />
-        <meta name="keywords" content="Florian GIURGIU, développeur, web, IA, optimisation, portfolio, freelance" />
-        <meta name="author" content="Florian GIURGIU" />
-      </Helmet>
-      <Navbar />
-      <AnimatedRoutes />
+      <LanguageProvider>
+        <Helmet>
+          <title>Portfolio Florian GIURGIU</title>
+          <meta name="description" content="Développeur web, IA, optimisation, portfolio moderne et performant." />
+          <meta name="keywords" content="Florian GIURGIU, développeur, web, IA, optimisation, portfolio, freelance" />
+          <meta name="author" content="Florian GIURGIU" />
+        </Helmet>
+        <Navbar />
+        <AnimatedRoutes />
+      </LanguageProvider>
     </Router>
   );
 }

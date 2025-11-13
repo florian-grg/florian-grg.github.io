@@ -1,0 +1,231 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "header": {
+    "title": "Florian GIURGIU",
+    "subtitle": "Développeur web freelance — création de sites et applications modernes",
+    "description": "J'aide PME et startups à concevoir des expériences web rapides, accessibles et maintenables.",
+    "description2": "De l'idée au déploiement, je vous accompagne avec des solutions sur‑mesure et mesurables.",
+    "features": {
+      "performance": "Performance",
+      "accessibility": "Accessibilité",
+      "seo": "SEO technique"
+    },
+    "cta": {
+      "quote": "Demander un devis",
+      "profile": "Découvrir mon profil",
+      "downloadCv": "Télécharger mon CV"
+    },
+    "scroll": "Faire défiler vers la section À propos",
+    "seo": {
+      "title": "Accueil | Florian GIURGIU",
+      "description": "Accueil du portfolio de Florian GIURGIU, développeur web freelance: sites vitrines, web apps et intégrations sur‑mesure."
+    }
+  },
+  "about": {
+    "title": "À propos de moi",
+    "greeting": "Bonjour, je m'appelle",
+    "name": "Florian GIURGIU",
+    "role": "Développeur Web & Auto-Entrepreneur",
+    "intro": "Passionné par le développement web et les nouvelles technologies, je crée des solutions digitales modernes et performantes.",
+    "paragraph1": "Bonjour, je m'appelle Florian Giurgiu, étudiant en dernière année d'école d'ingénieur à Télécom Saint-Étienne et actuellement en échange Erasmus à l'Université de Padoue en Italie. Passionné par l'Intelligence Artificielle, la Vision par Ordinateur et le Développement Logiciel, j'aime concevoir et expérimenter des solutions innovantes alliant mathématiques, programmation et créativité.",
+    "paragraph2": "Curieux et persévérant, je m'intéresse autant à l'apprentissage profond (Deep Learning, Réseaux de neurones, Optimisation) qu'au développement full stack pour donner vie à des projets concrets. J'ai eu l'occasion de travailler sur des projets variés : détection et appariement d'images par Deep Learning, développement d'applications interactives en Java et Qt, ainsi que la création de sites modernes avec React et Tailwind CSS.",
+    "paragraph3": "Au-delà de mes études, je suis passionné de musculation et de handball, et je pratique la guitare depuis plusieurs années. J'aime aussi m'investir dans la vie associative, notamment à travers l'organisation d'événements E-Sport et culturels. Je parle couramment le français et le roumain, et j'ai également un bon niveau d'anglais (B2), ainsi que des notions en espagnol (A2) et en allemand (A1).",
+    "paragraph4": "Mon objectif est de mettre mes compétences au service de projets ambitieux et innovants, dans lesquels je peux apprendre, partager et avoir un impact positif.",
+    "portfolio": {
+      "subtitle": "Étudiant ingénieur • IA & Développement",
+      "description": "Étudiant en dernière année à Télécom Saint‑Étienne (en échange à Padoue), passionné par l'IA, la vision par ordinateur et le développement. Projets : deep learning (détection/appariement d'images), apps Java/Qt, sites React/Tailwind. Curieux et engagé, je cherche des projets ambitieux pour apprendre et avoir un impact.",
+      "keySkills": "Compétences clés",
+      "ai": "Intelligence Artificielle",
+      "cv": "Vision par Ordinateur",
+      "fullstack": "Full‑stack",
+      "reactTailwind": "React & Tailwind",
+      "javaQt": "Java / Qt",
+      "journey": "Mon parcours"
+    },
+    "stats": {
+      "projects": "Projets réalisés",
+      "experience": "Années d'expérience",
+      "technologies": "Technologies maîtrisées",
+      "satisfaction": "Satisfaction client"
+    },
+    "cta": "Me contacter",
+    "seo": {
+      "title": "À propos | Florian GIURGIU",
+      "description": "Développeur web freelance passionné par les technologies modernes. Découvrez mon parcours et mes compétences.",
+      "portfolio": "Florian GIURGIU — Portfolio"
+    }
+  },
+  "skills": {
+    "title": "Compétences",
+    "subtitle": "Technologies & Outils",
+    "filter": {
+      "all": "Tous"
+    },
+    "category": "Catégorie",
+    "examples": "Exemples d'utilisation",
+    "certifications": "Certifications & formations",
+    "level": "Niveau",
+    "experience": "Expérience",
+    "years": "ans",
+    "seo": {
+      "title": "Compétences | Florian GIURGIU",
+      "description": "Technologies et outils que je maîtrise : React, Python, Java, Node.js et bien plus."
+    }
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Travaux récents",
+    "role": "Rôle",
+    "tech": "Technologies",
+    "highlights": "Points clés",
+    "viewProject": "Voir le projet",
+    "viewCode": "Repo",
+    "comingSoon": "Bientôt disponible",
+    "badge": "Projet",
+    "seo": {
+      "title": "Projets | Florian GIURGIU",
+      "description": "Projets réalisés par Florian GIURGIU, IA, web, optimisation."
+    }
+  },
+  "experiences": {
+    "title": "Expériences",
+    "subtitle": "Parcours professionnel",
+    "highlights": "Points clés",
+    "tech": "Technologies utilisées",
+    "location": "Lieu",
+    "learnMore": "En savoir plus",
+    "badge": "Expérience",
+    "seo": {
+      "title": "Expériences | Florian GIURGIU",
+      "description": "Expériences professionnelles et associatives de Florian GIURGIU."
+    }
+  },
+  "services": {
+    "title": "Mes Prestations",
+    "subtitle": "Des prestations sur-mesure pour entreprises et porteurs de projets : sites, applications, intelligence artificielle et accompagnement stratégique.",
+    "cta": "En savoir plus",
+    "explore": "Explorer mes services",
+    "headerService": {
+      "title": "Services & Prestations",
+      "subtitle": "Solutions complètes pour lancer, faire croître et industrialiser vos produits numériques : du prototype à la production.",
+      "audit": {
+        "title": "Audit & Conseil",
+        "description": "Analyse technique et feuille de route priorisée pour vos besoins produit et perf."
+      },
+      "projects": {
+        "title": "Projets sur‑mesure",
+        "description": "Développement full‑stack, architecture scalable et déploiement en production."
+      },
+      "ai": {
+        "title": "Accompagnement IA",
+        "description": "Intégration de modèles, optimisation d'inférence et pipelines MLOps pour production."
+      },
+      "viewServices": "Voir les services"
+    },
+    "details": {
+      "benefits": "Avantages",
+      "contact": "Demander un devis",
+      "examples": "Exemples & résultats",
+      "examplesDescription": "Exemples concrets de missions, métriques et impacts pour vous aider à comprendre la valeur ajoutée.",
+      "projectType": "Projet type",
+      "projectTypeDescription": "Conception d'une boutique performante — +35% de conversion, temps de chargement < 1s.",
+      "deliverables": "Livrables",
+      "deliverablesDescription": "Design, code, documentation, plan de maintenance et formation."
+    },
+    "seo": {
+      "title": "Services | Florian GIURGIU",
+      "description": "Services : création de sites web, IA, optimisation, conseil.",
+      "service": "Service | Florian GIURGIU",
+      "servicesTitle": "Florian GIURGIU — Services",
+      "servicesDescription": "Prestations : création de sites, applications, IA et accompagnement."
+    }
+  },
+  "contact": {
+    "title": "Vous souhaitez discuter d'un projet ?",
+    "subtitle": "Discutons de votre projet",
+    "description": "N'hésitez pas à me contacter par email ou via le formulaire ci-dessous.",
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "Votre email",
+      "subject": "Sujet",
+      "subjectPlaceholder": "-- Sélectionnez un sujet --",
+      "subjectOptions": {
+        "web": "Création de sites web",
+        "application": "Développement d'applications",
+        "optimisation": "Optimisation & IA",
+        "conseil": "Conseil & accompagnement",
+        "question": "Question générale",
+        "autre": "Autre"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Décrivez votre projet ou posez votre question...",
+      "send": "Envoyer",
+      "sending": "Envoi en cours..."
+    },
+    "success": "Merci, votre message a bien été envoyé !",
+    "error": "Erreur lors de l'envoi. Réessayez ou contactez-moi par email.",
+    "info": {
+      "title": "Informations",
+      "email": "Email",
+      "phone": "Téléphone",
+      "location": "Localisation",
+      "availability": "Disponibilité"
+    },
+    "seo": {
+      "title": "Contact | Florian GIURGIU",
+      "description": "Contactez-moi pour discuter de votre projet web. Devis gratuit et réponse rapide."
+    }
+  },
+  "footer": {
+    "tagline": "Développement Web · IA · Applications",
+    "viewSource": "Voir le code source",
+    "backToTop": "Retour en haut de la page",
+    "topLabel": "Haut de page",
+    "rights": "Tous droits réservés",
+    "links": {
+      "legal": "Mentions légales",
+      "privacy": "Confidentialité"
+    }
+  },
+  "legal": {
+    "title": "Mentions Légales",
+    "publisher": {
+      "title": "Éditeur du site",
+      "email": "Email"
+    },
+    "hosting": {
+      "title": "Hébergement"
+    },
+    "ip": {
+      "title": "Propriété intellectuelle",
+      "content": "Tous les contenus présents sur ce site sont la propriété exclusive de Florian GIURGIU, sauf mention contraire."
+    },
+    "privacy": {
+      "title": "Protection des données",
+      "content": "Ce site ne collecte pas de données personnelles sans consentement."
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "Pour toute question, contactez-moi à l'adresse ci-dessus."
+    },
+    "seo": {
+      "title": "Mentions Légales | Florian GIURGIU",
+      "description": "Mentions légales du site de Florian GIURGIU."
+    }
+  },
+  "common": {
+    "readMore": "Lire la suite",
+    "learnMore": "En savoir plus",
+    "close": "Fermer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent"
+  }
+}

@@ -2,7 +2,9 @@ import React from "react";
 import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
-import projects from "../data/projects.json";
+import projectsFr from "../data/projects-fr.json";
+import projectsEn from "../data/projects-en.json";
+import { useLanguage } from '../contexts/LanguageContext';
 
 // Données importées depuis src/data/projectsData.js
 
@@ -12,11 +14,15 @@ const Badge = ({ children }) => (
   </span>
 );
 
-const Projects = () => (
+const Projects = () => {
+  const { t, language } = useLanguage();
+  const projects = language === 'fr' ? projectsFr : projectsEn;
+  
+  return (
   <>
-    <Seo title="Florian GIURGIU — Projets" description="Projets réalisés par Florian GIURGIU, IA, web, optimisation." />
+    <Seo title={t('projects.seo.title')} description={t('projects.seo.description')} />
     <section className="w-full py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-12 text-center">Projets</h1>
+      <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-12 text-center">{t('projects.title')}</h1>
 
       <div className="flex flex-col gap-8">
         {projects.map((project, idx) => (
@@ -43,7 +49,7 @@ const Projects = () => (
                   ))}
                 </div>
                 <div className="text-sm text-black mb-3">
-                  <strong>Rôle :</strong> {project.role}
+                  <strong>{t('projects.role')} :</strong> {project.role}
                   {project.location && <span className="ml-3">| {project.location}</span>}
                 </div>
                 <ul className="list-inside list-disc text-sm text-black mb-4 space-y-1">
@@ -61,7 +67,7 @@ const Projects = () => (
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Voir le projet
+                    {t('projects.viewProject')}
                   </a>
                 )}
                 {project.availableRepo === "True" && (
@@ -71,7 +77,7 @@ const Projects = () => (
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Repo
+                    {t('projects.viewCode')}
                   </a>
                 )}
               </div>
@@ -85,7 +91,7 @@ const Projects = () => (
                   <path d="M8 12h8M8 16h5" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <div className="absolute top-3 right-3 px-2 py-1 rounded bg-white/80 text-xs text-black">Projet</div>
+              <div className="absolute top-3 right-3 px-2 py-1 rounded bg-white/80 text-xs text-black">{t('projects.badge')}</div>
             </div>
           </motion.article>
         ))}
@@ -93,5 +99,6 @@ const Projects = () => (
     </section>
   </>
 );
+};
 
 export default Projects;

@@ -2,7 +2,9 @@ import React from "react";
 import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
-import experiences from "../data/experiences.json";
+import experiencesFr from "../data/experiences-fr.json";
+import experiencesEn from "../data/experiences-en.json";
+import { useLanguage } from '../contexts/LanguageContext';
 
 // Données importées depuis src/data/experiencesData.js
 
@@ -12,11 +14,15 @@ const Badge = ({ children }) => (
   </span>
 );
 
-const Experiences = () => (
+const Experiences = () => {
+  const { t, language } = useLanguage();
+  const experiences = language === 'fr' ? experiencesFr : experiencesEn;
+  
+  return (
   <>
-    <Seo title="Florian GIURGIU — Expériences" description="Expériences professionnelles et associatives de Florian GIURGIU." />
+    <Seo title={t('experiences.seo.title')} description={t('experiences.seo.description')} />
     <section className="w-full py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-12 text-center">Expériences</h1>
+      <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-12 text-center">{t('experiences.title')}</h1>
       <div className="flex flex-col gap-8">
         {experiences.map((exp, idx) => (
           <motion.article
@@ -44,7 +50,7 @@ const Experiences = () => (
                 </div>
 
                 <div className="text-sm text-black mb-3">
-                  <strong>Lieu :</strong> {exp.location}
+                  <strong>{t('experiences.location')} :</strong> {exp.location}
                 </div>
 
                 <ul className="list-inside list-disc text-sm text-black mb-4 space-y-1">
@@ -62,7 +68,7 @@ const Experiences = () => (
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    En savoir plus
+                    {t('experiences.learnMore')}
                   </a>
                 )}
               </div>
@@ -75,7 +81,7 @@ const Experiences = () => (
                   <path d="M12 2l3 7h7l-5.5 4 2 7L12 17l-6.5 3 2-7L2 9h7l3-7z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <div className="absolute top-3 right-3 px-2 py-1 rounded bg-white/80 text-xs text-black">Expérience</div>
+              <div className="absolute top-3 right-3 px-2 py-1 rounded bg-white/80 text-xs text-black">{t('experiences.badge')}</div>
             </div>
           </motion.article>
         ))}
@@ -83,5 +89,6 @@ const Experiences = () => (
     </section>
   </>
 );
+};
 
 export default Experiences;

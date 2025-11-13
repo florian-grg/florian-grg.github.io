@@ -2,12 +2,14 @@ import React, { useRef, useState } from "react";
 import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { sendEmail } from "../utils/email";
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Contact = () => {
   const form = useRef();
   const [sent, setSent] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const { t } = useLanguage();
 
   const handleSendEmail = (e) => {
     e.preventDefault();
@@ -19,20 +21,20 @@ const Contact = () => {
         setLoading(false);
       })
       .catch(() => {
-        setError("Erreur lors de l'envoi. Réessaie ou contacte-moi par email.");
+        setError(t('contact.error'));
         setLoading(false);
       });
   };
 
   return (
     <>
-      <Seo title="Florian GIURGIU — Contact" description="Contactez Florian GIURGIU pour vos projets web, IA, optimisation." />
+      <Seo title={t('contact.seo.title')} description={t('contact.seo.description')} />
       <section id="contact" className="w-full min-h-screen flex items-center py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
-            <h1 className="text-4xl md:text-5xl font-extrabold">Vous souhaitez discuter d'un projet ?</h1>
+            <h1 className="text-4xl md:text-5xl font-extrabold">{t('contact.title')}</h1>
             <p className="text-black mt-3">
-              N'hésitez pas à me contacter par email ou via le formulaire ci-dessous.
+              {t('contact.description')}
             </p>
             <a
               href="mailto:florian.giurgiu3@gmail.com"
@@ -55,7 +57,7 @@ const Contact = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                 >
-                  Merci, votre message a bien été envoyé !
+                  {t('contact.success')}
                 </motion.div>
               ) : (
                 <form
@@ -69,14 +71,14 @@ const Contact = () => {
                   htmlFor="name"
                   className="text-lg font-medium text-gray-700"
                 >
-                  Nom
+                  {t('contact.form.name')}
                 </label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
-                  placeholder="Votre nom"
+                  placeholder={t('contact.form.namePlaceholder')}
                   required
                 />
               </div>
@@ -87,14 +89,14 @@ const Contact = () => {
                   htmlFor="email"
                   className="text-lg font-medium text-gray-700"
                 >
-                  Email
+                  {t('contact.form.email')}
                 </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
-                  placeholder="Votre email"
+                  placeholder={t('contact.form.emailPlaceholder')}
                   required
                 />
               </div>
@@ -105,7 +107,7 @@ const Contact = () => {
                   htmlFor="subject"
                   className="text-lg font-medium text-gray-700"
                 >
-                  Sujet
+                  {t('contact.form.subject')}
                 </label>
                 <select
                   id="subject"
@@ -113,13 +115,13 @@ const Contact = () => {
                   className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
                   required
                 >
-                  <option value="">-- Sélectionnez un sujet --</option>
-                  <option value="web">Création de sites web</option>
-                  <option value="application">Développement d'applications</option>
-                  <option value="optimisation-IA">Optimisation & IA</option>
-                  <option value="conseil-accompagnement">Conseil & accompagnement</option>
-                  <option value="question-generale">Question générale</option>
-                  <option value="autre">Autre</option>
+                  <option value="">{t('contact.form.subjectPlaceholder')}</option>
+                  <option value="web">{t('contact.form.subjectOptions.web')}</option>
+                  <option value="application">{t('contact.form.subjectOptions.application')}</option>
+                  <option value="optimisation-IA">{t('contact.form.subjectOptions.optimisation')}</option>
+                  <option value="conseil-accompagnement">{t('contact.form.subjectOptions.conseil')}</option>
+                  <option value="question-generale">{t('contact.form.subjectOptions.question')}</option>
+                  <option value="autre">{t('contact.form.subjectOptions.autre')}</option>
                 </select>
               </div>
 
@@ -129,13 +131,13 @@ const Contact = () => {
                   htmlFor="message"
                   className="text-lg font-medium text-gray-700"
                 >
-                  Message
+                  {t('contact.form.message')}
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   className="border border-gray-300 rounded-md px-4 py-2 h-32 resize-none focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
-                  placeholder="Votre message"
+                  placeholder={t('contact.form.messagePlaceholder')}
                   required
                 ></textarea>
               </div>
@@ -149,7 +151,7 @@ const Contact = () => {
                 disabled={loading}
                 className="bg-gradient-to-r from-blue-600 to-purple-500 hover:from-blue-700 hover:to-purple-600 text-white font-semibold py-3 rounded-md shadow-md hover:scale-105 transition-all duration-200"
               >
-                {loading ? "Envoi en cours..." : "Envoyer"}
+                {loading ? t('contact.form.sending') : t('contact.form.send')}
               </button>
                 </form>
               )}

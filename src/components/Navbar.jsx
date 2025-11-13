@@ -2,11 +2,13 @@ import { smoothScrollTo } from "../animations/smoothScrollTo";
 import React from "react";
 import { useNavigate, useLocation } from 'react-router-dom';
 import logo from '../logo.png';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+  const { language, toggleLanguage, t } = useLanguage();
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -51,10 +53,10 @@ export default function Navbar() {
         <img src={logo} alt="Logo" className="hidden sm:block h-8 w-8 rounded" />
         <div className="w-full flex flex-wrap gap-x-2 justify-end items-center">
           {[
-            { path: "/", label: "Accueil", hash: "#header" },
-            { path: "/portfolio", label: "Portfolio", hash: "#about" },
-            { path: "/service", label: "Services", hash: "#services" },
-            { path: "/contact", label: "Contact", hash: "#contact" },
+            { path: "/", label: t('nav.home'), hash: "#header" },
+            { path: "/portfolio", label: t('nav.portfolio'), hash: "#about" },
+            { path: "/service", label: t('nav.services'), hash: "#services" },
+            { path: "/contact", label: t('nav.contact'), hash: "#contact" },
           ].map(({ path, hash, label }) => {
             const isActive = location.pathname === path;
 
@@ -88,6 +90,23 @@ export default function Navbar() {
               </a>
             );
           })}
+          
+          {/* Language Toggle Button */}
+          <button
+            onClick={toggleLanguage}
+            className={`ml-2 px-3 py-1.5 rounded-lg font-medium transition-all flex items-center gap-1.5 ${
+              darkText
+                ? "text-gray-700 hover:text-blue-700 hover:bg-slate-100"
+                : "text-white hover:text-blue-200 hover:bg-white/10"
+            }`}
+            aria-label={language === 'fr' ? 'Switch to English' : 'Passer en français'}
+            title={language === 'fr' ? 'Switch to English' : 'Passer en français'}
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+            </svg>
+            <span className="font-semibold text-sm">{language.toUpperCase()}</span>
+          </button>
         </div>
       </div>
     </nav>

@@ -4,12 +4,16 @@ import Seo from '../components/Seo';
 import { motion, AnimatePresence } from 'framer-motion';
 import { fadeIn } from '../animations/fadeIn';
 import { Link, useLocation } from 'react-router-dom';
-import servicesData from '../data/services.json';
+import servicesDataFr from '../data/services-fr.json';
+import servicesDataEn from '../data/services-en.json';
+import { useLanguage } from '../contexts/LanguageContext';
 
 // Données externalisées depuis src/data/servicesData.js
 
 export default function Service() {
     const location = useLocation();
+    const { t, language } = useLanguage();
+    const servicesData = language === 'fr' ? servicesDataFr : servicesDataEn;
     // L'onglet actif, par défaut le premier service
     const [activeId, setActiveId] = useState(servicesData[0].id);
 
@@ -34,14 +38,14 @@ export default function Service() {
                 if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }, 80);
         }
-    }, [location]); // Se redéclenche si l'URL change
+    }, [location, servicesData]); // Se redéclenche si l'URL ou les données changent
 
     // Trouve le service actif à afficher
     const activeService = servicesData.find(s => s.id === activeId) || servicesData[0];
 
     return (
         <>
-            <Seo title="Florian GIURGIU — Services" description="Prestations : création de sites, applications, IA et accompagnement." />
+            <Seo title={t('services.seo.service')} description={t('services.seo.servicesDescription')} />
 
             {/* Fond clair cohérent */}
             <main id="service" className="bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black py-20 md:py-28">
@@ -110,25 +114,25 @@ export default function Service() {
                                         <div className="flex-grow" /> {/* Pousse les boutons en bas */}
                                         <div className="mt-8 flex flex-col sm:flex-row gap-3">
                                             <Link to="/contact#contact" className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-5 py-3 rounded-md font-semibold transition-colors duration-200 shadow-lg shadow-blue-500/20">
-                                                Demander un devis
+                                                {t('services.details.contact')}
                                             </Link>
                                         </div>
                                     </div>
 
                                             {/* Carte "Exemples" avec style "incrusté" */}
                                     <div className="rounded-3xl p-8 bg-white/50 shadow-inner shadow-black/10 h-full flex flex-col justify-center">
-                                        <h3 className="text-2xl font-bold mb-4 text-black">Exemples & résultats</h3>
-                                        <p className="text-black">Exemples concrets de missions, métriques et impacts pour vous aider à comprendre la valeur ajoutée.</p>
+                                        <h3 className="text-2xl font-bold mb-4 text-black">{t('services.details.examples')}</h3>
+                                        <p className="text-black">{t('services.details.examplesDescription')}</p>
 
                                         <div className="mt-6 grid grid-cols-1 gap-4">
                                             <div className="p-4 bg-white rounded-lg border border-slate-100">
-                                                <strong className="block text-black">Projet type</strong>
-                                                <p className="text-sm text-black">Conception d'une boutique performante — +35% de conversion, temps de chargement &lt; 1s.</p>
+                                                <strong className="block text-black">{t('services.details.projectType')}</strong>
+                                                <p className="text-sm text-black">{t('services.details.projectTypeDescription')}</p>
                                             </div>
 
                                             <div className="p-4 bg-white rounded-lg border border-slate-100">
-                                                <strong className="block text-black">Livrables</strong>
-                                                <p className="text-sm text-black">Design, code, documentation, plan de maintenance et formation.</p>
+                                                <strong className="block text-black">{t('services.details.deliverables')}</strong>
+                                                <p className="text-sm text-black">{t('services.details.deliverablesDescription')}</p>
                                             </div>
                                         </div>
                                     </div>

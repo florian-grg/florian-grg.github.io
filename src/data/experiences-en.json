@@ -1,0 +1,42 @@
+[{
+  "title": "Internship - Choisir mon Groupement",
+  "description": "IT development and database optimization. Participated in refactoring and query improvement for performance gains.",
+  "date": "06/2024 - 07/2024",
+  "location": "Schiltigheim (67)",
+  "highlights": [
+    "SQL query optimization (execution time reduced by 40%)",
+    "Development of Python scripts for data migration",
+    "Documentation and knowledge transfer"
+  ],
+  "tech": ["SQL", "Python", "Docker"],
+  "link": "#",
+  "more": "False"
+},
+{
+  "title": "Inspire, Junior-Enterprise",
+  "description": "Quality Manager: implementation of quality processes, testing and deliverable review for client projects.",
+  "date": "09/2023 - 04/2025",
+  "location": "Saint-Étienne (42)",
+  "highlights": [
+    "Definition of quality standards for web/mobile projects",
+    "Systematic testing and deliverable validation",
+    "Customer satisfaction monitoring and continuous improvement"
+  ],
+  "tech": ["Git", "Testing", "Documentation"],
+  "link": "#",
+  "more": "False"
+},
+{
+  "title": "University Projects & Personal Initiatives",
+  "description": "Deep learning, computer vision, and full-stack web development: object detection, image matching, React apps, Qt interfaces.",
+  "date": "2023 - 2025",
+  "location": "Saint-Étienne (42) & Padua (IT)",
+  "highlights": [
+    "Deep Learning: PyTorch, CNNs, feature detection",
+    "Desktop applications (Java/Qt) and modern websites (React/Tailwind)",
+    "Continuous self-learning and technical exploration"
+  ],
+  "tech": ["PyTorch", "OpenCV", "React", "Java", "Qt"],
+  "link": "#",
+  "more": "False"
+}]

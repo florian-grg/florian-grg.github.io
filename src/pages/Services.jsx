@@ -2,12 +2,16 @@ import React from "react";
 import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
-import servicesData from "../data/services.json";
+import servicesDataFr from "../data/services-fr.json";
+import servicesDataEn from "../data/services-en.json";
 import { useNavigate } from "react-router-dom";
 import { smoothScrollTo } from "../animations/smoothScrollTo";
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Services = () => {
 	const navigate = useNavigate();
+	const { t, language } = useLanguage();
+	const servicesData = language === 'fr' ? servicesDataFr : servicesDataEn;
 
 	function getServiceIcon(name) {
 		const common = { className: 'w-10 h-10 text-white' };
@@ -50,17 +54,17 @@ const Services = () => {
 	return (
 		<>
 			<Seo
-				title="Florian GIURGIU — Services"
-				description="Services : création de sites web, IA, optimisation, conseil."
+				title={t('services.seo.title')}
+				description={t('services.seo.description')}
 			/>
 
 			{/* Section 1 — Aperçu des prestations (fond blanc, design landing page) */}
 			<section className="w-full min-h-screen py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black flex items-center">
 				<div className="max-w-7xl mx-auto">
 					<div className="text-center mb-14">
-						<h1 className="text-4xl md:text-5xl font-extrabold text-black">Mes Prestations</h1>
+						<h1 className="text-4xl md:text-5xl font-extrabold text-black">{t('services.title')}</h1>
 						<p className="mt-4 text-lg text-black max-w-2xl mx-auto">
-							Des prestations sur-mesure pour entreprises et porteurs de projets : sites, applications, intelligence artificielle et accompagnement stratégique.
+							{t('services.subtitle')}
 						</p>
 					</div>
 
@@ -100,7 +104,7 @@ const Services = () => {
 										}}
 										className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-500 hover:from-blue-700 hover:to-purple-600 text-white font-semibold px-4 py-2 rounded-lg shadow"
 									>
-										<span>En savoir plus</span>
+										<span>{t('services.cta')}</span>
 										<svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
 									</button>
 								</div>

@@ -5,10 +5,12 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
 import { smoothScrollTo } from "../animations/smoothScrollTo";
 import { useNavigate, useLocation } from 'react-router-dom';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const { t } = useLanguage();
 
   const goTo = (path, hash) => {
     if (location.pathname === path) {
@@ -21,50 +23,73 @@ const Header = () => {
 
   return (
   <>
-    <Seo title="Accueil | Florian GIURGIU" description="Accueil du portfolio de Florian GIURGIU, développeur web et auto-entrepreneur." />
-    <header className="relative overflow-hidden bg-gradient-to-br from-[#000725ff] via-[#0a0e27] to-[#0f1642] min-h-screen flex flex-col items-center justify-center">
+    <Seo title={t('header.seo.title')} description={t('header.seo.description')} />
+    <header role="banner" id="home" className="relative overflow-hidden bg-gradient-to-br from-[#000725ff] via-[#0a0e27] to-[#0f1642] min-h-screen flex flex-col items-center justify-center">
       <NeuralNetworkBackground />
       
       {/* Overlay subtil */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20 z-0" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/40 z-0" />
 
       <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center px-6 py-16">
         {/* Titre principal */}
         <motion.h1
-          className="text-5xl md:text-6xl lg:text-7xl font-medium mb-6 tracking-wider"
+          className="text-5xl md:text-6xl lg:text-7xl font-semibold mb-6 tracking-tight"
           initial="hidden"
           animate="visible"
           variants={fadeIn}
           transition={{ delay: 0.2, duration: 0.7 }}
         >
           <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
-            Florian GIURGIU
+            {t('header.title')}
           </span>
         </motion.h1>
 
         {/* Sous-titre */}
         <motion.h2
-          className="text-xl md:text-2xl font-light mb-8 tracking-wide"
+          className="text-lg md:text-xl font-normal mb-5 tracking-wide text-gray-300"
           initial="hidden"
           animate="visible"
           variants={fadeIn}
-          transition={{ delay: 0.4, duration: 0.7 }}
+          transition={{ delay: 0.35, duration: 0.7 }}
         >
-          <span className="text-white">Développeur Web</span> <span className="text-gray-400">&</span> <span className="text-blue-400">Auto-Entrepreneur</span>
+          {t('header.subtitle')}
         </motion.h2>
 
         {/* Description */}
         <motion.p
-          className="text-gray-400 text-base md:text-lg max-w-2xl leading-relaxed mb-12"
+          className="text-gray-400 text-base md:text-lg max-w-2xl leading-relaxed mb-8"
           initial="hidden"
           animate="visible"
           variants={fadeIn}
-          transition={{ delay: 0.6, duration: 0.7 }}
+          transition={{ delay: 0.5, duration: 0.7 }}
         >
-          Je conçois des sites et applications modernes, performants et sur-mesure.
-          <br />
-          Passionné par les nouvelles technologies et à l'écoute de vos besoins pour donner vie à vos projets digitaux.
+          {t('header.description')}
+          <br className="hidden md:block" />
+          {t('header.description2')}
         </motion.p>
+
+        {/* Points clés */}
+        <motion.ul
+          className="mb-10 grid grid-cols-1 sm:grid-cols-3 gap-3 w-full max-w-3xl"
+          initial="hidden"
+          animate="visible"
+          variants={fadeIn}
+          transition={{ delay: 0.65, duration: 0.7 }}
+          aria-label="Points clés de ma prestation"
+        >
+          <li className="flex items-center justify-center gap-2 rounded-md bg-white/5 border border-white/10 px-4 py-2 text-sm text-gray-200">
+            <svg className="h-4 w-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            {t('header.features.performance')}
+          </li>
+          <li className="flex items-center justify-center gap-2 rounded-md bg-white/5 border border-white/10 px-4 py-2 text-sm text-gray-200">
+            <svg className="h-4 w-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            {t('header.features.accessibility')}
+          </li>
+          <li className="flex items-center justify-center gap-2 rounded-md bg-white/5 border border-white/10 px-4 py-2 text-sm text-gray-200">
+            <svg className="h-4 w-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            {t('header.features.seo')}
+          </li>
+        </motion.ul>
 
         {/* Boutons d'action */}
         <motion.div
@@ -75,22 +100,24 @@ const Header = () => {
           transition={{ delay: 0.8, duration: 0.7 }}
         >
           <button
-            className="group relative px-8 py-3.5 bg-blue-600 text-white rounded-lg font-semibold shadow-lg shadow-blue-600/30 hover:shadow-xl hover:shadow-blue-600/40 hover:bg-blue-700 transition-all duration-300 hover:scale-105"
+            className="group relative px-8 py-3.5 bg-blue-600 text-white rounded-lg font-semibold shadow-lg shadow-blue-600/30 hover:shadow-xl hover:shadow-blue-600/40 hover:bg-blue-700 transition-all duration-300 hover:scale-[1.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f1642]"
             onClick={() => goTo('/contact', '#contact')}
+            aria-label={t('header.cta.quote')}
           >
             <span className="flex items-center gap-2">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              Me contacter
+              {t('header.cta.quote')}
             </span>
           </button>
           
           <button
-            className="px-8 py-3.5 bg-transparent border-2 border-blue-600 text-blue-400 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105"
+            className="px-8 py-3.5 bg-transparent border-2 border-blue-600 text-blue-400 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-[1.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f1642]"
             onClick={() => goTo('/portfolio', '#about')}
+            aria-label={t('header.cta.profile')}
           >
-            À propos de moi
+            {t('header.cta.profile')}
           </button>
         </motion.div>
 
@@ -105,13 +132,14 @@ const Header = () => {
             href="/CV_Florian_GIURGIU.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 px-6 py-3 bg-white/5 backdrop-blur-sm border border-gray-600 text-gray-300 rounded-full font-medium hover:border-blue-500 hover:text-blue-400 hover:bg-white/10 transition-all duration-300"
+            className="group inline-flex items-center gap-2 px-6 py-3 bg-white/5 backdrop-blur-sm border border-gray-600 text-gray-300 rounded-full font-medium hover:border-blue-500 hover:text-blue-400 hover:bg-white/10 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f1642]"
             download
+            aria-label={t('header.cta.downloadCv')}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 group-hover:translate-y-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 group-hover:translate-y-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
             </svg>
-            <span>Télécharger mon CV</span>
+            <span>{t('header.cta.downloadCv')}</span>
           </a>
         </motion.div>
 
@@ -122,19 +150,22 @@ const Header = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 0.7 }}
         >
-          <motion.div
+          <motion.button
+            type="button"
+            onClick={() => goTo('/portfolio', '#about')}
             animate={{ y: [0, 8, 0] }}
             transition={{
               duration: 2,
               repeat: Infinity,
               ease: "easeInOut"
             }}
-            className="text-gray-500 hover:text-gray-400 transition-colors cursor-pointer"
+            className="text-gray-500 hover:text-gray-300 transition-colors cursor-pointer rounded-full p-2 bg-white/5 border border-white/10"
+            aria-label={t('header.scroll')}
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
-          </motion.div>
+          </motion.button>
         </motion.div>
       </div>
     </header>

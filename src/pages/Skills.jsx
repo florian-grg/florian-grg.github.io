@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
-import SKILLS from "../data/skills.json";
+import skillsFr from "../data/skills-fr.json";
+import skillsEn from "../data/skills-en.json";
+import { useLanguage } from '../contexts/LanguageContext';
 
 // Données importées depuis src/data/skillsData.js
 
-const getUniqueCategories = (list) => ["Tous", ...Array.from(new Set(list.map((s) => s.category)))];
+const getUniqueCategories = (list, allLabel) => [allLabel, ...Array.from(new Set(list.map((s) => s.category)))];
 
 const Logo = ({ name }) => {
   switch (name) {
@@ -92,18 +94,26 @@ const Logo = ({ name }) => {
 };
 
 const Skills = () => {
-  const [category, setCategory] = useState("Tous");
-  const categories = getUniqueCategories(SKILLS);
-  const filtered = category === "Tous" ? SKILLS : SKILLS.filter((s) => s.category === category);
+  const { t, language } = useLanguage();
+  const SKILLS = language === 'fr' ? skillsFr : skillsEn;
+  const allLabel = t('skills.filter.all');
+  const [category, setCategory] = useState(allLabel);
+  const categories = getUniqueCategories(SKILLS, allLabel);
+  const filtered = category === allLabel ? SKILLS : SKILLS.filter((s) => s.category === category);
+
+  // Réinitialise le filtre quand la langue change
+  useEffect(() => {
+    setCategory(allLabel);
+  }, [language, allLabel]);
 
   return (
     <>
       <Seo
-        title="Florian GIURGIU — Compétences"
-        description="Compétences techniques de Florian GIURGIU : Python, Java, IA, web, etc."
+        title={t('skills.seo.title')}
+        description={t('skills.seo.description')}
       />
       <section className="w-full py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-12 text-center">Compétences</h1>
+        <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-12 text-center">{t('skills.title')}</h1>
         <div className="mx-auto">
           <div className="rounded-2xl shadow-2xl p-8 md:p-12 overflow-hidden bg-white border border-gray-200">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-center gap-6 mb-8">
@@ -150,7 +160,7 @@ const Skills = () => {
                       <div className="flex items-start gap-4">
                         <div>
                           <h3 className="text-lg font-semibold text-black leading-tight">{s.name}</h3>
-                          <div className="text-xs text-black">Catégorie • {s.category} • {s.years} ans</div>
+                          <div className="text-xs text-black">{t('skills.category')} • {s.category} • {s.years} {t('skills.years')}</div>
                           {/* Decorative horizontal bar under title */}
                           <div className="mt-3">
                             <div aria-hidden className="h-0.5 w-20 rounded-full bg-gradient-to-r from-green-300 via-slate-200 to-transparent" />
@@ -169,7 +179,7 @@ const Skills = () => {
                       {/* Examples */}
                       {s.examples && s.examples.length > 0 && (
                         <motion.div className="mt-3" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: idx * 0.03 }}>
-                          <div className="text-xs font-medium text-slate-500">Exemples d'utilisation</div>
+                          <div className="text-xs font-medium text-slate-500">{t('skills.examples')}</div>
                           <ul className="mt-1 text-xs text-slate-700 list-disc list-inside space-y-1">
                             {s.examples.map((ex) => (
                               <li key={ex}>{ex}</li>
@@ -181,7 +191,7 @@ const Skills = () => {
                       {/* Certifications */}
                       {s.certs && s.certs.length > 0 && (
                         <motion.div className="mt-3" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: idx * 0.04 }}>
-                          <div className="text-xs font-medium text-slate-500">Certifications & formations</div>
+                          <div className="text-xs font-medium text-slate-500">{t('skills.certifications')}</div>
                           <ul className="mt-1 text-xs text-slate-700 space-y-1">
                             {s.certs.map((c, i) => (
                               <li key={i}>
