@@ -24,9 +24,9 @@ const Footer = () => {
                             <span className="break-all">florian.giurgiu3@gmail.com</span>
                         </a>
 
-                        <a href="tel:+33333333333" className="text-sm md:text-base text-slate-300 hover:text-white flex items-center gap-3 justify-center">
+                        <a href="tel:+33629158054" className="text-sm md:text-base text-slate-300 hover:text-white flex items-center gap-3 justify-center">
                             <FaPhone />
-                            <span className="break-all">+33 (0)3 33 33 33 33</span>
+                            <span className="break-all">+33 (0)6 29 15 80 54</span>
                         </a>
                     </div>
 
