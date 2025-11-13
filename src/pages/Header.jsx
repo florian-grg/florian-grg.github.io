@@ -68,29 +68,6 @@ const Header = () => {
           {t('header.description2')}
         </motion.p>
 
-        {/* Points clés */}
-        <motion.ul
-          className="mb-10 grid grid-cols-1 sm:grid-cols-3 gap-3 w-full max-w-3xl"
-          initial="hidden"
-          animate="visible"
-          variants={fadeIn}
-          transition={{ delay: 0.65, duration: 0.7 }}
-          aria-label="Points clés de ma prestation"
-        >
-          <li className="flex items-center justify-center gap-2 rounded-md bg-white/5 border border-white/10 px-4 py-2 text-sm text-gray-200">
-            <svg className="h-4 w-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-            {t('header.features.performance')}
-          </li>
-          <li className="flex items-center justify-center gap-2 rounded-md bg-white/5 border border-white/10 px-4 py-2 text-sm text-gray-200">
-            <svg className="h-4 w-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-            {t('header.features.accessibility')}
-          </li>
-          <li className="flex items-center justify-center gap-2 rounded-md bg-white/5 border border-white/10 px-4 py-2 text-sm text-gray-200">
-            <svg className="h-4 w-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-            {t('header.features.seo')}
-          </li>
-        </motion.ul>
-
         {/* Boutons d'action */}
         <motion.div
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
@@ -141,31 +118,6 @@ const Header = () => {
             </svg>
             <span>{t('header.cta.downloadCv')}</span>
           </a>
-        </motion.div>
-
-        {/* Indicateur de scroll */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 0.7 }}
-        >
-          <motion.button
-            type="button"
-            onClick={() => goTo('/portfolio', '#about')}
-            animate={{ y: [0, 8, 0] }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-            className="text-gray-500 hover:text-gray-300 transition-colors cursor-pointer rounded-full p-2 bg-white/5 border border-white/10"
-            aria-label={t('header.scroll')}
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </motion.button>
         </motion.div>
       </div>
     </header>
