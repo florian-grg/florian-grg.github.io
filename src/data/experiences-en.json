@@ -1,42 +1,58 @@
-[{
-  "title": "Internship - Choisir mon Groupement",
-  "description": "IT development and database optimization. Participated in refactoring and query improvement for performance gains.",
-  "date": "06/2024 - 07/2024",
-  "location": "Schiltigheim (67)",
-  "highlights": [
-    "SQL query optimization (execution time reduced by 40%)",
-    "Development of Python scripts for data migration",
-    "Documentation and knowledge transfer"
-  ],
-  "tech": ["SQL", "Python", "Docker"],
-  "link": "#",
-  "more": "False"
-},
-{
-  "title": "Inspire, Junior-Enterprise",
-  "description": "Quality Manager: implementation of quality processes, testing and deliverable review for client projects.",
-  "date": "09/2023 - 04/2025",
-  "location": "Saint-Étienne (42)",
-  "highlights": [
-    "Definition of quality standards for web/mobile projects",
-    "Systematic testing and deliverable validation",
-    "Customer satisfaction monitoring and continuous improvement"
-  ],
-  "tech": ["Git", "Testing", "Documentation"],
-  "link": "#",
-  "more": "False"
-},
-{
-  "title": "University Projects & Personal Initiatives",
-  "description": "Deep learning, computer vision, and full-stack web development: object detection, image matching, React apps, Qt interfaces.",
-  "date": "2023 - 2025",
-  "location": "Saint-Étienne (42) & Padua (IT)",
-  "highlights": [
-    "Deep Learning: PyTorch, CNNs, feature detection",
-    "Desktop applications (Java/Qt) and modern websites (React/Tailwind)",
-    "Continuous self-learning and technical exploration"
-  ],
-  "tech": ["PyTorch", "OpenCV", "React", "Java", "Qt"],
-  "link": "#",
-  "more": "False"
-}]
+[
+  {
+    "title": "Self-Employed in Artificial Intelligence & Computer Vision",
+    "description": "Consulting and development services in AI, Machine Learning, Deep Learning and Computer Vision.",
+    "date": "09/2025 - Present",
+    "location": "—",
+    "highlights": [
+      "Custom AI prototypes (detection, segmentation, tracking)",
+      "Rapid POC delivery in computer vision",
+      "Technical advisory and ML model integration"
+    ],
+    "tech": ["Python", "PyTorch", "OpenCV", "Docker"],
+    "link": "#",
+    "more": "False"
+  },
+  {
+    "title": "Engineering AI Project - Myakiatto",
+    "description": "Keypoint detection and matching between drone and satellite imagery using Deep Learning and Image Processing.",
+    "date": "03/2025 - Present",
+    "location": "Saint-Étienne (42)",
+    "highlights": [
+      "Keypoint matching (SIFT/ORB) & homography estimation (RANSAC)",
+      "CNN-based detection/segmentation + geospatial post-processing",
+      "GDAL integration and projection standardisation"
+    ],
+    "tech": ["Python", "PyTorch", "OpenCV", "GDAL"],
+    "link": "#",
+    "more": "False"
+  },
+  {
+    "title": "Quality Manager - Inspire Junior-Enterprise",
+    "description": "Implementation and monitoring of the QMS, procedures and quality KPIs, internal audits for continuous improvement.",
+    "date": "09/2023 - 04/2025",
+    "location": "Saint-Étienne (42)",
+    "highlights": [
+      "Definition of processes & quality indicators",
+      "Testing and review of client deliverables",
+      "Internal audits & continuous improvement"
+    ],
+    "tech": ["Git", "Testing", "Documentation"],
+    "link": "#",
+    "more": "False"
+  },
+  {
+    "title": "Software Developer - Choisir mon Groupement (Internship)",
+    "description": "SEO improvements, PHP project work and SQL database optimisation.",
+    "date": "06/2024 - 07/2024",
+    "location": "Schiltigheim (67)",
+    "highlights": [
+      "SQL query optimisation & refactoring",
+      "On‑page SEO improvements",
+      "Contribution to a PHP codebase"
+    ],
+    "tech": ["PHP", "SQL", "SEO"],
+    "link": "#",
+    "more": "False"
+  }
+]

@@ -11,48 +11,26 @@
     "description": "I help SMEs and startups design fast, accessible, and maintainable web experiences.",
     "description2": "From concept to deployment, I support you with custom and measurable solutions.",
     "cta": {
-      "quote": "Request a quote",
       "profile": "Discover my profile",
+      "quote": "Request a quote",
+      "services": "View my services",
       "downloadCv": "Download my CV"
     },
     "scroll": "Scroll to About section",
     "seo": {
-      "title": "Home | Florian GIURGIU",
-      "description": "Florian GIURGIU's portfolio homepage, freelance web developer: showcase websites, web apps and custom integrations."
+      "title": "AI & Web Engineering | Florian GIURGIU",
+      "description": "Portfolio of Florian GIURGIU: AI & computer vision engineering, modern web development, performance and quality consulting."
     }
   },
   "about": {
     "title": "About",
-    "greeting": "Hello, I'm",
-    "name": "Florian GIURGIU",
-    "role": "Web Developer & Entrepreneur",
-    "intro": "Passionate about web development and new technologies, I create modern and high-performance digital solutions.",
-    "paragraph1": "Hello, my name is Florian Giurgiu, a final-year engineering student at Télécom Saint-Étienne and currently on an Erasmus exchange at the University of Padua in Italy. Passionate about Artificial Intelligence, Computer Vision, and Software Development, I enjoy designing and experimenting with innovative solutions that combine mathematics, programming, and creativity.",
-    "paragraph2": "Curious and persevering, I am equally interested in deep learning (Deep Learning, Neural Networks, Optimization) and full-stack development to bring concrete projects to life. I have had the opportunity to work on various projects: image detection and matching using Deep Learning, developing interactive applications in Java and Qt, as well as creating modern websites with React and Tailwind CSS.",
-    "paragraph3": "Beyond my studies, I am passionate about bodybuilding and handball, and I have been playing guitar for several years. I also enjoy getting involved in associative life, particularly through organizing E-Sport and cultural events. I speak French and Romanian fluently, and I also have a good level of English (B2), as well as notions in Spanish (A2) and German (A1).",
-    "paragraph4": "My goal is to put my skills to use in ambitious and innovative projects, where I can learn, share, and have a positive impact.",
-    "portfolio": {
-      "subtitle": "Engineering Student • AI & Development",
-      "description": "Final-year student at Télécom Saint‑Étienne (on exchange in Padua), passionate about AI, computer vision, and development. Projects: deep learning (object detection/image matching), Java/Qt apps, React/Tailwind websites. Curious and committed, I seek ambitious projects to learn and make an impact.",
-      "keySkills": "Key Skills",
-      "ai": "Artificial Intelligence",
-      "cv": "Computer Vision",
-      "fullstack": "Full‑stack",
-      "reactTailwind": "React & Tailwind",
-      "javaQt": "Java / Qt",
-      "journey": "My Journey"
-    },
-    "stats": {
-      "projects": "Completed projects",
-      "experience": "Years of experience",
-      "technologies": "Mastered technologies",
-      "satisfaction": "Client satisfaction"
-    },
+    "keySkills": "Key Skills",
+    "journey": "My Journey",
     "cta": "Contact me",
     "seo": {
       "title": "About | Florian GIURGIU",
-      "description": "Freelance web developer passionate about modern technologies. Discover my journey and skills.",
-      "portfolio": "Florian GIURGIU — Portfolio"
+      "description": "Freelance engineer in AI, computer vision and modern web development. Blending academic research and production pragmatism.",
+      "portfolio": "Portfolio | AI & Computer Vision"
     }
   },
   "skills": {
@@ -69,7 +47,7 @@
     "years": "years",
     "seo": {
       "title": "Skills | Florian GIURGIU",
-      "description": "Technologies and tools I master: React, Python, Java, Node.js and more."
+      "description": "Core stack for AI, computer vision & high‑quality web delivery: Python, PyTorch, OpenCV, React, Java, Tailwind, Docker, GDAL."
     }
   },
   "projects": {
@@ -83,8 +61,16 @@
     "comingSoon": "Coming soon",
     "badge": "Project",
     "seo": {
-      "title": "Projects | Florian GIURGIU",
-      "description": "Projects completed by Florian GIURGIU, AI, web, optimization."
+      "title": "AI & Vision Projects | Florian GIURGIU",
+      "description": "Selected projects: conditional VAE, image classification, geospatial keypoint matching, real‑time vision game, React/Tailwind site."
+    }
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "Academic background",
+    "seo": {
+      "title": "Education in AI & Vision | Florian GIURGIU",
+      "description": "Erasmus AI semester, digital engineering degree (image & computing), preparatory classes (MPSI/PSI) and scientific foundations."
     }
   },
   "experiences": {
@@ -96,8 +82,16 @@
     "learnMore": "Learn more",
     "badge": "Experience",
     "seo": {
-      "title": "Experience | Florian GIURGIU",
-      "description": "Professional and associative experiences of Florian GIURGIU."
+      "title": "Professional Experience in AI & Vision | Florian GIURGIU",
+      "description": "Entrepreneur in AI & vision, engineering project Myakiatto, quality management, and SEO/database optimisation internship."
+    }
+  },
+  "certifications": {
+    "title": "Certifications",
+    "subtitle": "Validated knowledge & achievements",
+    "seo": {
+      "title": "Certifications – Florian GIURGIU",
+      "description": "CS50 Harvard, computer science certificates, TOEIC C1. Verified skills in algorithms, programming, web and English."
     }
   },
   "services": {
@@ -133,11 +127,11 @@
       "deliverablesDescription": "Design, code, documentation, maintenance plan, and training."
     },
     "seo": {
-      "title": "Services | Florian GIURGIU",
-      "description": "Website creation, custom applications, AI optimization and technical consulting.",
-      "service": "Service | Florian GIURGIU",
-      "servicesTitle": "Florian GIURGIU — Services",
-      "servicesDescription": "Services: website creation, applications, AI and support."
+      "title": "Services: AI, Vision & Web Development | Florian GIURGIU",
+      "description": "Custom services: AI model integration, computer vision pipelines, performant web apps, strategic technical consulting.",
+      "service": "Service | AI & Web | Florian GIURGIU",
+      "servicesTitle": "Services | AI & Vision",
+      "servicesDescription": "Offerings: AI & vision integration, website & application creation, optimisation and advisory."
     }
   },
   "contact": {
@@ -165,6 +159,7 @@
       "sending": "Sending..."
     },
     "success": "Message sent successfully! I will reply shortly.",
+    "return": "Return to home",
     "error": "An error occurred. Please try again.",
     "info": {
       "title": "Information",
@@ -175,7 +170,7 @@
     },
     "seo": {
       "title": "Contact | Florian GIURGIU",
-      "description": "Contact me to discuss your web project. Free quote and quick response."
+      "description": "Start a conversation about AI, computer vision or web development. Fast reply and free initial assessment."
     }
   },
   "footer": {
@@ -212,7 +207,7 @@
     },
     "seo": {
       "title": "Legal Notice | Florian GIURGIU",
-      "description": "Legal notice for Florian GIURGIU's website."
+      "description": "Legal notice for the AI & web engineering portfolio of Florian GIURGIU."
     }
   },
   "common": {

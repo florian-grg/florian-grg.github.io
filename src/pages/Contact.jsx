@@ -26,6 +26,10 @@ const Contact = () => {
       });
   };
 
+  const goTo = (path, hash) => {
+    window.location.href = window.location.origin + path + hash;
+  };
+
   return (
     <>
       <Seo title={t('contact.seo.title')} description={t('contact.seo.description')} />
@@ -33,12 +37,12 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h1 className="text-4xl md:text-5xl font-extrabold">{t('contact.title')}</h1>
-            <p className="text-black mt-3">
+            <p className="text-slate-700 mt-3">
               {t('contact.description')}
             </p>
             <a
               href="mailto:florian.giurgiu3@gmail.com"
-              className="mt-4 inline-block bg-blue-700 text-white px-6 py-2 rounded-full font-semibold shadow hover:bg-blue-800 transition"
+              className="mt-4 inline-block bg-gradient-to-r from-blue-600 to-purple-500 text-white px-6 py-2 rounded-full font-semibold shadow hover:opacity-95 transition"
             >
               florian.giurgiu3@gmail.com
             </a>
@@ -53,11 +57,23 @@ const Contact = () => {
             >
               {sent ? (
                 <motion.div
-                  className="text-green-600 font-semibold text-center py-10"
+                  className="flex flex-col items-center gap-4 text-slate-800 font-semibold py-10"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                 >
-                  {t('contact.success')}
+                  <div className="text-center">{t('contact.success')}</div>
+                  <button
+                    className="mt-2 bg-gradient-to-r from-blue-600 to-purple-500 text-white px-8 py-3.5 rounded-lg font-semibold shadow hover:opacity-95 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white hover:to-purple-600 text-white font-semibold py-3 rounded-md shadow-md hover:scale-105 transition-all duration-200"
+                    onClick={() => goTo('#/', '')}
+                    aria-label={t('contact.return')}
+                  >
+                    <span className="flex items-center gap-2">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                      {t('contact.return')}
+                    </span>
+                  </button>
                 </motion.div>
               ) : (
                 <form

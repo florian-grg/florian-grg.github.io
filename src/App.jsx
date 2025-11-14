@@ -4,10 +4,12 @@ import Footer from './components/Footer';
 import Header from './pages/Header';
 import HeaderPortfolio from './pages/HeaderPortfolio';
 import Projects from './pages/Projects';
+import Education from './pages/Education';
 import Experiences from './pages/Experiences';
 import Skills from './pages/Skills';
+import Certifications from './pages/Certifications';
+import HeaderServices from './pages/HeaderServices';
 import Services from './pages/Services';
-import Service from './pages/Service';
 import Contact from './pages/Contact';
 import MentionsLegales from './pages/MentionsLegales';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
@@ -43,11 +45,11 @@ function AnimatedRoutes() {
             exit={pageTransition.exit}
             transition={pageTransition.transition}
           >
-            <section id="neural">
+            <section id="portfolio">
               <HeaderPortfolio />
             </section>
-            <section id="projects">
-              <Projects />
+            <section id="education">
+              <Education />
             </section>
             <section id="skills">
               <Skills />
@@ -55,12 +57,18 @@ function AnimatedRoutes() {
             <section id="experiences">
               <Experiences />
             </section>
+            <section id="projects">
+              <Projects />
+            </section>
+            <section id="certifications">
+              <Certifications />
+            </section>
             <Footer />
           </motion.div>
         } />
 
         {/* Service page */}
-        <Route path="/service" element={
+        <Route path="/services" element={
           <motion.div
             initial={pageTransition.initial}
             animate={pageTransition.animate}
@@ -68,10 +76,10 @@ function AnimatedRoutes() {
             transition={pageTransition.transition}
           >
             <section id="services">
-              <Services />
+              <HeaderServices />
             </section>
             <section id="service">
-              <Service />
+              <Services />
             </section>
             <Footer />
           </motion.div>

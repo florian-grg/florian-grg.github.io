@@ -1,32 +1,16 @@
 [
   {
-    "title": "Projet d'ingénierie - Myakiatto",
-    "description": "Détection et géoréférencement de points caractéristiques du paysage à partir d'images satellite via traitement d'images et IA. Pipeline complet : prétraitement, segmentation, matching et post-traitement géospatial.",
-    "date": "03/2025 - 06/2025",
-    "location": "Saint-Étienne (42)",
-    "tech": ["Python", "PyTorch", "OpenCV", "GDAL"],
-    "role": "Lead ML Engineer",
-    "highlights": [
-      "Détection d'objets basée YOLO avec 92% de précision",
-      "Matching d'images via SIFT + homographie (RANSAC)",
-      "Pipeline dockerisé pour batch processing"
-    ],
-    "link": "#",
-    "repo": "#",
-    "availableProject": "False",
-    "availableRepo": "False"
-  },
-  {
-    "title": "Développement Web - Portfolio Personnel",
-    "description": "Site portfolio moderne : design responsive, Tailwind CSS, animations Framer Motion, multilingue (FR/EN) et intégration EmailJS.",
-    "date": "2024 - 2025",
-    "location": "Saint-Étienne (42)",
+    "title": "Développement d’un site web moderne avec React et Tailwind CSS",
+    "description": "Création d’une interface responsive présentant parcours, compétences et projets. Intégration d’un formulaire de contact et animations interactives.",
+    "date": "08/2025 - Présent",
+    "location": "—",
     "tech": ["React", "Tailwind CSS", "Framer Motion", "EmailJS"],
-    "role": "Développeur Full-stack",
+    "role": "Développeur Front‑End",
     "highlights": [
-      "Structure de page professionnelle et UX épurée",
-      "i18n avec persistence de langue (localStorage)",
-      "Déploiement sur GitHub Pages"
+      "Interface responsive et accessible",
+      "Animations fluides (Framer Motion)",
+      "Formulaire de contact EmailJS",
+      "Déploiement GitHub Pages"
     ],
     "link": "https://florian-grg.github.io",
     "repo": "https://github.com/florian-grg/florian-grg.github.io",
@@ -34,16 +18,16 @@
     "availableRepo": "True"
   },
   {
-    "title": "Reconstruction 3D - Photogrammétrie",
-    "description": "Reconstruction 3D et texturage à partir d'images multi-vues. Implémentation d'algorithmes SfM (Structure from Motion) et MVS (Multi-View Stereo).",
-    "date": "2024",
-    "location": "Saint-Étienne (42)",
-    "tech": ["Python", "OpenCV", "NumPy", "Open3D"],
-    "role": "Ingénieur Vision par Ordinateur",
+    "title": "Conception d'un Autoencodeur Variationnel (VAE) conditionnel",
+    "description": "Entraînement sur CelebA et génération d'images conditionnées par attributs visuels (cVAE) avec PyTorch.",
+    "date": "05/2025",
+    "location": "—",
+    "tech": ["Python", "PyTorch", "VAE", "CelebA"],
+    "role": "Machine Learning Engineer",
     "highlights": [
-      "Calibration caméra et estimation de pose",
-      "Génération de nuages de points denses",
-      "Reconstruction de maillage et texturage"
+      "Architecture cVAE pour génération contrôlée",
+      "Pipeline d'entraînement et d'évaluation",
+      "Exploration d'attributs latents"
     ],
     "link": "#",
     "repo": "#",
@@ -51,16 +35,33 @@
     "availableRepo": "False"
   },
   {
-    "title": "Application Desktop - Traitement Automatisé",
-    "description": "Application C++/Qt pour traitement automatisé par lots d'images médicales : segmentation, mesures et génération de rapports PDF.",
-    "date": "2023",
-    "location": "Saint-Étienne (42)",
-    "tech": ["C++", "Qt", "OpenCV"],
-    "role": "Ingénieur Logiciel",
+    "title": "Classification d’images de pizzas",
+    "description": "Extraction de descripteurs couleur/texture, détection de formes (transformée de Hough). Implémentation et comparaison KNN, SVM et GMM.",
+    "date": "02/2025 - 04/2025",
+    "location": "—",
+    "tech": ["Python", "OpenCV", "scikit-learn", "SVM", "KNN", "GMM"],
+    "role": "Computer Vision Engineer",
     "highlights": [
-      "Interface graphique moderne Qt5",
-      "Intégration OpenCV pour traitement d'images",
-      "Traitement par lots automatisé et rapports"
+      "Descripteurs couleur et texture",
+      "Détection de formes par Hough",
+      "Benchmark KNN / SVM / GMM"
+    ],
+    "link": "#",
+    "repo": "#",
+    "availableProject": "False",
+    "availableRepo": "False"
+  },
+  {
+    "title": "Jeu de Curling en Java",
+    "description": "Application desktop Java packagée avec Maven, acquisition webcam temps‑réel et traitement multithreadé. Calibration homographique et pipeline vision, moteur de jeu gérant tours et score.",
+    "date": "10/2024 - 01/2025",
+    "location": "—",
+    "tech": ["Java", "Maven", "OpenCV", "Multithreading"],
+    "role": "Développeur Java",
+    "highlights": [
+      "Acquisition webcam temps réel",
+      "Homographie & pipeline vision",
+      "Gestion des tours et du scoring"
     ],
     "link": "#",
     "repo": "#",

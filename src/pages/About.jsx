@@ -2,9 +2,12 @@ import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
 import { useLanguage } from '../contexts/LanguageContext';
+import aboutFr from '../data/about-fr.json';
+import aboutEn from '../data/about-en.json';
 
 const About = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const about = language === 'fr' ? aboutFr : aboutEn;
   
   return (
   <>
@@ -31,21 +34,11 @@ const About = () => {
       >
         {/* Texte (occuppe 3/4 sur md+) */}
         <div className="flex-1 md:w-3/4">
-          <p className="font-serif text-black leading-relaxed text-justify text-base sm:text-lg">
-            {t('about.paragraph1')}
-          </p>
-
-          <p className="font-serif text-black leading-relaxed text-justify text-base sm:text-lg mt-4">
-            {t('about.paragraph2')}
-          </p>
-
-          <p className="font-serif text-black leading-relaxed text-justify text-base sm:text-lg mt-4">
-            {t('about.paragraph3')}
-          </p>
-
-          <p className="font-serif text-black leading-relaxed text-justify text-base sm:text-lg mt-4">
-            {t('about.paragraph4')}
-          </p>
+          {about.paragraphs.map((paragraph, idx) => (
+            <p key={idx} className={`font-serif text-black leading-relaxed text-justify text-base sm:text-lg ${idx > 0 ? 'mt-4' : ''}`}>
+              {paragraph}
+            </p>
+          ))}
         </div>
 
         {/* Photo (1/4 sur md+), centrée verticalement et alignée à droite */}

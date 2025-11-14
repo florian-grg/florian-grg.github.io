@@ -19,47 +19,39 @@ const Projects = () => {
   const projects = language === 'fr' ? projectsFr : projectsEn;
   
   return (
-  <>
-    <Seo title={t('projects.seo.title')} description={t('projects.seo.description')} />
-    <section className="w-full py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-12 text-center">{t('projects.title')}</h1>
+    <>
+      <Seo title={t('projects.seo.title')} description={t('projects.seo.description')} />
+      <section className="w-full py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-2 text-center text-black">{t('projects.title')}</h1>
+        <p className="text-center text-black/70 mb-12 max-w-2xl mx-auto">{t('projects.subtitle')}</p>
 
-      <div className="flex flex-col gap-8">
-        {projects.map((project, idx) => (
-          <motion.article
-            key={project.title}
-            variants={fadeIn}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: idx * 0.06, duration: 0.45 }}
-            className={`w-full flex flex-col ${idx % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"} items-stretch gap-6 p-6 md:p-8 rounded-2xl
-                        bg-white border border-slate-100 shadow-lg hover:shadow-xl transition-transform duration-300 hover:scale-[1.01]`}
-          >
-            {/* Left content: main info */}
-            <div className="flex-1 flex flex-col justify-between z-10">
-              <div>
-                <div className="flex items-center justify-between mb-3">
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-black leading-tight">{project.title}</h2>
-                  <div className="text-sm text-black">{project.date}</div>
-                </div>
-                <p className="text-sm text-black mb-4 text-justify leading-relaxed">{project.description}</p>
-                <div className="flex flex-wrap mb-3">
-                  {project.tech.map((t) => (
-                    <Badge key={t}>{t}</Badge>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {projects.map((project, idx) => (
+            <motion.article
+              key={project.title}
+              variants={fadeIn}
+              initial="hidden"
+              animate="visible"
+              transition={{ delay: idx * 0.05, duration: 0.45 }}
+              className="relative flex flex-col p-6 rounded-2xl bg-white border border-slate-100 shadow hover:shadow-lg hover:scale-[1.01] transition"
+            >
+              <div className="mb-4">
+                <h2 className="text-xl md:text-2xl font-bold text-black leading-snug mb-1">{project.title}</h2>
+                <div className="text-sm text-blue-600 mb-3">{project.date}</div>
+                <p className="text-sm text-black/70 leading-relaxed mb-4">{project.description}</p>
+                <div className="flex flex-wrap mb-4 gap-1">
+                  {project.tech.map((tTech) => (
+                    <Badge key={tTech}>{tTech}</Badge>
                   ))}
                 </div>
-                <div className="text-sm text-black mb-3">
-                  <strong>{t('projects.role')} :</strong> {project.role}
-                  {project.location && <span className="ml-3">| {project.location}</span>}
+                <div className="text-xs uppercase tracking-wide text-black/60 mb-2">
+                  <strong className="text-black">{t('projects.role')}:</strong> {project.role}
                 </div>
-                <ul className="list-inside list-disc text-sm text-black mb-4 space-y-1">
-                  {project.highlights.map((h, i) => (
-                    <li key={i}>{h}</li>
-                  ))}
+                <ul className="list-disc list-inside text-sm text-black/70 space-y-1 mb-4">
+                  {project.highlights.map((h, i) => <li key={i}>{h}</li>)}
                 </ul>
               </div>
-
-              <div className="mt-4 flex flex-wrap gap-3">
+              <div className="mt-auto flex flex-wrap gap-3">
                 {project.availableProject === "True" && (
                   <a
                     href={project.link}
@@ -73,7 +65,7 @@ const Projects = () => {
                 {project.availableRepo === "True" && (
                   <a
                     href={project.repo}
-                    className="inline-flex items-center gap-2 border border-slate-200 text-black px-3 py-2 rounded-lg hover:bg-slate-50"
+                    className="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-black px-3 py-2 rounded-lg border border-slate-200"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -81,24 +73,15 @@ const Projects = () => {
                   </a>
                 )}
               </div>
-            </div>
-
-            {/* Right visual: decorative card / placeholder */}
-            <div className="w-full md:w-56 lg:w-72 flex-shrink-0 rounded-xl overflow-hidden relative">
-              <div className="w-full h-40 md:h-full bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-500 flex items-center justify-center">
-                <svg className="w-20 h-20 text-white/90" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                  <path d="M3 7a4 4 0 014-4h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M8 12h8M8 16h5" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
+              <div className="absolute top-3 right-3 px-2 py-1 rounded bg-blue-600/10 backdrop-blur text-xs text-blue-700 border border-blue-600/20">
+                {t('projects.badge')}
               </div>
-              <div className="absolute top-3 right-3 px-2 py-1 rounded bg-white/80 text-xs text-black">{t('projects.badge')}</div>
-            </div>
-          </motion.article>
-        ))}
-      </div>
-    </section>
-  </>
-);
+            </motion.article>
+          ))}
+        </div>
+      </section>
+    </>
+  );
 };
 
 export default Projects;

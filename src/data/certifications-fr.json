@@ -1,0 +1,43 @@
+[
+  {
+    "title": "NVIDIA Deep Learning Institute",
+    "provider": "NVIDIA - DLI",
+    "date": "2025",
+    "location": "En ligne",
+    "highlights": [
+      "Getting Started with Deep Learning",
+      "Introduction to Transformer-Based NLP",
+      "Generative AI with Diffusion Models"
+    ],
+    "link": "https://www.nvidia.com/fr-fr/training/",
+    "more": "False"
+  },
+  {
+    "title": "TOEIC – Niveau B2",
+    "provider": "ETS Global",
+    "date": "04/2025 - 04/2027",
+    "location": "Saint-Étienne (42)",
+    "highlights": [
+      "Certification niveau B2",
+      "Compréhension écrite",
+      "Compréhension orale",
+      "Communication professionnelle"
+    ],
+    "link": "https://www.ets.org/fr/toeic",
+    "more": "False"
+  },
+  {
+    "title": "Formation Musicale – Mention Bien",
+    "provider": "LA MUSE École de musique et de danse",
+    "date": "2019",
+    "location": "Schweighouse (67)",
+    "highlights": [
+      "Théorie musicale",
+      "Rythme",
+      "Écoute active",
+      "Mention Bien"
+    ],
+    "link": "#",
+    "more": "False"
+  }
+]

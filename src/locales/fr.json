@@ -3,7 +3,8 @@
     "home": "Accueil",
     "portfolio": "Portfolio",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "certifications": "Certifications"
   },
   "header": {
     "title": "Florian GIURGIU",
@@ -11,48 +12,26 @@
     "description": "J'aide PME et startups à concevoir des expériences web rapides, accessibles et maintenables.",
     "description2": "De l'idée au déploiement, je vous accompagne avec des solutions sur‑mesure et mesurables.",
     "cta": {
-      "quote": "Demander un devis",
       "profile": "Découvrir mon profil",
+      "services": "Voir mes services",
+      "quote": "Demander un devis",
       "downloadCv": "Télécharger mon CV"
     },
     "scroll": "Faire défiler vers la section À propos",
     "seo": {
-      "title": "Accueil | Florian GIURGIU",
-      "description": "Accueil du portfolio de Florian GIURGIU, développeur web freelance: sites vitrines, web apps et intégrations sur‑mesure."
+      "title": "Ingénierie IA & Web | Florian GIURGIU",
+      "description": "Portfolio de Florian GIURGIU : ingénierie IA & vision par ordinateur, développement web moderne, performance et conseil qualité."
     }
   },
   "about": {
     "title": "À propos de moi",
-    "greeting": "Bonjour, je m'appelle",
-    "name": "Florian GIURGIU",
-    "role": "Développeur Web & Auto-Entrepreneur",
-    "intro": "Passionné par le développement web et les nouvelles technologies, je crée des solutions digitales modernes et performantes.",
-    "paragraph1": "Bonjour, je m'appelle Florian Giurgiu, étudiant en dernière année d'école d'ingénieur à Télécom Saint-Étienne et actuellement en échange Erasmus à l'Université de Padoue en Italie. Passionné par l'Intelligence Artificielle, la Vision par Ordinateur et le Développement Logiciel, j'aime concevoir et expérimenter des solutions innovantes alliant mathématiques, programmation et créativité.",
-    "paragraph2": "Curieux et persévérant, je m'intéresse autant à l'apprentissage profond (Deep Learning, Réseaux de neurones, Optimisation) qu'au développement full stack pour donner vie à des projets concrets. J'ai eu l'occasion de travailler sur des projets variés : détection et appariement d'images par Deep Learning, développement d'applications interactives en Java et Qt, ainsi que la création de sites modernes avec React et Tailwind CSS.",
-    "paragraph3": "Au-delà de mes études, je suis passionné de musculation et de handball, et je pratique la guitare depuis plusieurs années. J'aime aussi m'investir dans la vie associative, notamment à travers l'organisation d'événements E-Sport et culturels. Je parle couramment le français et le roumain, et j'ai également un bon niveau d'anglais (B2), ainsi que des notions en espagnol (A2) et en allemand (A1).",
-    "paragraph4": "Mon objectif est de mettre mes compétences au service de projets ambitieux et innovants, dans lesquels je peux apprendre, partager et avoir un impact positif.",
-    "portfolio": {
-      "subtitle": "Étudiant ingénieur • IA & Développement",
-      "description": "Étudiant en dernière année à Télécom Saint‑Étienne (en échange à Padoue), passionné par l'IA, la vision par ordinateur et le développement. Projets : deep learning (détection/appariement d'images), apps Java/Qt, sites React/Tailwind. Curieux et engagé, je cherche des projets ambitieux pour apprendre et avoir un impact.",
-      "keySkills": "Compétences clés",
-      "ai": "Intelligence Artificielle",
-      "cv": "Vision par Ordinateur",
-      "fullstack": "Full‑stack",
-      "reactTailwind": "React & Tailwind",
-      "javaQt": "Java / Qt",
-      "journey": "Mon parcours"
-    },
-    "stats": {
-      "projects": "Projets réalisés",
-      "experience": "Années d'expérience",
-      "technologies": "Technologies maîtrisées",
-      "satisfaction": "Satisfaction client"
-    },
+    "keySkills": "Compétences clés",
+    "journey": "Mon parcours",
     "cta": "Me contacter",
     "seo": {
       "title": "À propos | Florian GIURGIU",
-      "description": "Développeur web freelance passionné par les technologies modernes. Découvrez mon parcours et mes compétences.",
-      "portfolio": "Florian GIURGIU — Portfolio"
+      "description": "Ingénieur freelance en IA, vision par ordinateur et développement web moderne. Alliance entre rigueur académique et pragmatisme production.",
+      "portfolio": "Portfolio | IA & Vision par Ordinateur"
     }
   },
   "skills": {
@@ -69,7 +48,7 @@
     "years": "ans",
     "seo": {
       "title": "Compétences | Florian GIURGIU",
-      "description": "Technologies et outils que je maîtrise : React, Python, Java, Node.js et bien plus."
+      "description": "Stack cœur pour IA, vision & livraison web de qualité : Python, PyTorch, OpenCV, React, Java, Tailwind, Docker, GDAL."
     }
   },
   "projects": {
@@ -83,8 +62,16 @@
     "comingSoon": "Bientôt disponible",
     "badge": "Projet",
     "seo": {
-      "title": "Projets | Florian GIURGIU",
-      "description": "Projets réalisés par Florian GIURGIU, IA, web, optimisation."
+      "title": "Projets IA & Vision | Florian GIURGIU",
+      "description": "Sélection : VAE conditionnel, classification d’images, appariement géospatial de points clés, jeu vision temps réel, site React/Tailwind."
+    }
+  },
+  "education": {
+    "title": "Formation",
+    "subtitle": "Parcours académique",
+    "seo": {
+      "title": "Formation en IA & Vision | Florian GIURGIU",
+      "description": "Semestre Erasmus IA, école d’ingénieur (image & informatique), classes préparatoires (MPSI/PSI) et bases scientifiques solides."
     }
   },
   "experiences": {
@@ -96,8 +83,16 @@
     "learnMore": "En savoir plus",
     "badge": "Expérience",
     "seo": {
-      "title": "Expériences | Florian GIURGIU",
-      "description": "Expériences professionnelles et associatives de Florian GIURGIU."
+      "title": "Expériences en IA & Vision | Florian GIURGIU",
+      "description": "Auto‑entrepreneur IA & vision, projet Myakiatto, management qualité, stage SEO et optimisation base de données."
+    }
+  },
+  "certifications": {
+    "title": "Certifications",
+    "subtitle": "Connaissances et validations clés",
+    "seo": {
+      "title": "Certifications – Florian GIURGIU",
+      "description": "CS50 Harvard, certificats d'informatique, TOEIC C1. Compétences vérifiées en algorithmique, programmation, web et anglais."
     }
   },
   "services": {
@@ -133,11 +128,11 @@
       "deliverablesDescription": "Design, code, documentation, plan de maintenance et formation."
     },
     "seo": {
-      "title": "Services | Florian GIURGIU",
-      "description": "Services : création de sites web, IA, optimisation, conseil.",
-      "service": "Service | Florian GIURGIU",
-      "servicesTitle": "Florian GIURGIU — Services",
-      "servicesDescription": "Prestations : création de sites, applications, IA et accompagnement."
+      "title": "Services : IA, Vision & Développement Web | Florian GIURGIU",
+      "description": "Prestations sur‑mesure : intégration de modèles IA, pipelines vision, applications web performantes, conseil technique.",
+      "service": "Service | IA & Web | Florian GIURGIU",
+      "servicesTitle": "Services | IA & Vision",
+      "servicesDescription": "Offres : intégration IA & vision, création de sites/applications, optimisation et accompagnement."
     }
   },
   "contact": {
@@ -165,6 +160,7 @@
       "sending": "Envoi en cours..."
     },
     "success": "Merci, votre message a bien été envoyé !",
+    "return": "Revenir à l'accueil",
     "error": "Erreur lors de l'envoi. Réessayez ou contactez-moi par email.",
     "info": {
       "title": "Informations",
@@ -175,7 +171,7 @@
     },
     "seo": {
       "title": "Contact | Florian GIURGIU",
-      "description": "Contactez-moi pour discuter de votre projet web. Devis gratuit et réponse rapide."
+      "description": "Discutons IA, vision par ordinateur ou développement web. Réponse rapide et premier avis gratuit."
     }
   },
   "footer": {
@@ -212,7 +208,7 @@
     },
     "seo": {
       "title": "Mentions Légales | Florian GIURGIU",
-      "description": "Mentions légales du site de Florian GIURGIU."
+      "description": "Mentions légales du portfolio d’ingénierie IA & web de Florian GIURGIU."
     }
   },
   "common": {

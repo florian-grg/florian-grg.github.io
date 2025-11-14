@@ -26,7 +26,18 @@ export default function NeuralNetworkBackground() {
   // Génère les points une seule fois
   useEffect(() => {
     if (size.width > 0 && size.height > 0 && pointsRef.current.length === 0) {
-      const POINTS = 64;
+      const POINTS = (() => {
+        // Breakpoints (px) — ajustez si besoin
+        const bp = { xs: 480, sm: 640, md: 768, lg: 1024, xl: 1280, xxl: 1600 };
+        const w = size.width;
+        if (w <= bp.xs) return 12;    // extra-small
+        if (w <= bp.sm) return 20;    // small
+        if (w <= bp.md) return 32;    // medium
+        if (w <= bp.lg) return 48;    // large
+        if (w <= bp.xl) return 64;    // extra-large
+        return 96;                    // ultra / very large screens
+      })();
+      
       pointsRef.current = Array.from({ length: POINTS }, () => ({
         x: Math.random() * size.width,
         y: Math.random() * size.height,

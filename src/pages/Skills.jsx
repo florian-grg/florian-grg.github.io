@@ -113,9 +113,10 @@ const Skills = () => {
         description={t('skills.seo.description')}
       />
       <section className="w-full py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-12 text-center">{t('skills.title')}</h1>
-        <div className="mx-auto">
-          <div className="rounded-2xl shadow-2xl p-8 md:p-12 overflow-hidden bg-white border border-gray-200">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-3 text-center">{t('skills.title')}</h1>
+        <p className="text-center text-black/70 mb-12 max-w-2xl mx-auto">{t('skills.subtitle')}</p>
+        <div className="max-w-6xl mx-auto">
+          <div className="rounded-2xl shadow p-8 md:p-10 overflow-hidden bg-white border border-slate-100">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-center gap-6 mb-8">
               <div className="flex items-center gap-2 flex-wrap">
                 {categories.map((cat) => (
@@ -125,7 +126,7 @@ const Skills = () => {
                     onClick={() => setCategory(cat)}
                     className={`px-3 py-1.5 rounded-full text-sm font-medium transition ${
                       category === cat
-                        ? "bg-slate-900 text-white ring-2 ring-slate-100/10"
+                        ? "bg-blue-600 text-white ring-2 ring-blue-600/30 shadow"
                         : "bg-slate-100 text-black hover:bg-slate-200"
                     }`}
                     aria-pressed={category === cat}
@@ -141,7 +142,7 @@ const Skills = () => {
               initial="hidden"
               animate="visible"
               transition={{ duration: 0.4 }}
-              className="grid grid-cols-1 sm:grid-cols-2 gap-4"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
             >
               {filtered.map((s, idx) => (
                 <motion.article
@@ -152,23 +153,23 @@ const Skills = () => {
                   transition={{ delay: idx * 0.04, duration: 0.3 }}
                   whileHover={{ y: -6 }}
                   whileTap={{ scale: 0.985 }}
-                  className="flex gap-4 p-4 rounded-lg bg-white border border-slate-100 hover:shadow transition"
+                  className="flex flex-col gap-4 p-5 rounded-xl bg-white border border-slate-100 hover:shadow-lg transition h-full"
                 >
                   <Logo name={s.name} />
 
-                  <div className="flex-1 min-w-0">
+                  <div className="flex-1 min-w-0 flex flex-col">
                       <div className="flex items-start gap-4">
                         <div>
                           <h3 className="text-lg font-semibold text-black leading-tight">{s.name}</h3>
                           <div className="text-xs text-black">{t('skills.category')} • {s.category} • {s.years} {t('skills.years')}</div>
                           {/* Decorative horizontal bar under title */}
                           <div className="mt-3">
-                            <div aria-hidden className="h-0.5 w-20 rounded-full bg-gradient-to-r from-green-300 via-slate-200 to-transparent" />
+                            <div aria-hidden className="h-0.5 w-24 rounded-full bg-gradient-to-r from-blue-600 via-purple-500 to-transparent" />
                           </div>
                         </div>
                       </div>
 
-                    <div className="mt-3">
+                    <div className="mt-1 flex-1 flex flex-col">
                       <div className="mt-2 flex flex-wrap gap-2">
                         {s.tech.map((t) => (
                           <span key={t} className="text-xs bg-slate-100 text-black px-2 py-1 rounded-md">
@@ -179,8 +180,8 @@ const Skills = () => {
                       {/* Examples */}
                       {s.examples && s.examples.length > 0 && (
                         <motion.div className="mt-3" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: idx * 0.03 }}>
-                          <div className="text-xs font-medium text-slate-500">{t('skills.examples')}</div>
-                          <ul className="mt-1 text-xs text-slate-700 list-disc list-inside space-y-1">
+                          <div className="text-xs font-medium text-blue-600">{t('skills.examples')}</div>
+                          <ul className="mt-1 text-xs text-black/70 list-disc list-inside space-y-1">
                             {s.examples.map((ex) => (
                               <li key={ex}>{ex}</li>
                             ))}
@@ -191,8 +192,8 @@ const Skills = () => {
                       {/* Certifications */}
                       {s.certs && s.certs.length > 0 && (
                         <motion.div className="mt-3" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: idx * 0.04 }}>
-                          <div className="text-xs font-medium text-slate-500">{t('skills.certifications')}</div>
-                          <ul className="mt-1 text-xs text-slate-700 space-y-1">
+                          <div className="text-xs font-medium text-blue-600">{t('skills.certifications')}</div>
+                          <ul className="mt-1 text-xs text-black/70 space-y-1">
                             {s.certs.map((c, i) => (
                               <li key={i}>
                                 <span className="font-medium">{c.title}</span>

@@ -1,32 +1,16 @@
 [
   {
-    "title": "Engineering Project - Myakiatto",
-    "description": "Detection and georeferencing of landscape features from satellite images via image processing and AI. Complete pipeline: preprocessing, segmentation, matching, and geospatial post-processing.",
-    "date": "03/2025 - 06/2025",
-    "location": "Saint-Étienne (42)",
-    "tech": ["Python", "PyTorch", "OpenCV", "GDAL"],
-    "role": "Lead ML Engineer",
-    "highlights": [
-      "YOLO-based object detection with 92% precision",
-      "Image matching via SIFT + homography (RANSAC)",
-      "Dockerized pipeline for batch processing"
-    ],
-    "link": "#",
-    "repo": "#",
-    "availableProject": "False",
-    "availableRepo": "False"
-  },
-  {
-    "title": "Web Development - Personal Portfolio",
-    "description": "Modern portfolio website: responsive design, Tailwind CSS, Framer Motion animations, multilingual (FR/EN), and EmailJS integration.",
-    "date": "2024 - 2025",
-    "location": "Saint-Étienne (42)",
+    "title": "Modern Website Development with React & Tailwind CSS",
+    "description": "Responsive interface showcasing background, skills and projects. Contact form and interactive animations integrated.",
+    "date": "08/2025 - Present",
+    "location": "—",
     "tech": ["React", "Tailwind CSS", "Framer Motion", "EmailJS"],
-    "role": "Full-stack Developer",
+    "role": "Front-End Developer",
     "highlights": [
-      "Professional page structure and clean UX",
-      "i18n with language persistence (localStorage)",
-      "Deployment on GitHub Pages"
+      "Responsive & accessible layout",
+      "Smooth animations (Framer Motion)",
+      "EmailJS contact workflow",
+      "GitHub Pages deployment"
     ],
     "link": "https://florian-grg.github.io",
     "repo": "https://github.com/florian-grg/florian-grg.github.io",
@@ -34,16 +18,16 @@
     "availableRepo": "True"
   },
   {
-    "title": "3D Reconstruction - Photogrammetry",
-    "description": "3D reconstruction and texturing from multi-view images. Implementation of SfM (Structure from Motion) and MVS (Multi-View Stereo) algorithms.",
-    "date": "2024",
-    "location": "Saint-Étienne (42)",
-    "tech": ["Python", "OpenCV", "NumPy", "Open3D"],
-    "role": "Computer Vision Engineer",
+    "title": "Conditional Variational Autoencoder (cVAE) for Image Generation",
+    "description": "Training on the CelebA dataset and generating images conditioned by visual attributes using a cVAE architecture in PyTorch.",
+    "date": "05/2025",
+    "location": "—",
+    "tech": ["Python", "PyTorch", "VAE", "CelebA"],
+    "role": "Machine Learning Engineer",
     "highlights": [
-      "Camera calibration and pose estimation",
-      "Dense point cloud generation",
-      "Mesh reconstruction and texturing"
+      "Conditional VAE architecture",
+      "Training & evaluation pipeline",
+      "Latent attribute exploration"
     ],
     "link": "#",
     "repo": "#",
@@ -51,16 +35,33 @@
     "availableRepo": "False"
   },
   {
-    "title": "Desktop Application - Automated Processing",
-    "description": "C++/Qt application for automated batch processing of medical images: segmentation, measurements, and PDF report generation.",
-    "date": "2023",
-    "location": "Saint-Étienne (42)",
-    "tech": ["C++", "Qt", "OpenCV"],
-    "role": "Software Engineer",
+    "title": "Pizza Image Classification System",
+    "description": "Extraction of color & texture descriptors, shape detection (Hough). Implementation and comparison of KNN, SVM and GMM models.",
+    "date": "02/2025 - 04/2025",
+    "location": "—",
+    "tech": ["Python", "OpenCV", "scikit-learn", "SVM", "KNN", "GMM"],
+    "role": "Computer Vision Engineer",
     "highlights": [
-      "Modern Qt5 graphical interface",
-      "OpenCV integration for image processing",
-      "Automated batch processing and reporting"
+      "Color & texture feature engineering",
+      "Shape detection via Hough transform",
+      "Model benchmarking (KNN / SVM / GMM)"
+    ],
+    "link": "#",
+    "repo": "#",
+    "availableProject": "False",
+    "availableRepo": "False"
+  },
+  {
+    "title": "Java Curling Game",
+    "description": "Desktop Java application packaged with Maven, real‑time webcam input and multithreaded processing. Homography calibration and vision pipeline, game engine managing turns & scoring.",
+    "date": "10/2024 - 01/2025",
+    "location": "—",
+    "tech": ["Java", "Maven", "OpenCV", "Multithreading"],
+    "role": "Java Developer",
+    "highlights": [
+      "Real-time webcam acquisition",
+      "Homography & vision pipeline",
+      "Turn & scoring game logic"
     ],
     "link": "#",
     "repo": "#",

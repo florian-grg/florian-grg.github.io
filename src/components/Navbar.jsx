@@ -55,7 +55,7 @@ export default function Navbar() {
           {[
             { path: "/", label: t('nav.home'), hash: "#header" },
             { path: "/portfolio", label: t('nav.portfolio'), hash: "#about" },
-            { path: "/service", label: t('nav.services'), hash: "#services" },
+            { path: "/services", label: t('nav.services'), hash: "#services" },
             { path: "/contact", label: t('nav.contact'), hash: "#contact" },
           ].map(({ path, hash, label }) => {
             const isActive = location.pathname === path;

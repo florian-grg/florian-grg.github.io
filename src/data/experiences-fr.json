@@ -1,42 +1,58 @@
-[{
-  "title": "Stage - Choisir mon Groupement",
-  "description": "Développement informatique et optimisation de base de données. Participation à la refactorisation et à l'amélioration des requêtes pour gains de performance.",
-  "date": "06/2024 - 07/2024",
-  "location": "Schiltigheim (67)",
-  "highlights": [
-    "Optimisation de requêtes SQL (temps d'exécution réduit de 40%)",
-    "Développement de scripts Python pour migration de données",
-    "Documentation et transfert de compétences"
-  ],
-  "tech": ["SQL", "Python", "Docker"],
-  "link": "#",
-  "more": "False"
-},
-{
-  "title": "Inspire, Junior-Entreprise",
-  "description": "Chargé Qualité : mise en place de processus qualité, tests et revue des livrables pour les projets clients.",
-  "date": "09/2023 - 04/2025",
-  "location": "Saint-Étienne (42)",
-  "highlights": [
-    "Définition de standards qualité pour projets web/mobile",
-    "Tests systématiques et validation des livrables",
-    "Suivi de la satisfaction client et amélioration continue"
-  ],
-  "tech": ["Git", "Testing", "Documentation"],
-  "link": "#",
-  "more": "False"
-},
-{
-  "title": "Projets universitaires & initiatives personnelles",
-  "description": "Deep learning, vision par ordinateur et développement full-stack : détection d'objets, appariement d'images, apps React, interfaces Qt.",
-  "date": "2023 - 2025",
-  "location": "Saint-Étienne (42) & Padoue (IT)",
-  "highlights": [
-    "Deep Learning : PyTorch, CNN, détection de features",
-    "Applications desktop (Java/Qt) et sites modernes (React/Tailwind)",
-    "Apprentissage autonome et exploration technique continue"
-  ],
-  "tech": ["PyTorch", "OpenCV", "React", "Java", "Qt"],
-  "link": "#",
-  "more": "False"
-}]
+[
+  {
+    "title": "Auto-Entrepreneur en Intelligence Artificielle et Vision par Ordinateur",
+    "description": "Prestations informatiques dans le domaine de l'Intelligence Artificielle, du Machine Learning, du Deep Learning et de la Vision par Ordinateur.",
+    "date": "09/2025 - Présent",
+    "location": "—",
+    "highlights": [
+      "Projets IA sur mesure (détection, segmentation, suivi)",
+      "Prototypage rapide et POC en vision par ordinateur",
+      "Conseil technique et intégration de modèles ML en production"
+    ],
+    "tech": ["Python", "PyTorch", "OpenCV", "Docker"],
+    "link": "#",
+    "more": "False"
+  },
+  {
+    "title": "Projet d'ingénierie en Intelligence Artificielle - Myakiatto",
+    "description": "Détection et appariement de points clés entre images drone et satellite via Deep Learning et Traitement d'Images.",
+    "date": "03/2025 - Présent",
+    "location": "Saint-Étienne (42)",
+    "highlights": [
+      "Appariement keypoints (SIFT/ORB) et estimation d'homographie (RANSAC)",
+      "Détection/segmentation par CNN et post-traitement géospatial",
+      "Standardisation des projections et intégration GDAL"
+    ],
+    "tech": ["Python", "PyTorch", "OpenCV", "GDAL"],
+    "link": "#",
+    "more": "False"
+  },
+  {
+    "title": "Chargé Qualité - Inspire, Junior-Entreprise de Télécom Saint-Étienne",
+    "description": "Mise en place et suivi du SMQ, gestion des procédures et KPI qualité, et réalisation d’audits pour l’amélioration continue.",
+    "date": "09/2023 - 04/2025",
+    "location": "Saint-Étienne (42)",
+    "highlights": [
+      "Définition de processus et indicateurs qualité",
+      "Tests et revue des livrables clients",
+      "Audits internes et amélioration continue"
+    ],
+    "tech": ["Git", "Testing", "Documentation"],
+    "link": "#",
+    "more": "False"
+  },
+  {
+    "title": "Développeur informatique - Choisir mon Groupement (Stage)",
+    "description": "Amélioration SEO, projet PHP et optimisation de base de données SQL.",
+    "date": "06/2024 - 07/2024",
+    "location": "Schiltigheim (67)",
+    "highlights": [
+      "Optimisation de requêtes SQL et refactorisation",
+      "Améliorations SEO on‑page",
+      "Contribution à un projet PHP"
+    ],
+    "tech": ["PHP", "SQL", "SEO"],
+    "link": "#",
+    "more": "False"
+  }
+]
