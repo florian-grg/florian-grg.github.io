@@ -1,21 +1,40 @@
+import React, { lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Header from './pages/Header';
-import HeaderPortfolio from './pages/HeaderPortfolio';
-import Projects from './pages/Projects';
-import Education from './pages/Education';
-import Experiences from './pages/Experiences';
-import Skills from './pages/Skills';
-import Certifications from './pages/Certifications';
-import HeaderServices from './pages/HeaderServices';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
-import MentionsLegales from './pages/MentionsLegales';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { pageTransition } from './animations/pageTransition';
-import { LanguageProvider } from './contexts/LanguageContext';
+import { LanguageProvider, useLanguage } from './contexts/LanguageContext';
+import { ROUTES } from './constants/routes';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import ErrorBoundary from './components/ErrorBoundary';
+
+// Lazy load pages for better performance
+const Header = lazy(() => import('./pages/Header'));
+const HeaderPortfolio = lazy(() => import('./pages/HeaderPortfolio'));
+const Projects = lazy(() => import('./pages/Projects'));
+const Education = lazy(() => import('./pages/Education'));
+const Experiences = lazy(() => import('./pages/Experiences'));
+const Skills = lazy(() => import('./pages/Skills'));
+const Certifications = lazy(() => import('./pages/Certifications'));
+const HeaderServices = lazy(() => import('./pages/HeaderServices'));
+const Services = lazy(() => import('./pages/Services'));
+const Contact = lazy(() => import('./pages/Contact'));
+const MentionsLegales = lazy(() => import('./pages/MentionsLegales'));
+const NotFound = lazy(() => import('./pages/NotFound'));
+
+// Loading component with i18n support
+const PageLoader = () => {
+  const { t } = useLanguage();
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-blue-50">
+      <div className="text-center">
+        <div className="inline-block animate-spin rounded-full h-12 w-12 border-4 border-blue-500 border-t-transparent"></div>
+        <p className="mt-4 text-slate-600 font-medium">{t('common.loading')}</p>
+      </div>
+    </div>
+  );
+};
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -24,7 +43,7 @@ function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         
         {/* Main landing: header + services (one-page) */}
-        <Route path="/" element={
+        <Route path={ROUTES.HOME} element={
           <motion.div
             initial={pageTransition.initial}
             animate={pageTransition.animate}
@@ -38,7 +57,7 @@ function AnimatedRoutes() {
         } />
 
         {/* Portfolio page: neural network + about + projects + skills + experiences */}
-        <Route path="/portfolio" element={
+        <Route path={ROUTES.PORTFOLIO} element={
           <motion.div
             initial={pageTransition.initial}
             animate={pageTransition.animate}
@@ -68,7 +87,7 @@ function AnimatedRoutes() {
         } />
 
         {/* Service page */}
-        <Route path="/services" element={
+        <Route path={ROUTES.SERVICES} element={
           <motion.div
             initial={pageTransition.initial}
             animate={pageTransition.animate}
@@ -86,7 +105,7 @@ function AnimatedRoutes() {
         } />
 
         {/* Contact-only page */}
-        <Route path="/contact" element={
+        <Route path={ROUTES.CONTACT} element={
           <motion.div
             initial={pageTransition.initial}
             animate={pageTransition.animate}
@@ -101,7 +120,7 @@ function AnimatedRoutes() {
         } />
 
         {/* Mentions légales page */}
-        <Route path="/mentions-legales" element={
+        <Route path={ROUTES.LEGAL} element={
           <motion.div
             initial={pageTransition.initial}
             animate={pageTransition.animate}
@@ -113,6 +132,18 @@ function AnimatedRoutes() {
           </motion.div>
         } />
 
+        {/* 404 - Catch all unknown routes */}
+        <Route path="*" element={
+          <motion.div
+            initial={pageTransition.initial}
+            animate={pageTransition.animate}
+            exit={pageTransition.exit}
+            transition={pageTransition.transition}
+          >
+            <NotFound />
+          </motion.div>
+        } />
+
       </Routes>
     </AnimatePresence>
   );
@@ -120,17 +151,21 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <Router>
-      <LanguageProvider>
-        <Helmet>
-          <title>Portfolio Florian GIURGIU</title>
-          <meta name="description" content="Développeur web, IA, optimisation, portfolio moderne et performant." />
-          <meta name="keywords" content="Florian GIURGIU, développeur, web, IA, optimisation, portfolio, freelance" />
-          <meta name="author" content="Florian GIURGIU" />
-        </Helmet>
-        <Navbar />
-        <AnimatedRoutes />
-      </LanguageProvider>
-    </Router>
+    <ErrorBoundary>
+      <Router>
+        <LanguageProvider>
+          <Helmet>
+            <title>Portfolio Florian GIURGIU</title>
+            <meta name="description" content="Développeur web, IA, optimisation, portfolio moderne et performant." />
+            <meta name="keywords" content="Florian GIURGIU, développeur, web, IA, optimisation, portfolio, freelance" />
+            <meta name="author" content="Florian GIURGIU" />
+          </Helmet>
+          <Navbar />
+          <Suspense fallback={<PageLoader />}>
+            <AnimatedRoutes />
+          </Suspense>
+        </LanguageProvider>
+      </Router>
+    </ErrorBoundary>
   );
 }

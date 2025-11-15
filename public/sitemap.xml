@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- 
+    Note: Site uses HashRouter (#/route) for GitHub Pages compatibility.
+    Search engines only index the root URL as hash fragments are not sent to servers.
+    All content is a Single Page Application (SPA) served from the root.
+  -->
+  <url>
+    <loc>https://florian-grg.github.io/</loc>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

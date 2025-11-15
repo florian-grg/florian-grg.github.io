@@ -3,6 +3,7 @@ import React from "react";
 import { useNavigate, useLocation } from 'react-router-dom';
 import logo from '../logo.png';
 import { useLanguage } from '../contexts/LanguageContext';
+import { ROUTE_CONFIG } from '../constants/routes';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
@@ -33,7 +34,19 @@ export default function Navbar() {
   }, [location]);
 
   const isHome = location.pathname === "/";
-  const darkText = scrolled || !isHome; // true => texte noir, false => texte blanc
+  const darkText = scrolled || !isHome;
+
+  // Helper function to get link classes
+  const getLinkClasses = (isActive) => {
+    const activeClass = "bg-blue-50 ring-2 ring-blue-200 text-blue-700";
+    const inactiveClass = darkText
+      ? "hover:text-blue-700 hover:bg-slate-100"
+      : "text-white hover:text-blue-200 hover:bg-white/10";
+    
+    return `px-3 py-1.5 rounded-lg font-medium transition-colors ${
+      isActive ? activeClass : inactiveClass
+    }`;
+  };
 
   // When the route (pathname) changes via the navbar, ensure viewport resets to top.
   // This guarantees that clicking a navbar tab (navigate) shows the top of the new page.
@@ -52,30 +65,15 @@ export default function Navbar() {
         {/* hidden on small screens, visible from sm and up */}
         <img src={logo} alt="Logo" className="hidden sm:block h-8 w-8 rounded" />
         <div className="w-full flex flex-wrap gap-x-2 justify-end items-center">
-          {[
-            { path: "/", label: t('nav.home'), hash: "#header" },
-            { path: "/portfolio", label: t('nav.portfolio'), hash: "#about" },
-            { path: "/services", label: t('nav.services'), hash: "#services" },
-            { path: "/contact", label: t('nav.contact'), hash: "#contact" },
-          ].map(({ path, hash, label }) => {
+          {ROUTE_CONFIG.map(({ path, hash, label }) => {
             const isActive = location.pathname === path;
-
-            const activeClass = darkText
-              ? "bg-blue-50 ring-2 ring-blue-200 text-blue-700"
-              : "bg-blue-50 ring-2 ring-blue-200 text-blue-700";
-
-            const inactiveClass = darkText
-              ? "hover:text-blue-700 hover:bg-slate-100"
-              : "text-white hover:text-blue-200 hover:bg-white/10";
 
             return (
               <a
                 key={path}
                 href={`#${path}`}
                 aria-current={isActive ? "page" : undefined}
-                className={`px-3 py-1.5 rounded-lg font-medium transition-colors ${
-                  isActive ? activeClass : inactiveClass
-                }`}
+                className={getLinkClasses(isActive)}
                 onClick={(e) => {
                   e.preventDefault();
                   if (location.pathname === path) {
@@ -86,7 +84,7 @@ export default function Navbar() {
                   }
                 }}
               >
-                {label}
+                {t(label)}
               </a>
             );
           })}

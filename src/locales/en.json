@@ -216,6 +216,19 @@
     "close": "Close",
     "back": "Back",
     "next": "Next",
-    "previous": "Previous"
+    "previous": "Previous",
+    "loading": "Loading..."
+  },
+  "error": {
+    "title": "Oops! An error occurred",
+    "description": "Something went wrong. Please try again or reload the page.",
+    "reload": "Reload page",
+    "home": "Back to home",
+    "details": "Error details (development mode)"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "Sorry, the page you are looking for doesn't exist or has been moved.",
+    "home": "Back to home"
   }
 }

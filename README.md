@@ -1,74 +1,134 @@
-# Getting Started with Create React App
+# Portfolio Florian GIURGIU
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfolio personnel développé avec React, présentant mes compétences, projets et services en développement web et IA.
 
-## Available Scripts
+## 🚀 Démarrage rapide
 
-In the project directory, you can run:
+### Prérequis
 
-### `npm start`
+- Node.js (version 14+)
+- npm ou yarn
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Cloner le repository :
+```bash
+git clone https://github.com/florian-grg/florian-grg.github.io.git
+cd florian-grg.github.io
+```
 
-### `npm test`
+2. Installer les dépendances :
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Configurer les variables d'environnement :
+```bash
+cp .env.example .env
+# Puis éditer .env avec vos clés EmailJS
+```
 
-### `npm run build`
+4. Lancer le serveur de développement :
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+L'application sera accessible sur [http://localhost:3000](http://localhost:3000)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📦 Scripts disponibles
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `npm start` - Lance l'application en mode développement
+- `npm test` - Lance les tests
+- `npm run build` - Crée une version de production dans le dossier `build/`
+- `npm run deploy` - Déploie l'application sur GitHub Pages
 
-### `npm run eject`
+## 🏗️ Architecture du projet
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+src/
+├── animations/      # Animations et transitions
+├── components/      # Composants réutilisables
+│   ├── ErrorBoundary.jsx
+│   ├── Footer.jsx
+│   ├── Navbar.jsx
+│   └── ...
+├── constants/       # Constantes et configuration
+│   ├── config.js
+│   └── routes.js
+├── contexts/        # Contextes React (i18n, etc.)
+├── data/           # Données JSON (projets, compétences, etc.)
+├── locales/        # Fichiers de traduction (fr, en)
+├── pages/          # Pages de l'application
+├── utils/          # Fonctions utilitaires
+└── App.jsx         # Composant principal
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🌐 Fonctionnalités
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- ✅ **Multi-langues** (FR/EN) avec persistance localStorage
+- ✅ **Responsive Design** - Optimisé pour tous les écrans
+- ✅ **Animations fluides** avec Framer Motion
+- ✅ **Lazy Loading** des pages pour de meilleures performances
+- ✅ **Error Boundary** pour une gestion d'erreurs robuste
+- ✅ **SEO optimisé** avec React Helmet et métadonnées complètes
+- ✅ **Formulaire de contact** via EmailJS
+- ✅ **Background interactif** (réseau neuronal animé)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🔧 Technologies utilisées
 
-## Learn More
+- **React 19** - Framework JavaScript
+- **React Router** - Navigation SPA
+- **Tailwind CSS** - Framework CSS utilitaire
+- **Framer Motion** - Animations
+- **EmailJS** - Service d'envoi d'emails
+- **React Helmet** - Gestion des métadonnées SEO
+- **React Icons** - Bibliothèque d'icônes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📝 Configuration EmailJS
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Pour utiliser le formulaire de contact, vous devez configurer EmailJS :
 
-### Code Splitting
+1. Créer un compte sur [EmailJS](https://www.emailjs.com/)
+2. Créer un service email
+3. Créer un template d'email
+4. Copier vos clés dans le fichier `.env` :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```env
+REACT_APP_EMAILJS_SERVICE_ID=votre_service_id
+REACT_APP_EMAILJS_TEMPLATE_ID=votre_template_id
+REACT_APP_EMAILJS_PUBLIC_KEY=votre_public_key
+```
 
-### Analyzing the Bundle Size
+## 🎨 Personnalisation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Modifier les couleurs
 
-### Making a Progressive Web App
+Les couleurs principales sont définies dans `tailwind.config.js` et peuvent être personnalisées selon vos préférences.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Modifier le contenu
 
-### Advanced Configuration
+- **Données** : Fichiers JSON dans `src/data/`
+- **Traductions** : `src/locales/fr.json` et `src/locales/en.json`
+- **Constantes** : `src/constants/config.js` et `src/constants/routes.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📱 UI/UX Notes
 
-### Deployment
+Le site force un scrollbar vertical permanent via `body { overflow-y: scroll; }` (voir `src/index.css`). Cela prévient les décalages de layout et les problèmes d'alignement du pointeur dans l'animation du fond neural lors du chargement initial.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🚀 Déploiement
 
-### `npm run build` fails to minify
+Le site est automatiquement déployé sur GitHub Pages. Pour déployer manuellement :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm run deploy
+```
 
-## UI note: Scroll behavior
+## 📄 Licence
 
-The site forces a permanent vertical scrollbar via `body { overflow-y: scroll; }` (see `src/index.css`). This prevents layout shifts and pointer misalignment in the neural background animation during initial load.
+© 2025 Florian GIURGIU. Tous droits réservés.
+
+## 🤝 Contact
+
+- Email: florian.giurgiu3@gmail.com
+- LinkedIn: [Florian GIURGIU](https://www.linkedin.com/in/florian-giurgiu/)
+- GitHub: [@florian-grg](https://github.com/florian-grg)

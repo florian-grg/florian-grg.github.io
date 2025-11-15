@@ -2,6 +2,8 @@ import React from "react";
 import { FaLinkedin, FaGithub, FaEnvelope, FaArrowUp, FaPhone } from "react-icons/fa";
 import { smoothScrollTo } from "../animations/smoothScrollTo";
 import { useLanguage } from '../contexts/LanguageContext';
+import { SOCIAL_LINKS, CONTACT_INFO } from '../constants/config';
+import { ROUTES } from '../constants/routes';
 
 const Footer = () => {
     const year = new Date().getFullYear();
@@ -19,30 +21,30 @@ const Footer = () => {
 
                     {/* Contact */}
                     <div className="space-y-2 text-center">
-                        <a href="mailto:florian.giurgiu3@gmail.com" className="text-sm md:text-base text-slate-300 hover:text-white flex items-center gap-3 justify-center">
+                        <a href={`mailto:${CONTACT_INFO.EMAIL}`} className="text-sm md:text-base text-slate-300 hover:text-white flex items-center gap-3 justify-center">
                             <FaEnvelope />
-                            <span className="break-all">florian.giurgiu3@gmail.com</span>
+                            <span className="break-all">{CONTACT_INFO.EMAIL}</span>
                         </a>
 
-                        <a href="tel:+33629158054" className="text-sm md:text-base text-slate-300 hover:text-white flex items-center gap-3 justify-center">
+                        <a href={`tel:${CONTACT_INFO.PHONE}`} className="text-sm md:text-base text-slate-300 hover:text-white flex items-center gap-3 justify-center">
                             <FaPhone />
-                            <span className="break-all">+33 (0)6 29 15 80 54</span>
+                            <span className="break-all">{CONTACT_INFO.PHONE_FORMATTED}</span>
                         </a>
                     </div>
 
                     {/* Actions */}
                     <div>
                         <div className="flex items-center gap-4 mb-3 justify-center">
-                            <a href="https://www.linkedin.com/in/florian-giurgiu/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-slate-300 hover:text-white">
+                            <a href={SOCIAL_LINKS.LINKEDIN} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-slate-300 hover:text-white">
                                 <FaLinkedin size={20} />
                             </a>
-                            <a href="https://github.com/florian-grg" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-slate-300 hover:text-white">
+                            <a href={SOCIAL_LINKS.GITHUB} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-slate-300 hover:text-white">
                                 <FaGithub size={20} />
                             </a>
                         </div>
 
                         <div className="flex flex-col items-center space-y-3 text-center">
-                            <a href="https://github.com/florian-grg/florian-grg.github.io" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-400 hover:text-slate-200 underline">
+                            <a href={SOCIAL_LINKS.GITHUB_REPO} target="_blank" rel="noopener noreferrer" className="text-sm text-slate-400 hover:text-slate-200 underline">
                                 {t('footer.viewSource')}
                             </a>
                         </div>
@@ -65,7 +67,7 @@ const Footer = () => {
                 <div className="mt-8 border-t border-slate-800 pt-6">
                     <div className="text-center text-xs text-slate-500">© {year} Florian GIURGIU. {t('footer.rights')}
                         <span className="mx-1">|</span>
-                        <a href="#/mentions-legales" className="hover:text-slate-200 underline">
+                        <a href={`#${ROUTES.LEGAL}`} className="hover:text-slate-200 underline">
                             {t('footer.links.legal')}
                         </a>
                     </div>

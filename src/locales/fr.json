@@ -217,6 +217,19 @@
     "close": "Fermer",
     "back": "Retour",
     "next": "Suivant",
-    "previous": "Précédent"
+    "previous": "Précédent",
+    "loading": "Chargement..."
+  },
+  "error": {
+    "title": "Oups ! Une erreur est survenue",
+    "description": "Quelque chose s'est mal passé. Veuillez réessayer ou recharger la page.",
+    "reload": "Recharger la page",
+    "home": "Retour à l'accueil",
+    "details": "Détails de l'erreur (mode développement)"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "Désolé, la page que vous recherchez n'existe pas ou a été déplacée.",
+    "home": "Retour à l'accueil"
   }
 }

@@ -1,11 +1,14 @@
 import React, { useRef, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { sendEmail } from "../utils/email";
 import { useLanguage } from '../contexts/LanguageContext';
+import { ROUTES } from '../constants/routes';
 
 const Contact = () => {
   const form = useRef();
+  const navigate = useNavigate();
   const [sent, setSent] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -24,10 +27,6 @@ const Contact = () => {
         setError(t('contact.error'));
         setLoading(false);
       });
-  };
-
-  const goTo = (path, hash) => {
-    window.location.href = window.location.origin + path + hash;
   };
 
   return (
@@ -63,8 +62,8 @@ const Contact = () => {
                 >
                   <div className="text-center">{t('contact.success')}</div>
                   <button
-                    className="mt-2 bg-gradient-to-r from-blue-600 to-purple-500 text-white px-8 py-3.5 rounded-lg font-semibold shadow hover:opacity-95 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white hover:to-purple-600 text-white font-semibold py-3 rounded-md shadow-md hover:scale-105 transition-all duration-200"
-                    onClick={() => goTo('#/', '')}
+                    className="mt-2 bg-gradient-to-r from-blue-600 to-purple-500 hover:from-blue-700 hover:to-purple-600 text-white px-8 py-3 rounded-lg font-semibold shadow hover:scale-105 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2"
+                    onClick={() => navigate(ROUTES.HOME)}
                     aria-label={t('contact.return')}
                   >
                     <span className="flex items-center gap-2">
