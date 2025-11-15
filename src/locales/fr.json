@@ -26,7 +26,8 @@
   "about": {
     "title": "À propos de moi",
     "keySkills": "Compétences clés",
-    "journey": "Mon parcours",
+    "journey": "Découvrir mon parcours",
+    "downloadCv" :"Télécharger mon CV",
     "cta": "Me contacter",
     "seo": {
       "title": "À propos | Florian GIURGIU",

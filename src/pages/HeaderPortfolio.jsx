@@ -58,13 +58,12 @@ const Header = () => {
           </motion.div>
 
           <motion.div variants={fadeIn} className="mt-6 flex flex-wrap justify-center gap-4">
-            <button onClick={() => goTo('/portfolio', '#projects')} className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-blue-600 to-purple-500 hover:from-blue-700 hover:to-purple-600 text-white shadow-lg shadow-blue-500/20 transition">
-              <span>👨‍🚀</span>
+            <button onClick={() => goTo('/portfolio', '#education')} className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-blue-600 to-purple-500 hover:from-blue-700 hover:to-purple-600 text-white shadow-lg shadow-blue-500/20 transition">
               <span>{t('about.journey')}</span>
             </button>
             <a href="/CV_Florian_GIURGIU.pdf" target="_blank" rel="noopener noreferrer" download className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-slate-300 text-black hover:bg-slate-50 transition">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
-              <span>CV</span>
+              <span>{t('about.downloadCv')}</span>
             </a>
           </motion.div>
         </motion.div>

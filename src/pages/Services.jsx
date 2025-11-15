@@ -7,15 +7,25 @@ import { Link, useLocation } from 'react-router-dom';
 import servicesDataFr from '../data/services-fr.json';
 import servicesDataEn from '../data/services-en.json';
 import { useLanguage } from '../contexts/LanguageContext';
+import examplesFr from '../data/service-examples-fr.json';
+import examplesEn from '../data/service-examples-en.json';
 
 // Données externalisées depuis src/data/servicesData.js
 
-export default function Service() {
+export default function Services() {
     const location = useLocation();
     const { t, language } = useLanguage();
     const servicesData = language === 'fr' ? servicesDataFr : servicesDataEn;
     // L'onglet actif, par défaut le premier service
     const [activeId, setActiveId] = useState(servicesData[0].id);
+
+    // Sélecteur de contenu d'exemples basé sur JSON externalisés
+    const examplesData = language === 'fr' ? examplesFr : examplesEn;
+    const examples = examplesData[activeId] || {
+        intro: t('services.details.examplesDescription'),
+        projectExamples: [],
+        deliverables: []
+    };
 
     // Fait défiler jusqu'à l'ancre si elle est dans l'URL
     useEffect(() => {
@@ -26,7 +36,7 @@ export default function Service() {
             setActiveId(tab);
         }
 
-        // 2) Support hash formats (works even with HashRouter '#/service#site-web')
+        // 2) Support hash formats (works even with HashRouter '#/services#site-web')
         if (location.hash) {
             const raw = location.hash;
             const id = raw.substring(raw.lastIndexOf('#') + 1);
@@ -48,7 +58,7 @@ export default function Service() {
             <Seo title={t('services.seo.service')} description={t('services.seo.servicesDescription')} />
 
             {/* Fond clair cohérent */}
-            <main id="service" className="bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black py-20 md:py-28">
+            <main id="services" className="bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black py-20 md:py-28">
                 
                 {/* Conteneur principal centré */}
                 <div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -61,7 +71,7 @@ export default function Service() {
                     </div>
 
                     {/* NOUVELLE ARCHITECTURE : Navigation par Onglets */}
-                    <nav id="service-nav" className="flex flex-wrap justify-center gap-3 md:gap-4 mb-12">
+                    <nav id="services-nav" className="flex flex-wrap justify-center gap-3 md:gap-4 mb-12">
                         {servicesData.map((s) => (
                             <motion.button
                                 key={s.id}
@@ -122,17 +132,25 @@ export default function Service() {
                                             {/* Carte "Exemples" avec style "incrusté" */}
                                     <div className="rounded-3xl p-8 bg-white/50 shadow-inner shadow-black/10 h-full flex flex-col justify-center">
                                         <h3 className="text-2xl font-bold mb-4 text-black">{t('services.details.examples')}</h3>
-                                        <p className="text-black">{t('services.details.examplesDescription')}</p>
+                                        <p className="text-black">{examples.intro}</p>
 
                                         <div className="mt-6 grid grid-cols-1 gap-4">
                                             <div className="p-4 bg-white rounded-lg border border-slate-100">
                                                 <strong className="block text-black">{t('services.details.projectType')}</strong>
-                                                <p className="text-sm text-black">{t('services.details.projectTypeDescription')}</p>
+                                                <ul className="mt-2 list-disc pl-5 text-sm text-black space-y-1">
+                                                    {examples.projectExamples.map((line, idx) => (
+                                                        <li key={idx}>{line}</li>
+                                                    ))}
+                                                </ul>
                                             </div>
 
                                             <div className="p-4 bg-white rounded-lg border border-slate-100">
                                                 <strong className="block text-black">{t('services.details.deliverables')}</strong>
-                                                <p className="text-sm text-black">{t('services.details.deliverablesDescription')}</p>
+                                                <ul className="mt-2 list-disc pl-5 text-sm text-black space-y-1">
+                                                    {examples.deliverables.map((line, idx) => (
+                                                        <li key={idx}>{line}</li>
+                                                    ))}
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>

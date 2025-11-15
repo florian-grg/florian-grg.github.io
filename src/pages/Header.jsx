@@ -39,7 +39,7 @@ const Header = () => {
           variants={fadeIn}
           transition={{ delay: 0.2, duration: 0.7 }}
         >
-          <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
+          <span className="text-white">
             {t('header.title')}
           </span>
         </motion.h1>

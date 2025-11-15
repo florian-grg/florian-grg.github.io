@@ -99,7 +99,7 @@ const Services = () => {
 								<div className="mt-4">
 									<button
 										onClick={() => {
-											navigate({ pathname: "/service", search: `?tab=${s.id}` });
+											navigate({ pathname: "/services", search: `?tab=${s.id}` });
 											setTimeout(() => smoothScrollTo("#service"), 250);
 										}}
 										className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-500 hover:from-blue-700 hover:to-purple-600 text-white font-semibold px-4 py-2 rounded-lg shadow"
