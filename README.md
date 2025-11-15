@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## UI note: Scroll behavior
+
+The site forces a permanent vertical scrollbar via `body { overflow-y: scroll; }` (see `src/index.css`). This prevents layout shifts and pointer misalignment in the neural background animation during initial load.
