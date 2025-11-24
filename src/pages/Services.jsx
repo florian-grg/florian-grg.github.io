@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// Rétablissement des chemins d'importation d'origine (../)
 import Seo from '../components/Seo';
 import { motion, AnimatePresence } from 'framer-motion';
 import { fadeIn } from '../animations/fadeIn';
@@ -9,8 +8,6 @@ import servicesDataEn from '../data/services-en.json';
 import { useLanguage } from '../contexts/LanguageContext';
 import examplesFr from '../data/service-examples-fr.json';
 import examplesEn from '../data/service-examples-en.json';
-
-// Données externalisées depuis src/data/servicesData.js
 
 export default function Services() {
     const location = useLocation();
@@ -107,7 +104,7 @@ export default function Services() {
                                 {/* Grille réutilisée de la v1, mais pour le service actif */}
                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
 
-                                    {/* Carte de service principale "Glassmorphism" */}
+                    {/* Carte de service principale "Glassmorphism" */}
                     <div className="rounded-3xl p-10 md:p-12 bg-white shadow-sm border border-slate-100 h-full flex flex-col">
                         <h2 className="text-3xl md:text-4xl font-extrabold text-black">{activeService.title}</h2>
                         <p className="text-black mt-2">{activeService.subtitle}</p>
@@ -123,13 +120,13 @@ export default function Services() {
                                         </ul>
                                         <div className="flex-grow" /> {/* Pousse les boutons en bas */}
                                         <div className="mt-8 flex flex-col sm:flex-row gap-3">
-                                            <Link to="/contact#contact" className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-5 py-3 rounded-md font-semibold transition-colors duration-200 shadow-lg shadow-blue-500/20">
+                                            <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-5 py-3 rounded-md font-semibold transition-colors duration-200 shadow-lg shadow-blue-500/20">
                                                 {t('services.details.contact')}
                                             </Link>
                                         </div>
                                     </div>
 
-                                            {/* Carte "Exemples" avec style "incrusté" */}
+                                    {/* Carte "Exemples" avec style "incrusté" */}
                                     <div className="rounded-3xl p-8 bg-white/50 shadow-inner shadow-black/10 h-full flex flex-col justify-center">
                                         <h3 className="text-2xl font-bold mb-4 text-black">{t('services.details.examples')}</h3>
                                         <p className="text-black">{examples.intro}</p>
