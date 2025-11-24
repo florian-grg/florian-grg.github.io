@@ -3,14 +3,13 @@
     "home": "Accueil",
     "portfolio": "Portfolio",
     "services": "Services",
-    "contact": "Contact",
-    "certifications": "Certifications"
+    "contact": "Contact"
   },
   "header": {
     "title": "Florian GIURGIU",
     "subtitle": "Développeur web freelance — création de sites et applications modernes",
     "description": "J'aide PME et startups à concevoir des expériences web rapides, accessibles et maintenables.",
-    "description2": "De l'idée au déploiement, je vous accompagne avec des solutions sur‑mesure et mesurables.",
+    "description2": "De l'idée au déploiement, je vous accompagne avec des solutions sur-mesure et mesurables.",
     "cta": {
       "profile": "Découvrir mon profil",
       "services": "Voir mes services",
@@ -85,7 +84,7 @@
     "badge": "Expérience",
     "seo": {
       "title": "Expériences en IA & Vision | Florian GIURGIU",
-      "description": "Auto‑entrepreneur IA & vision, projet Myakiatto, management qualité, stage SEO et optimisation base de données."
+      "description": "Auto-entrepreneur IA & vision, projet Myakiatto, management qualité, stage SEO et optimisation base de données."
     }
   },
   "certifications": {
@@ -109,8 +108,8 @@
         "description": "Analyse technique et feuille de route priorisée pour vos besoins produit et perf."
       },
       "projects": {
-        "title": "Projets sur‑mesure",
-        "description": "Développement full‑stack, architecture scalable et déploiement en production."
+        "title": "Projets sur-mesure",
+        "description": "Développement full-stack, architecture scalable et déploiement en production."
       },
       "ai": {
         "title": "Accompagnement IA",
@@ -130,7 +129,7 @@
     },
     "seo": {
       "title": "Services : IA, Vision & Développement Web | Florian GIURGIU",
-      "description": "Prestations sur‑mesure : intégration de modèles IA, pipelines vision, applications web performantes, conseil technique.",
+      "description": "Prestations sur-mesure : intégration de modèles IA, pipelines vision, applications web performantes, conseil technique.",
       "service": "Service | IA & Web | Florian GIURGIU",
       "servicesTitle": "Services | IA & Vision",
       "servicesDescription": "Offres : intégration IA & vision, création de sites/applications, optimisation et accompagnement."

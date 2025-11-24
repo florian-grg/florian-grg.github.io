@@ -1,6 +1,5 @@
 {
-  "greeting": "Bonjour, je m'appelle",
-  "name": "Florian GIURGIU",
+  "name": "Qui suis-je ?",
   "role": "Développeur Web & Auto-Entrepreneur",
   "intro": "Passionné par le développement web et les nouvelles technologies, je crée des solutions digitales modernes et performantes.",
   "paragraphs": [
@@ -10,12 +9,12 @@
     "Mon objectif est de mettre mes compétences au service de projets ambitieux et innovants, dans lesquels je peux apprendre, partager et avoir un impact positif."
   ],
   "portfolio": {
-    "subtitle": "Étudiant ingénieur • IA & Développement",
-    "description": "Étudiant en dernière année à Télécom Saint‑Étienne (en échange à Padoue), passionné par l'IA, la vision par ordinateur et le développement. Projets : deep learning (détection/appariement d'images), apps Java/Qt, sites React/Tailwind. Curieux et engagé, je cherche des projets ambitieux pour apprendre et avoir un impact.",
+    "subtitle": "Florian GIURGIU • Étudiant ingénieur • IA & Développement",
+    "description": "Étudiant en dernière année à Télécom Saint-Étienne (en échange à Padoue), passionné par l'IA, la vision par ordinateur et le développement. Projets : deep learning (détection/appariement d'images), apps Java/Qt, sites React/Tailwind. Curieux et engagé, je cherche des projets ambitieux pour apprendre et avoir un impact.",
     "keySkills": [
       "Intelligence Artificielle",
       "Vision par Ordinateur",
-      "Full‑stack",
+      "Full-stack",
       "React & Tailwind",
       "Java / Qt"
     ]

@@ -48,7 +48,7 @@
     "years": "years",
     "seo": {
       "title": "Skills | Florian GIURGIU",
-      "description": "Core stack for AI, computer vision & high‑quality web delivery: Python, PyTorch, OpenCV, React, Java, Tailwind, Docker, GDAL."
+      "description": "Core stack for AI, computer vision & high-quality web delivery: Python, PyTorch, OpenCV, React, Java, Tailwind, Docker, GDAL."
     }
   },
   "projects": {
@@ -63,7 +63,7 @@
     "badge": "Project",
     "seo": {
       "title": "AI & Vision Projects | Florian GIURGIU",
-      "description": "Selected projects: conditional VAE, image classification, geospatial keypoint matching, real‑time vision game, React/Tailwind site."
+      "description": "Selected projects: conditional VAE, image classification, geospatial keypoint matching, real-time vision game, React/Tailwind site."
     }
   },
   "education": {
@@ -109,7 +109,7 @@
       },
       "projects": {
         "title": "Custom Projects",
-        "description": "Full‑stack development, scalable architecture, and production deployment."
+        "description": "Full-stack development, scalable architecture, and production deployment."
       },
       "ai": {
         "title": "AI Support",

@@ -3,11 +3,11 @@
     "intro": "Examples from my React/Tailwind portfolio and SEO work.",
     "projectExamples": [
       "React/Tailwind portfolio deployed on GitHub Pages",
-      "On‑page SEO improvements (Choisir mon Groupement)",
+      "On-page SEO improvements (Choisir mon Groupement)",
       "Accessible, semantic landing pages"
     ],
     "deliverables": [
-      "Responsive (mobile‑first) site ready to deploy",
+      "Responsive (mobile-first) site ready to deploy",
       "Technical SEO: tags, performance, sitemap",
       "Contact form (EmailJS) + analytics",
       "Light maintenance and editing guide"
@@ -16,7 +16,7 @@
   "application": {
     "intro": "Focused on robust apps in Python/Java.",
     "projectExamples": [
-      "Java game with real‑time vision pipeline (OpenCV)",
+      "Java game with real-time vision pipeline (OpenCV)",
       "Python APIs/ETL for image processing",
       "Qt/desktop interfaces ready to use"
     ],
@@ -42,16 +42,16 @@
     ]
   },
   "conseil-accompagnement": {
-    "intro": "Pragmatic approach informed by my Quality role (Junior‑Enterprise).",
+    "intro": "Pragmatic approach informed by my Quality role (Junior-Enterprise).",
     "projectExamples": [
       "Code/test audit with actionable recommendations",
       "Web/ML architecture planning",
-      "Git workflow set‑up"
+      "Git workflow set-up"
     ],
     "deliverables": [
       "Prioritized audit report",
       "Action backlog and quick wins",
-      "Review session and follow‑up"
+      "Review session and follow-up"
     ]
   }
 }

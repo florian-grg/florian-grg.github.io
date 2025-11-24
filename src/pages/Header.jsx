@@ -33,7 +33,7 @@ const Header = () => {
       <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center px-6 py-16">
         {/* Titre principal */}
         <motion.h1
-          className="text-5xl md:text-6xl lg:text-7xl font-semibold mb-6 tracking-tight"
+          className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight"
           initial="hidden"
           animate="visible"
           variants={fadeIn}

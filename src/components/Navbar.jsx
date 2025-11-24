@@ -2,6 +2,7 @@ import { smoothScrollTo } from "../animations/smoothScrollTo";
 import React from "react";
 import { useNavigate, useLocation } from 'react-router-dom';
 import logo from '../logo.png';
+import logo_navbar from '../logo_navbar.jpg';
 import { useLanguage } from '../contexts/LanguageContext';
 import { ROUTE_CONFIG } from '../constants/routes';
 import { FaBars, FaTimes } from 'react-icons/fa';
@@ -82,8 +83,17 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
-          {/* Logo - visible sur tous les écrans */}
-          <img src={logo} alt="Logo" className="h-8 w-8 rounded" />
+          {/* Logo - visible sur tous les écrans, cliquable pour retourner à l'accueil */}
+          <button
+            onClick={() => {
+              navigate('/');
+              setMobileMenuOpen(false);
+            }}
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+            aria-label="Retour à l'accueil"
+          >
+            <img src={logo} alt="Logo" className="h-8 w-8 rounded" />
+          </button>
           
           {/* Menu Desktop - caché sur mobile (md:flex) */}
           <div className="hidden md:flex flex-wrap gap-x-2 items-center">

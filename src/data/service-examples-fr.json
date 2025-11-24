@@ -3,11 +3,11 @@
     "intro": "Exemples tirés de mon portfolio React/Tailwind et de missions SEO.",
     "projectExamples": [
       "Portfolio React/Tailwind déployé sur GitHub Pages",
-      "Améliorations SEO on‑page (Choisir mon Groupement)",
+      "Améliorations SEO on-page (Choisir mon Groupement)",
       "Landing pages accessibles et sémantiques"
     ],
     "deliverables": [
-      "Site responsive (mobile‑first) prêt à déployer",
+      "Site responsive (mobile-first) prêt à déployer",
       "SEO technique: balises, performances, sitemap",
       "Formulaire contact (EmailJS) + analytics",
       "Maintenance légère et guide d’édition"
@@ -42,7 +42,7 @@
     ]
   },
   "conseil-accompagnement": {
-    "intro": "Approche pragmatique issue de mon rôle Qualité (Junior‑Entreprise).",
+    "intro": "Approche pragmatique issue de mon rôle Qualité (Junior-Entreprise).",
     "projectExamples": [
       "Audit code/tests et recommandations actionnables",
       "Plan d’architecture web/ML",

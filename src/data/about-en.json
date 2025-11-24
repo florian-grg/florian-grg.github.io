@@ -1,6 +1,5 @@
 {
-  "greeting": "Hello, I'm",
-  "name": "Florian GIURGIU",
+  "name": "Who am I?",
   "role": "Web Developer & Entrepreneur",
   "intro": "Passionate about web development and new technologies, I create modern and high-performance digital solutions.",
   "paragraphs": [
@@ -11,11 +10,11 @@
   ],
   "portfolio": {
     "subtitle": "Engineering Student • AI & Development",
-    "description": "Final-year student at Télécom Saint‑Étienne (on exchange in Padua), passionate about AI, computer vision, and development. Projects: deep learning (object detection/image matching), Java/Qt apps, React/Tailwind websites. Curious and committed, I seek ambitious projects to learn and make an impact.",
+    "description": "Final-year student at Télécom Saint-Étienne (on exchange in Padua), passionate about AI, computer vision, and development. Projects: deep learning (object detection/image matching), Java/Qt apps, React/Tailwind websites. Curious and committed, I seek ambitious projects to learn and make an impact.",
     "keySkills": [
       "Artificial Intelligence",
       "Computer Vision",
-      "Full‑stack",
+      "Full-stack",
       "React & Tailwind",
       "Java / Qt"
     ]

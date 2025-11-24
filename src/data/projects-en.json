@@ -53,7 +53,7 @@
   },
   {
     "title": "Java Curling Game",
-    "description": "Desktop Java application packaged with Maven, real‑time webcam input and multithreaded processing. Homography calibration and vision pipeline, game engine managing turns & scoring.",
+    "description": "Desktop Java application packaged with Maven, real-time webcam input and multithreaded processing. Homography calibration and vision pipeline, game engine managing turns & scoring.",
     "date": "10/2024 - 01/2025",
     "location": "—",
     "tech": ["Java", "Maven", "OpenCV", "Multithreading"],

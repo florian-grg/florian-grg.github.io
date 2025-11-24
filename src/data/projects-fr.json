@@ -5,7 +5,7 @@
     "date": "08/2025 - Présent",
     "location": "—",
     "tech": ["React", "Tailwind CSS", "Framer Motion", "EmailJS"],
-    "role": "Développeur Front‑End",
+    "role": "Développeur Front-End",
     "highlights": [
       "Interface responsive et accessible",
       "Animations fluides (Framer Motion)",
@@ -53,7 +53,7 @@
   },
   {
     "title": "Jeu de Curling en Java",
-    "description": "Application desktop Java packagée avec Maven, acquisition webcam temps‑réel et traitement multithreadé. Calibration homographique et pipeline vision, moteur de jeu gérant tours et score.",
+    "description": "Application desktop Java packagée avec Maven, acquisition webcam temps-réel et traitement multithreadé. Calibration homographique et pipeline vision, moteur de jeu gérant tours et score.",
     "date": "10/2024 - 01/2025",
     "location": "—",
     "tech": ["Java", "Maven", "OpenCV", "Multithreading"],
