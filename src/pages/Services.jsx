@@ -48,7 +48,6 @@ export default function Services() {
 
     return (
         <>
-            <Seo title={t('seo.services.title')} description={t('seo.services.description')} />
             {/* Fond clair cohérent */}
             <main id="services" className="bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black py-20 md:py-28">
                 
