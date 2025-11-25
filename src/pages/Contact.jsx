@@ -31,7 +31,7 @@ const Contact = () => {
 
   return (
     <>
-      <Seo title={t('contact.seo.title')} description={t('contact.seo.description')} />
+      <Seo title={t('seo.contact.title')} description={t('seo.contact.description')} />
       <section id="contact" className="w-full min-h-screen flex items-center py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">

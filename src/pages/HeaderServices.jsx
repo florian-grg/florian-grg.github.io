@@ -2,16 +2,14 @@ import React from "react";
 import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
-import servicesDataFr from "../data/services-fr.json";
-import servicesDataEn from "../data/services-en.json";
 import { useNavigate } from "react-router-dom";
 import { smoothScrollTo } from "../animations/smoothScrollTo";
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Services = () => {
 	const navigate = useNavigate();
-	const { t, language } = useLanguage();
-	const servicesData = language === 'fr' ? servicesDataFr : servicesDataEn;
+	const { t } = useLanguage();
+	const servicesData = t('data.services');
 
 	function getServiceIcon(name) {
 		const common = { className: 'w-10 h-10 text-white' };
@@ -54,8 +52,8 @@ const Services = () => {
 	return (
 		<>
 			<Seo
-				title={t('services.seo.title')}
-				description={t('services.seo.description')}
+				title={t('seo.services.title')}
+				description={t('seo.services.description')}
 			/>
 
 			{/* Section 1 — Aperçu des prestations (fond blanc, design landing page) */}

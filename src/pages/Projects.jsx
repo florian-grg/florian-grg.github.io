@@ -2,8 +2,6 @@ import React from "react";
 import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
-import projectsFr from "../data/projects-fr.json";
-import projectsEn from "../data/projects-en.json";
 import { useLanguage } from '../contexts/LanguageContext';
 
 // Données importées depuis src/data/projectsData.js
@@ -15,12 +13,11 @@ const Badge = ({ children }) => (
 );
 
 const Projects = () => {
-  const { t, language } = useLanguage();
-  const projects = language === 'fr' ? projectsFr : projectsEn;
+  const { t } = useLanguage();
+  const projects = t('data.projects');
   
   return (
     <>
-      <Seo title={t('projects.seo.title')} description={t('projects.seo.description')} />
       <section className="w-full py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-2 text-center text-black">{t('projects.title')}</h1>
         <p className="text-center text-black/70 mb-12 max-w-2xl mx-auto">{t('projects.subtitle')}</p>

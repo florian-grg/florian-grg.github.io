@@ -3,18 +3,15 @@ import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
 import { FaGraduationCap, FaMapMarkerAlt } from "react-icons/fa";
-import educationFr from "../data/education-fr.json";
-import educationEn from "../data/education-en.json";
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Education = () => {
-  const { t, language } = useLanguage();
-  const education = language === 'fr' ? educationFr : educationEn;
+  const { t } = useLanguage();
+  const education = t('data.education');
 
   // Simple chronological ordering: keep original order; could sort by start date if needed.
   return (
     <>
-      <Seo title={t('education.seo.title')} description={t('education.seo.description')} />
       <section className="w-full py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black">
         <div className="max-w-5xl mx-auto relative">
           {/* Vertical timeline line */}

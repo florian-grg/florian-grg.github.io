@@ -2,8 +2,6 @@ import React from "react";
 import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
-import experiencesFr from "../data/experiences-fr.json";
-import experiencesEn from "../data/experiences-en.json";
 import { useLanguage } from '../contexts/LanguageContext';
 import { FaBriefcase, FaMapMarkerAlt } from "react-icons/fa";
 
@@ -16,12 +14,11 @@ const Badge = ({ children }) => (
 );
 
 const Experiences = () => {
-  const { t, language } = useLanguage();
-  const experiences = language === 'fr' ? experiencesFr : experiencesEn;
+  const { t } = useLanguage();
+  const experiences = t('data.experiences');
   
   return (
     <>
-      <Seo title={t('experiences.seo.title')} description={t('experiences.seo.description')} />
       <section className="w-full py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black">
         <div className="max-w-5xl mx-auto relative">
           <div className="absolute left-5 top-0 h-full w-px bg-gradient-to-b from-blue-600 via-purple-500 to-blue-600" aria-hidden></div>

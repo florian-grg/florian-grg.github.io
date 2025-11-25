@@ -7,7 +7,7 @@ const MentionsLegales = () => {
   
   return (
   <>
-    <Seo title={t('legal.seo.title')} description={t('legal.seo.description')} />
+    <Seo title={t('seo.legal.title')} description={t('seo.legal.description')} />
     <section className="w-full py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-8 text-center">{t('legal.title')}</h1>

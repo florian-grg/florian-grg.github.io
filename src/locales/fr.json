@@ -6,10 +6,11 @@
     "contact": "Contact"
   },
   "header": {
+    "greeting": "Bonjour, je m'appelle",
     "title": "Florian GIURGIU",
-    "subtitle": "Développeur web freelance — création de sites et applications modernes",
-    "description": "J'aide PME et startups à concevoir des expériences web rapides, accessibles et maintenables.",
-    "description2": "De l'idée au déploiement, je vous accompagne avec des solutions sur-mesure et mesurables.",
+    "subtitle": "Étudiant Ingénieur & Auto-entrepreneur",
+    "description": "Je suis passionné par l'IA, la vision par ordinateur et le développement informatique.",
+    "description2": "Je propose également mes services en freelance aux entreprises.",
     "cta": {
       "profile": "Découvrir mon profil",
       "services": "Voir mes services",
@@ -18,7 +19,7 @@
     },
     "scroll": "Faire défiler vers la section À propos",
     "seo": {
-      "title": "Ingénierie IA & Web | Florian GIURGIU",
+      "title": "Accueil | Florian GIURGIU",
       "description": "Portfolio de Florian GIURGIU : ingénierie IA & vision par ordinateur, développement web moderne, performance et conseil qualité."
     }
   },
@@ -45,11 +46,7 @@
     "certifications": "Certifications & formations",
     "level": "Niveau",
     "experience": "Expérience",
-    "years": "ans",
-    "seo": {
-      "title": "Compétences | Florian GIURGIU",
-      "description": "Stack cœur pour IA, vision & livraison web de qualité : Python, PyTorch, OpenCV, React, Java, Tailwind, Docker, GDAL."
-    }
+    "years": "ans"
   },
   "projects": {
     "title": "Projets",
@@ -60,19 +57,11 @@
     "viewProject": "Voir le projet",
     "viewCode": "Repo",
     "comingSoon": "Bientôt disponible",
-    "badge": "Projet",
-    "seo": {
-      "title": "Projets IA & Vision | Florian GIURGIU",
-      "description": "Sélection : VAE conditionnel, classification d’images, appariement géospatial de points clés, jeu vision temps réel, site React/Tailwind."
-    }
+    "badge": "Projet"
   },
   "education": {
     "title": "Formation",
-    "subtitle": "Parcours académique",
-    "seo": {
-      "title": "Formation en IA & Vision | Florian GIURGIU",
-      "description": "Semestre Erasmus IA, école d’ingénieur (image & informatique), classes préparatoires (MPSI/PSI) et bases scientifiques solides."
-    }
+    "subtitle": "Parcours académique"
   },
   "experiences": {
     "title": "Expériences",
@@ -81,19 +70,11 @@
     "tech": "Technologies utilisées",
     "location": "Lieu",
     "learnMore": "En savoir plus",
-    "badge": "Expérience",
-    "seo": {
-      "title": "Expériences en IA & Vision | Florian GIURGIU",
-      "description": "Auto-entrepreneur IA & vision, projet Myakiatto, management qualité, stage SEO et optimisation base de données."
-    }
+    "badge": "Expérience"
   },
   "certifications": {
     "title": "Certifications",
-    "subtitle": "Connaissances et validations clés",
-    "seo": {
-      "title": "Certifications – Florian GIURGIU",
-      "description": "CS50 Harvard, certificats d'informatique, TOEIC C1. Compétences vérifiées en algorithmique, programmation, web et anglais."
-    }
+    "subtitle": "Connaissances et validations clés"
   },
   "services": {
     "title": "Mes Prestations",
@@ -128,7 +109,7 @@
       "deliverablesDescription": "Design, code, documentation, plan de maintenance et formation."
     },
     "seo": {
-      "title": "Services : IA, Vision & Développement Web | Florian GIURGIU",
+      "title": "Services | Florian GIURGIU",
       "description": "Prestations sur-mesure : intégration de modèles IA, pipelines vision, applications web performantes, conseil technique.",
       "service": "Service | IA & Web | Florian GIURGIU",
       "servicesTitle": "Services | IA & Vision",
@@ -231,5 +212,491 @@
     "title": "Page introuvable",
     "description": "Désolé, la page que vous recherchez n'existe pas ou a été déplacée.",
     "home": "Retour à l'accueil"
+  },
+  "seo": {
+    "home": {
+      "title": "Accueil | Florian GIURGIU",
+      "description": "Portfolio de Florian GIURGIU : ingénierie IA & vision par ordinateur, développement web moderne, performance et conseil qualité."
+    },
+    "portfolio": {
+      "title": "Portfolio | Florian GIURGIU",
+      "description": "Étudiant en dernière année à Télécom Saint-Étienne (en échange à Padoue), passionné par l'IA, la vision par ordinateur et le développement. Projets : deep learning (détection/appariement d'images), apps Java/Qt, sites React/Tailwind. Curieux et engagé, je cherche des projets ambitieux pour apprendre et avoir un impact."
+    },
+    "about": {
+      "title": "À propos | Florian GIURGIU",
+      "description": "Ingénieur freelance en IA, vision par ordinateur et développement web moderne. Alliance entre rigueur académique et pragmatisme production."
+    },
+    "contact": {
+      "title": "Contact | Florian GIURGIU",
+      "description": "Discutons IA, vision par ordinateur ou développement web. Réponse rapide et premier avis gratuit."
+    },
+    "legal": {
+      "title": "Mentions Légales | Florian GIURGIU",
+      "description": "Mentions légales du portfolio d’ingénierie IA & web de Florian GIURGIU."
+    }
+  },
+  "data": {
+    "about": {
+      "name": "Qui suis-je ?",
+      "role": "Développeur Web & Auto-Entrepreneur",
+      "intro": "Passionné par le développement web et les nouvelles technologies, je crée des solutions digitales modernes et performantes.",
+      "paragraphs": [
+        "Bonjour, je m'appelle Florian Giurgiu, étudiant en dernière année d'école d'ingénieur à Télécom Saint-Étienne et actuellement en échange Erasmus à l'Université de Padoue en Italie. Passionné par l'Intelligence Artificielle, la Vision par Ordinateur et le Développement Logiciel, j'aime concevoir et expérimenter des solutions innovantes alliant mathématiques, programmation et créativité.",
+        "Curieux et persévérant, je m'intéresse autant à l'apprentissage profond (Deep Learning, Réseaux de neurones, Optimisation) qu'au développement full stack pour donner vie à des projets concrets. J'ai eu l'occasion de travailler sur des projets variés : détection et appariement d'images par Deep Learning, développement d'applications interactives en Java et Qt, ainsi que la création de sites modernes avec React et Tailwind CSS.",
+        "Au-delà de mes études, je suis passionné de musculation et de handball, et je pratique la guitare depuis plusieurs années. J'aime aussi m'investir dans la vie associative, notamment à travers l'organisation d'événements E-Sport et culturels. Je parle couramment le français et le roumain, et j'ai également un bon niveau d'anglais (B2), ainsi que des notions en espagnol (A2) et en allemand (A1).",
+        "Mon objectif est de mettre mes compétences au service de projets ambitieux et innovants, dans lesquels je peux apprendre, partager et avoir un impact positif."
+      ],
+      "portfolio": {
+        "subtitle": "Florian GIURGIU • Étudiant ingénieur • IA & Développement",
+        "description": "Étudiant en dernière année à Télécom Saint-Étienne (en échange à Padoue), passionné par l'IA, la vision par ordinateur et le développement. Projets : deep learning (détection/appariement d'images), apps Java/Qt, sites React/Tailwind. Curieux et engagé, je cherche des projets ambitieux pour apprendre et avoir un impact.",
+        "keySkills": [
+          "Intelligence Artificielle",
+          "Vision par Ordinateur",
+          "Full-stack",
+          "React & Tailwind",
+          "Java / Qt"
+        ]
+      },
+      "stats": [
+        { "value": "15+", "label": "Projets réalisés" },
+        { "value": "2+", "label": "Années d'expérience" },
+        { "value": "12+", "label": "Technologies maîtrisées" },
+        { "value": "100%", "label": "Satisfaction client" }
+      ]
+    },
+    "projects": [
+      {
+        "title": "Développement d’un site web moderne avec React et Tailwind CSS",
+        "description": "Création d’une interface responsive présentant parcours, compétences et projets. Intégration d’un formulaire de contact et animations interactives.",
+        "date": "08/2025 - Présent",
+        "location": "—",
+        "tech": ["React", "Tailwind CSS", "Framer Motion", "EmailJS"],
+        "role": "Développeur Front-End",
+        "highlights": [
+          "Interface responsive et accessible",
+          "Animations fluides (Framer Motion)",
+          "Formulaire de contact EmailJS",
+          "Déploiement GitHub Pages"
+        ],
+        "link": "https://florian-grg.github.io",
+        "repo": "https://github.com/florian-grg/florian-grg.github.io",
+        "availableProject": "True",
+        "availableRepo": "True"
+      },
+      {
+        "title": "Conception d'un Autoencodeur Variationnel (VAE) conditionnel",
+        "description": "Entraînement sur CelebA et génération d'images conditionnées par attributs visuels (cVAE) avec PyTorch.",
+        "date": "05/2025",
+        "location": "—",
+        "tech": ["Python", "PyTorch", "VAE", "CelebA"],
+        "role": "Machine Learning Engineer",
+        "highlights": [
+          "Architecture cVAE pour génération contrôlée",
+          "Pipeline d'entraînement et d'évaluation",
+          "Exploration d'attributs latents"
+        ],
+        "link": "#",
+        "repo": "#",
+        "availableProject": "False",
+        "availableRepo": "False"
+      },
+      {
+        "title": "Classification d’images de pizzas",
+        "description": "Extraction de descripteurs couleur/texture, détection de formes (transformée de Hough). Implémentation et comparaison KNN, SVM et GMM.",
+        "date": "02/2025 - 04/2025",
+        "location": "—",
+        "tech": ["Python", "OpenCV", "scikit-learn", "SVM", "KNN", "GMM"],
+        "role": "Computer Vision Engineer",
+        "highlights": [
+          "Descripteurs couleur et texture",
+          "Détection de formes par Hough",
+          "Benchmark KNN / SVM / GMM"
+        ],
+        "link": "#",
+        "repo": "#",
+        "availableProject": "False",
+        "availableRepo": "False"
+      },
+      {
+        "title": "Jeu de Curling en Java",
+        "description": "Application desktop Java packagée avec Maven, acquisition webcam temps-réel et traitement multithreadé. Calibration homographique et pipeline vision, moteur de jeu gérant tours et score.",
+        "date": "10/2024 - 01/2025",
+        "location": "—",
+        "tech": ["Java", "Maven", "OpenCV", "Multithreading"],
+        "role": "Développeur Java",
+        "highlights": [
+          "Acquisition webcam temps réel",
+          "Homographie & pipeline vision",
+          "Gestion des tours et du scoring"
+        ],
+        "link": "#",
+        "repo": "#",
+        "availableProject": "False",
+        "availableRepo": "False"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "category": "Langages",
+        "level": 92,
+        "years": 5,
+        "tech": ["PyTorch", "NumPy"],
+        "examples": [
+          "Classification d'images avec CNN",
+          "Pipelines ETL pour preprocessing"
+        ],
+        "certs": [
+          { "title": "Deep Learning - Intro", "org": "Cours interne", "year": 2022 }
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "category": "Langages",
+        "level": 85,
+        "years": 4,
+        "tech": ["React", "Node"],
+        "examples": ["SPA React pour portfolio", "API REST avec Node.js"],
+        "certs": []
+      },
+      {
+        "name": "Java",
+        "category": "Langages",
+        "level": 78,
+        "years": 4,
+        "tech": ["OOP", "Qt"],
+        "examples": ["Applications desktop avec Qt"],
+        "certs": []
+      },
+      {
+        "name": "C/C++",
+        "category": "Langages",
+        "level": 74,
+        "years": 3,
+        "tech": ["Embedded", "Optimisation"],
+        "examples": ["Développement embarqué pour capteurs"],
+        "certs": []
+      },
+      {
+        "name": "SQL",
+        "category": "Bases de données",
+        "level": 80,
+        "years": 3,
+        "tech": ["Postgres", "SQLite"],
+        "examples": ["Conception de schémas et requêtes complexes"],
+        "certs": []
+      },
+      {
+        "name": "PyTorch (Deep Learning)",
+        "category": "IA",
+        "level": 88,
+        "years": 3,
+        "tech": ["CNN", "Training"],
+        "examples": ["Entraînement de modèles pour détection d'objets"],
+        "certs": []
+      },
+      {
+        "name": "MATLAB",
+        "category": "Outils",
+        "level": 68,
+        "years": 2,
+        "tech": ["Simulations"],
+        "examples": [],
+        "certs": []
+      },
+      {
+        "name": "HTML",
+        "category": "Web",
+        "level": 86,
+        "years": 4,
+        "tech": ["Semantics"],
+        "examples": ["Structuration sémantique d'articles et landing pages"],
+        "certs": []
+      },
+      {
+        "name": "CSS",
+        "category": "Web",
+        "level": 82,
+        "years": 4,
+        "tech": ["Tailwind", "Responsive"],
+        "examples": ["Design responsive avec Tailwind CSS"],
+        "certs": []
+      },
+      {
+        "name": "Qt (GUI)",
+        "category": "Outils",
+        "level": 70,
+        "years": 2,
+        "tech": ["Interfaces"],
+        "examples": [],
+        "certs": []
+      },
+      {
+        "name": "LaTeX",
+        "category": "Outils",
+        "level": 75,
+        "years": 4,
+        "tech": ["Docs", "Reports"],
+        "examples": ["Rédaction d'articles techniques et rapports"],
+        "certs": []
+      },
+      {
+        "name": "Git",
+        "category": "Outils",
+        "level": 90,
+        "years": 5,
+        "tech": ["Workflows"],
+        "examples": ["Gestion de branches et workflows Git (feature/gitflow)"],
+        "certs": []
+      }
+    ],
+    "services": [
+      {
+        "title": "Création de sites web",
+        "subtitle": "Vitrine, portfolio, e-commerce léger",
+        "link": "site-web",
+        "id": "site-web",
+        "description": "Sites modernes, rapides et responsives, optimisés SEO et conversion. Design sur-mesure, intégration CMS si nécessaire.",
+        "benefits": ["Design sur-mesure", "SEO & performance", "Responsive & accessible"],
+        "icon": "site-web"
+      },
+      {
+        "title": "Développement d'applications",
+        "subtitle": "Web & Desktop",
+        "link": "application",
+        "id": "application",
+        "description": "Applications robustes (Python, Java, C++) : API, backends, interfaces Qt, traitement d'images et pipelines ML.",
+        "benefits": ["Architecture scalable", "Qualité de code & tests", "Documentation complète"],
+        "icon": "application"
+      },
+      {
+        "title": "IA & Optimisation",
+        "subtitle": "Intégration de modèles, performance",
+        "link": "ia-optimisation",
+        "id": "ia-optimisation",
+        "description": "Intégration de modèles IA (PyTorch, TensorFlow), optimisation d'algorithmes existants et solutions ML sur-mesure.",
+        "benefits": ["Entraînement de modèles personnalisés", "Optimisation d'inférence", "Déploiement en production"],
+        "icon": "ia-optimisation"
+      },
+      {
+        "title": "Conseil & Accompagnement",
+        "subtitle": "Code review, architecture, suivi",
+        "link": "conseil-accompagnement",
+        "id": "conseil-accompagnement",
+        "description": "Audit technique, planification d'architecture, code review et suivi qualité pour vos projets.",
+        "benefits": ["Code review détaillée", "Architecture optimisée", "Recommandations pragmatiques"],
+        "icon": "conseil-accompagnement"
+      }
+    ],
+    "serviceExamples": {
+      "site-web": {
+        "intro": "Exemples tirés de mon portfolio React/Tailwind et de missions SEO.",
+        "projectExamples": [
+          "Portfolio React/Tailwind déployé sur GitHub Pages",
+          "Améliorations SEO on-page (Choisir mon Groupement)",
+          "Landing pages accessibles et sémantiques"
+        ],
+        "deliverables": [
+          "Site responsive (mobile-first) prêt à déployer",
+          "SEO technique: balises, performances, sitemap",
+          "Formulaire contact (EmailJS) + analytics",
+          "Maintenance légère et guide d’édition"
+        ]
+      },
+      "application": {
+        "intro": "Focalisé sur des apps robustes en Python/Java.",
+        "projectExamples": [
+          "Jeu Java avec pipeline vision temps réel (OpenCV)",
+          "APIs/ETL Python pour traitement d’images",
+          "Interfaces Qt/desktop prêtes à l’emploi"
+        ],
+        "deliverables": [
+          "Architecture claire (couches, tests)",
+          "API REST + documentation (OpenAPI)",
+          "CI basique et scripts de lancement",
+          "Packaging (Maven/venv) et README"
+        ]
+      },
+      "ia-optimisation": {
+        "intro": "Basé sur mes projets PyTorch, OpenCV et Myakiatto.",
+        "projectExamples": [
+          "cVAE PyTorch (CelebA) pour génération conditionnelle",
+          "Classification image: SVM/KNN/GMM avec features",
+          "Appariement keypoints drone/satellite (SIFT/ORB, RANSAC)"
+        ],
+        "deliverables": [
+          "Notebook/Repo d’entraînement reproductible",
+          "Pipeline d’inférence optimisé",
+          "Suivi expérimental et métriques",
+          "Intégration légère (API/CLI/Docker optionnel)"
+        ]
+      },
+      "conseil-accompagnement": {
+        "intro": "Approche pragmatique issue de mon rôle Qualité (Junior-Entreprise).",
+        "projectExamples": [
+          "Audit code/tests et recommandations actionnables",
+          "Plan d’architecture web/ML",
+          "Mise en place de workflows Git"
+        ],
+        "deliverables": [
+          "Rapport d’audit priorisé",
+          "Backlog d’actions et quick wins",
+          "Séance de restitution et suivi"
+        ]
+      }
+    },
+    "education": [
+      {
+        "title": "Semestre Erasmus",
+        "school": "Université de Padoue",
+        "degree": "Spécialités : Intelligence Artificielle, Machine Learning, Reinforcement Learning, Vision par Ordinateur, Innovation, Entrepreneuriat, Finance",
+        "date": "09/2025 - 02/2026",
+        "location": "Padoue, Italie",
+        "highlights": [
+          "Intelligence Artificielle",
+          "Machine Learning & Reinforcement Learning",
+          "Vision par Ordinateur",
+          "Innovation & Entrepreneuriat",
+          "Finance"
+        ]
+      },
+      {
+        "title": "École d'Ingénieur Généraliste du Numérique",
+        "school": "Télécom Saint-Étienne",
+        "degree": "Diplôme d'Ingénieur - Spécialités : Image et Informatique",
+        "date": "09/2023 - 08/2026",
+        "location": "Saint-Étienne (42)",
+        "highlights": [
+          "Options : Optimisation et Intelligence Artificielle",
+          "Spécialisation Image et Informatique",
+          "Formation en ingénierie du numérique"
+        ]
+      },
+      {
+        "title": "Classe Préparatoire aux Grandes Écoles",
+        "school": "Lycée ORT",
+        "degree": "MPSI/PSI",
+        "date": "09/2021 - 07/2023",
+        "location": "Strasbourg (67)",
+        "highlights": [
+          "Mathématiques, Physique et Sciences de l'Ingénieur",
+          "Préparation aux concours des grandes écoles",
+          "Formation scientifique intensive"
+        ]
+      },
+      {
+        "title": "Baccalauréat Général",
+        "school": "Lycée Adrien Zeller",
+        "degree": "Mention Bien - Spécialités : Mathématiques, Physique-Chimie, SVT",
+        "date": "09/2018 - 07/2021",
+        "location": "Bouxwiller (67)",
+        "highlights": [
+          "Mention Bien",
+          "Spécialités scientifiques",
+          "Formation généraliste solide"
+        ]
+      }
+    ],
+    "experiences": [
+      {
+        "title": "Auto-Entrepreneur en Intelligence Artificielle et Vision par Ordinateur",
+        "description": "Prestations informatiques dans le domaine de l'Intelligence Artificielle, du Machine Learning, du Deep Learning et de la Vision par Ordinateur.",
+        "date": "09/2025 - Présent",
+        "location": "—",
+        "highlights": [
+          "Projets IA sur mesure (détection, segmentation, suivi)",
+          "Prototypage rapide et POC en vision par ordinateur",
+          "Conseil technique et intégration de modèles ML en production"
+        ],
+        "tech": ["Python", "PyTorch", "OpenCV", "Docker"],
+        "link": "#",
+        "more": "False"
+      },
+      {
+        "title": "Projet d'ingénierie en Intelligence Artificielle - Myakiatto",
+        "description": "Détection et appariement de points clés entre images drone et satellite via Deep Learning et Traitement d'Images.",
+        "date": "03/2025 - Présent",
+        "location": "Saint-Étienne (42)",
+        "highlights": [
+          "Appariement keypoints (SIFT/ORB) et estimation d'homographie (RANSAC)",
+          "Détection/segmentation par CNN et post-traitement géospatial",
+          "Standardisation des projections et intégration GDAL"
+        ],
+        "tech": ["Python", "PyTorch", "OpenCV", "GDAL"],
+        "link": "#",
+        "more": "False"
+      },
+      {
+        "title": "Chargé Qualité - Inspire, Junior-Entreprise de Télécom Saint-Étienne",
+        "description": "Mise en place et suivi du SMQ, gestion des procédures et KPI qualité, et réalisation d’audits pour l’amélioration continue.",
+        "date": "09/2023 - 04/2025",
+        "location": "Saint-Étienne (42)",
+        "highlights": [
+          "Définition de processus et indicateurs qualité",
+          "Tests et revue des livrables clients",
+          "Audits internes et amélioration continue"
+        ],
+        "tech": ["Git", "Testing", "Documentation"],
+        "link": "#",
+        "more": "False"
+      },
+      {
+        "title": "Développeur informatique - Choisir mon Groupement (Stage)",
+        "description": "Amélioration SEO, projet PHP et optimisation de base de données SQL.",
+        "date": "06/2024 - 07/2024",
+        "location": "Schiltigheim (67)",
+        "highlights": [
+          "Optimisation de requêtes SQL et refactorisation",
+          "Améliorations SEO on-page",
+          "Contribution à un projet PHP"
+        ],
+        "tech": ["PHP", "SQL", "SEO"],
+        "link": "#",
+        "more": "False"
+      }
+    ],
+    "certifications": [
+      {
+        "title": "NVIDIA Deep Learning Institute",
+        "provider": "NVIDIA - DLI",
+        "date": "2025",
+        "location": "En ligne",
+        "highlights": [
+          "Getting Started with Deep Learning",
+          "Introduction to Transformer-Based NLP",
+          "Generative AI with Diffusion Models"
+        ],
+        "link": "https://www.nvidia.com/fr-fr/training/",
+        "more": "False"
+      },
+      {
+        "title": "TOEIC – Niveau B2",
+        "provider": "ETS Global",
+        "date": "04/2025 - 04/2027",
+        "location": "Saint-Étienne (42)",
+        "highlights": [
+          "Certification niveau B2",
+          "Compréhension écrite",
+          "Compréhension orale",
+          "Communication professionnelle"
+        ],
+        "link": "https://www.ets.org/fr/toeic",
+        "more": "False"
+      },
+      {
+        "title": "Formation Musicale – Mention Bien",
+        "provider": "LA MUSE École de musique et de danse",
+        "date": "2019",
+        "location": "Schweighouse (67)",
+        "highlights": [
+          "Théorie musicale",
+          "Rythme",
+          "Écoute active",
+          "Mention Bien"
+        ],
+        "link": "#",
+        "more": "False"
+      }
+    ]
   }
 }

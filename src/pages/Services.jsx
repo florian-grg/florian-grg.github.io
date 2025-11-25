@@ -3,21 +3,17 @@ import Seo from '../components/Seo';
 import { motion, AnimatePresence } from 'framer-motion';
 import { fadeIn } from '../animations/fadeIn';
 import { Link, useLocation } from 'react-router-dom';
-import servicesDataFr from '../data/services-fr.json';
-import servicesDataEn from '../data/services-en.json';
 import { useLanguage } from '../contexts/LanguageContext';
-import examplesFr from '../data/service-examples-fr.json';
-import examplesEn from '../data/service-examples-en.json';
 
 export default function Services() {
     const location = useLocation();
     const { t, language } = useLanguage();
-    const servicesData = language === 'fr' ? servicesDataFr : servicesDataEn;
+    const servicesData = t('data.services');
     // L'onglet actif, par défaut le premier service
     const [activeId, setActiveId] = useState(servicesData[0].id);
 
     // Sélecteur de contenu d'exemples basé sur JSON externalisés
-    const examplesData = language === 'fr' ? examplesFr : examplesEn;
+    const examplesData = t('data.serviceExamples');
     const examples = examplesData[activeId] || {
         intro: t('services.details.examplesDescription'),
         projectExamples: [],
@@ -52,8 +48,7 @@ export default function Services() {
 
     return (
         <>
-            <Seo title={t('services.seo.service')} description={t('services.seo.servicesDescription')} />
-
+            <Seo title={t('seo.services.title')} description={t('seo.services.description')} />
             {/* Fond clair cohérent */}
             <main id="services" className="bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black py-20 md:py-28">
                 

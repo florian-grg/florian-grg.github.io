@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <>
-  <Seo title={t('services.seo.servicesTitle')} description={t('services.seo.servicesDescription')} />
+  <Seo title={t('seo.services.title')} description={t('seo.services.description')} />
   <header className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-blue-50 to-purple-50">
         <div className="max-w-6xl mx-auto py-20 px-6">
           <motion.div initial="hidden" animate="visible" variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12 } } }}>

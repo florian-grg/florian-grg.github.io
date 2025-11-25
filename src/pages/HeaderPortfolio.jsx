@@ -5,14 +5,12 @@ import { fadeIn } from "../animations/fadeIn";
 import { smoothScrollTo } from "../animations/smoothScrollTo";
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
-import aboutFr from '../data/about-fr.json';
-import aboutEn from '../data/about-en.json';
 
 const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { t, language } = useLanguage();
-  const about = language === 'fr' ? aboutFr : aboutEn;
+  const { t } = useLanguage();
+  const about = t('data.about');
 
   const goTo = (path, hash) => {
     if (location.pathname === path) {
@@ -25,7 +23,7 @@ const Header = () => {
 
     return (
   <>
-  <Seo title={t('about.seo.portfolio')} description={t('about.seo.description')} />
+  <Seo title={t('seo.portfolio.title')} description={t('seo.portfolio.description')} />
   <header className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-blue-50 to-purple-50">
       <div className="max-w-4xl mx-auto py-20 px-6 text-center">
         <motion.div initial="hidden" animate="visible" variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12 } } }}>
@@ -39,7 +37,7 @@ const Header = () => {
             {about.name}
           </motion.h1>
           <motion.div variants={fadeIn} className="mx-auto h-1 w-16 rounded-full bg-gradient-to-r from-blue-600 to-purple-500 mb-4" />
-          <motion.p variants={fadeIn} className="text-lg text-black mb-4">{about.portfolio.subtitle}</motion.p>
+          <motion.p variants={fadeIn} className="text-lg text-black font-semibold mb-4">{about.portfolio.subtitle}</motion.p>
 
           <motion.p variants={fadeIn} className="text-lg md:text-xl text-black max-w-3xl mx-auto leading-relaxed mb-6">
             {about.portfolio.description}

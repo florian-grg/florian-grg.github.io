@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
   <>
-    <Seo title={t('header.seo.title')} description={t('header.seo.description')} />
+    <Seo title={t('seo.home.title')} description={t('seo.home.description')} />
     <header role="banner" id="home" className="relative overflow-hidden bg-gradient-to-br from-[#000725ff] via-[#0a0e27] to-[#0f1642] min-h-screen flex flex-col items-center justify-center">
       <NeuralNetworkBackground />
       
@@ -31,22 +31,32 @@ const Header = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/40 z-0" />
 
       <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center px-6 py-16">
+        {/* Salutation */}
+        <motion.p
+          className="text-sm md:text-base text-white mb-4 tracking-wide"
+          initial="hidden"
+          animate="visible"
+          variants={fadeIn}
+          transition={{ delay: 0.1, duration: 0.7 }}
+        >
+          {t('header.greeting')}
+        </motion.p>
+
+
         {/* Titre principal */}
         <motion.h1
-          className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight"
+          className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight text-white"
           initial="hidden"
           animate="visible"
           variants={fadeIn}
           transition={{ delay: 0.2, duration: 0.7 }}
         >
-          <span className="text-white">
-            {t('header.title')}
-          </span>
+          {t('header.title')}
         </motion.h1>
 
         {/* Sous-titre */}
         <motion.h2
-          className="text-lg md:text-xl font-normal mb-5 tracking-wide text-gray-300"
+          className="text-2xl md:text-3xl lg:text-4xl mb-6 text-gray-300"
           initial="hidden"
           animate="visible"
           variants={fadeIn}

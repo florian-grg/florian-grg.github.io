@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
-import skillsFr from "../data/skills-fr.json";
-import skillsEn from "../data/skills-en.json";
 import { useLanguage } from '../contexts/LanguageContext';
 
 // Données importées depuis src/data/skillsData.js
@@ -95,7 +93,7 @@ const Logo = ({ name }) => {
 
 const Skills = () => {
   const { t, language } = useLanguage();
-  const SKILLS = language === 'fr' ? skillsFr : skillsEn;
+  const SKILLS = t('data.skills');
   const allLabel = t('skills.filter.all');
   const [category, setCategory] = useState(allLabel);
   const categories = getUniqueCategories(SKILLS, allLabel);
@@ -108,10 +106,6 @@ const Skills = () => {
 
   return (
     <>
-      <Seo
-        title={t('skills.seo.title')}
-        description={t('skills.seo.description')}
-      />
       <section className="w-full py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black">
         <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-3 text-center">{t('skills.title')}</h1>
         <p className="text-center text-black/70 mb-12 max-w-2xl mx-auto">{t('skills.subtitle')}</p>

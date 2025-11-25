@@ -6,31 +6,32 @@
     "contact": "Contact"
   },
   "header": {
+    "greeting": "Hello, my name is",
     "title": "Florian GIURGIU",
-    "subtitle": "Freelance web developer — building modern websites and applications",
-    "description": "I help SMEs and startups design fast, accessible, and maintainable web experiences.",
-    "description2": "From concept to deployment, I support you with custom and measurable solutions.",
+    "subtitle": "Engineering Student & Freelancer",
+    "description": "I’m passionate about AI, computer vision, and software development.",
+    "description2": "I also provide freelance services to companies.",
     "cta": {
-      "profile": "Discover my profile",
+      "profile": "Explore my profile",
+      "services": "See my services",
       "quote": "Request a quote",
-      "services": "View my services",
       "downloadCv": "Download my CV"
     },
-    "scroll": "Scroll to About section",
+    "scroll": "Scroll to the About section",
     "seo": {
-      "title": "AI & Web Engineering | Florian GIURGIU",
-      "description": "Portfolio of Florian GIURGIU: AI & computer vision engineering, modern web development, performance and quality consulting."
+      "title": "Home | Florian GIURGIU",
+      "description": "Portfolio of Florian GIURGIU: AI & computer vision engineering, modern web development, performance, and quality consulting."
     }
   },
   "about": {
-    "title": "About",
-    "keySkills": "Key Skills",
-    "journey": "Explore my background",
-    "downloadCv" :"Download my CV",
+    "title": "About Me",
+    "keySkills": "Key skills",
+    "journey": "Explore my journey",
+    "downloadCv": "Download my CV",
     "cta": "Contact me",
     "seo": {
       "title": "About | Florian GIURGIU",
-      "description": "Freelance engineer in AI, computer vision and modern web development. Blending academic research and production pragmatism.",
+      "description": "Freelance engineer in AI, computer vision, and modern web development. A blend of academic rigor and production pragmatism.",
       "portfolio": "Portfolio | AI & Computer Vision"
     }
   },
@@ -41,74 +42,54 @@
       "all": "All"
     },
     "category": "Category",
-    "examples": "Use cases",
-    "certifications": "Certifications & training",
+    "examples": "Usage examples",
+    "certifications": "Certifications & Training",
     "level": "Level",
     "experience": "Experience",
-    "years": "years",
-    "seo": {
-      "title": "Skills | Florian GIURGIU",
-      "description": "Core stack for AI, computer vision & high-quality web delivery: Python, PyTorch, OpenCV, React, Java, Tailwind, Docker, GDAL."
-    }
+    "years": "years"
   },
   "projects": {
     "title": "Projects",
     "subtitle": "Recent work",
     "role": "Role",
     "tech": "Technologies",
-    "highlights": "Key points",
+    "highlights": "Highlights",
     "viewProject": "View project",
     "viewCode": "Repo",
     "comingSoon": "Coming soon",
-    "badge": "Project",
-    "seo": {
-      "title": "AI & Vision Projects | Florian GIURGIU",
-      "description": "Selected projects: conditional VAE, image classification, geospatial keypoint matching, real-time vision game, React/Tailwind site."
-    }
+    "badge": "Project"
   },
   "education": {
     "title": "Education",
-    "subtitle": "Academic background",
-    "seo": {
-      "title": "Education in AI & Vision | Florian GIURGIU",
-      "description": "Erasmus AI semester, digital engineering degree (image & computing), preparatory classes (MPSI/PSI) and scientific foundations."
-    }
+    "subtitle": "Academic background"
   },
   "experiences": {
     "title": "Experience",
-    "subtitle": "Professional journey",
-    "highlights": "Key points",
+    "subtitle": "Professional background",
+    "highlights": "Highlights",
     "tech": "Technologies used",
     "location": "Location",
     "learnMore": "Learn more",
-    "badge": "Experience",
-    "seo": {
-      "title": "Professional Experience in AI & Vision | Florian GIURGIU",
-      "description": "Entrepreneur in AI & vision, engineering project Myakiatto, quality management, and SEO/database optimisation internship."
-    }
+    "badge": "Experience"
   },
   "certifications": {
     "title": "Certifications",
-    "subtitle": "Validated knowledge & achievements",
-    "seo": {
-      "title": "Certifications – Florian GIURGIU",
-      "description": "CS50 Harvard, computer science certificates, TOEIC C1. Verified skills in algorithms, programming, web and English."
-    }
+    "subtitle": "Key knowledge and validations"
   },
   "services": {
     "title": "My Services",
-    "subtitle": "Custom services for businesses and project owners: websites, applications, artificial intelligence, and strategic support.",
+    "subtitle": "Tailor-made services for businesses and founders: websites, applications, artificial intelligence, and strategic guidance.",
     "cta": "Learn more",
     "explore": "Explore my services",
     "headerService": {
       "title": "Services & Offerings",
-      "subtitle": "Complete solutions to launch, grow, and scale your digital products: from prototype to production.",
+      "subtitle": "End-to-end solutions to launch, grow, and industrialize your digital products: from prototype to production.",
       "audit": {
         "title": "Audit & Consulting",
-        "description": "Technical analysis and prioritized roadmap for your product and performance needs."
+        "description": "Technical analysis and a prioritized roadmap for your product and performance needs."
       },
       "projects": {
-        "title": "Custom Projects",
+        "title": "Custom projects",
         "description": "Full-stack development, scalable architecture, and production deployment."
       },
       "ai": {
@@ -120,27 +101,27 @@
     "details": {
       "benefits": "Benefits",
       "contact": "Request a quote",
-      "examples": "Examples & Results",
-      "examplesDescription": "Concrete examples of missions, metrics, and impacts to help you understand the added value.",
-      "projectType": "Typical Project",
-      "projectTypeDescription": "High-performance e-commerce design — +35% conversion, load time < 1s.",
+      "examples": "Examples & results",
+      "examplesDescription": "Concrete examples of engagements, metrics, and impact to help you understand the added value.",
+      "projectType": "Typical project",
+      "projectTypeDescription": "Design of a high‑performance storefront — +35% conversion, load time < 1s.",
       "deliverables": "Deliverables",
       "deliverablesDescription": "Design, code, documentation, maintenance plan, and training."
     },
     "seo": {
-      "title": "Services: AI, Vision & Web Development | Florian GIURGIU",
-      "description": "Custom services: AI model integration, computer vision pipelines, performant web apps, strategic technical consulting.",
+      "title": "Services | Florian GIURGIU",
+      "description": "Tailor-made services: AI model integration, vision pipelines, high‑performance web apps, and technical consulting.",
       "service": "Service | AI & Web | Florian GIURGIU",
       "servicesTitle": "Services | AI & Vision",
-      "servicesDescription": "Offerings: AI & vision integration, website & application creation, optimisation and advisory."
+      "servicesDescription": "Offers: AI & vision integration, site/app creation, optimization, and guidance."
     }
   },
   "contact": {
     "title": "Want to discuss a project?",
-    "subtitle": "Let's discuss your project",
+    "subtitle": "Let’s talk about your project",
     "description": "Feel free to contact me by email or via the form below.",
     "form": {
-      "name": "Full name",
+      "name": "Name",
       "namePlaceholder": "Your name",
       "email": "Email",
       "emailPlaceholder": "Your email",
@@ -150,7 +131,7 @@
         "web": "Website creation",
         "application": "Application development",
         "optimisation": "Optimization & AI",
-        "conseil": "Consulting & support",
+        "conseil": "Consulting & guidance",
         "question": "General question",
         "autre": "Other"
       },
@@ -159,9 +140,9 @@
       "send": "Send",
       "sending": "Sending..."
     },
-    "success": "Message sent successfully! I will reply shortly.",
-    "return": "Return to home",
-    "error": "An error occurred. Please try again.",
+    "success": "Thank you, your message has been sent!",
+    "return": "Back to home",
+    "error": "Error while sending. Please try again or contact me by email.",
     "info": {
       "title": "Information",
       "email": "Email",
@@ -171,13 +152,13 @@
     },
     "seo": {
       "title": "Contact | Florian GIURGIU",
-      "description": "Start a conversation about AI, computer vision or web development. Fast reply and free initial assessment."
+      "description": "Let’s talk AI, computer vision, or web development. Quick response and first opinion free."
     }
   },
   "footer": {
     "tagline": "Web Development · AI · Applications",
     "viewSource": "View source code",
-    "backToTop": "Back to top",
+    "backToTop": "Back to top of page",
     "topLabel": "Top of page",
     "rights": "All rights reserved",
     "links": {
@@ -188,18 +169,18 @@
   "legal": {
     "title": "Legal Notice",
     "publisher": {
-      "title": "Website Publisher",
+      "title": "Site publisher",
       "email": "Email"
     },
     "hosting": {
       "title": "Hosting"
     },
     "ip": {
-      "title": "Intellectual Property",
+      "title": "Intellectual property",
       "content": "All content on this site is the exclusive property of Florian GIURGIU, unless otherwise stated."
     },
     "privacy": {
-      "title": "Data Protection",
+      "title": "Data protection",
       "content": "This site does not collect personal data without consent."
     },
     "contact": {
@@ -208,7 +189,7 @@
     },
     "seo": {
       "title": "Legal Notice | Florian GIURGIU",
-      "description": "Legal notice for the AI & web engineering portfolio of Florian GIURGIU."
+      "description": "Legal notices of the AI & web engineering portfolio of Florian GIURGIU."
     }
   },
   "common": {
@@ -229,7 +210,513 @@
   },
   "notFound": {
     "title": "Page not found",
-    "description": "Sorry, the page you are looking for doesn't exist or has been moved.",
+    "description": "Sorry, the page you are looking for doesn’t exist or has been moved.",
     "home": "Back to home"
+  },
+  "seo": {
+    "home": {
+      "title": "Home | Florian GIURGIU",
+      "description": "Portfolio of Florian GIURGIU: AI & computer vision engineering, modern web development, performance, and quality consulting."
+    },
+    "portfolio": {
+      "title": "Portfolio | Florian GIURGIU",
+      "description": "Final-year student at Télécom Saint-Étienne (on exchange in Padua), passionate about AI, computer vision, and development. Projects: deep learning (object detection/image matching), Java/Qt apps, React/Tailwind websites. Curious and committed, I seek ambitious projects to learn and make an impact."
+    },
+    "about": {
+      "title": "About | Florian GIURGIU",
+      "description": "Freelance engineer in AI, computer vision, and modern web development. A blend of academic rigor and production pragmatism."
+    },
+    "projects": {
+      "title": "Projects | Florian GIURGIU",
+      "description": "Recent projects in AI, computer vision, and web development."
+    },
+    "skills": {
+      "title": "Skills | Florian GIURGIU",
+      "description": "Technologies, tools, examples and certifications."
+    },
+    "services": {
+      "title": "Services | Florian GIURGIU",
+      "description": "Tailor-made services: AI model integration, vision pipelines, high‑performance web apps, and technical consulting."
+    },
+    "education": {
+      "title": "Education | Florian GIURGIU",
+      "description": "Academic background and specializations."
+    },
+    "experiences": {
+      "title": "Experience | Florian GIURGIU",
+      "description": "Professional background and key missions."
+    },
+    "contact": {
+      "title": "Contact | Florian GIURGIU",
+      "description": "Let’s talk AI, computer vision, or web development. Quick response and first opinion free."
+    },
+    "legal": {
+      "title": "Legal Notice | Florian GIURGIU",
+      "description": "Legal notices of the AI & web engineering portfolio of Florian GIURGIU."
+    }
+  },
+  "data": {
+    "about": {
+      "name": "Who am I?",
+      "role": "Web Developer & Entrepreneur",
+      "intro": "Passionate about web development and new technologies, I create modern and high-performance digital solutions.",
+      "paragraphs": [
+        "Hello, my name is Florian Giurgiu, a final-year engineering student at Télécom Saint-Étienne and currently on an Erasmus exchange at the University of Padua in Italy. Passionate about Artificial Intelligence, Computer Vision, and Software Development, I enjoy designing and experimenting with innovative solutions that combine mathematics, programming, and creativity.",
+        "Curious and persevering, I am equally interested in deep learning (Deep Learning, Neural Networks, Optimization) and full-stack development to bring concrete projects to life. I have had the opportunity to work on various projects: image detection and matching using Deep Learning, developing interactive applications in Java and Qt, as well as creating modern websites with React and Tailwind CSS.",
+        "Beyond my studies, I am passionate about bodybuilding and handball, and I have been playing guitar for several years. I also enjoy getting involved in associative life, particularly through organizing E-Sport and cultural events. I speak French and Romanian fluently, and I also have a good level of English (B2), as well as notions in Spanish (A2) and German (A1).",
+        "My goal is to put my skills to use in ambitious and innovative projects, where I can learn, share, and have a positive impact."
+      ],
+      "portfolio": {
+        "subtitle": "Florian GIURGIU • Engineering Student • AI & Development",
+        "description": "Final-year student at Télécom Saint-Étienne (on exchange in Padua), passionate about AI, computer vision, and development. Projects: deep learning (object detection/image matching), Java/Qt apps, React/Tailwind websites. Curious and committed, I seek ambitious projects to learn and make an impact.",
+        "keySkills": [
+          "Artificial Intelligence",
+          "Computer Vision",
+          "Full-stack",
+          "React & Tailwind",
+          "Java / Qt"
+        ]
+      },
+      "stats": [
+        { "value": "15+", "label": "Completed projects" },
+        { "value": "2+", "label": "Years of experience" },
+        { "value": "12+", "label": "Mastered technologies" },
+        { "value": "100%", "label": "Client satisfaction" }
+      ]
+    },
+    "projects": [
+      {
+        "title": "Modern Website Development with React & Tailwind CSS",
+        "description": "Responsive interface showcasing background, skills and projects. Contact form and interactive animations integrated.",
+        "date": "08/2025 - Present",
+        "location": "—",
+        "tech": ["React", "Tailwind CSS", "Framer Motion", "EmailJS"],
+        "role": "Front-End Developer",
+        "highlights": [
+          "Responsive & accessible layout",
+          "Smooth animations (Framer Motion)",
+          "EmailJS contact workflow",
+          "GitHub Pages deployment"
+        ],
+        "link": "https://florian-grg.github.io",
+        "repo": "https://github.com/florian-grg/florian-grg.github.io",
+        "availableProject": "True",
+        "availableRepo": "True"
+      },
+      {
+        "title": "Conditional Variational Autoencoder (cVAE) for Image Generation",
+        "description": "Training on the CelebA dataset and generating images conditioned by visual attributes using a cVAE architecture in PyTorch.",
+        "date": "05/2025",
+        "location": "—",
+        "tech": ["Python", "PyTorch", "VAE", "CelebA"],
+        "role": "Machine Learning Engineer",
+        "highlights": [
+          "Conditional VAE architecture",
+          "Training & evaluation pipeline",
+          "Latent attribute exploration"
+        ],
+        "link": "#",
+        "repo": "#",
+        "availableProject": "False",
+        "availableRepo": "False"
+      },
+      {
+        "title": "Pizza Image Classification System",
+        "description": "Extraction of color & texture descriptors, shape detection (Hough). Implementation and comparison of KNN, SVM and GMM models.",
+        "date": "02/2025 - 04/2025",
+        "location": "—",
+        "tech": ["Python", "OpenCV", "scikit-learn", "SVM", "KNN", "GMM"],
+        "role": "Computer Vision Engineer",
+        "highlights": [
+          "Color & texture feature engineering",
+          "Shape detection via Hough transform",
+          "Model benchmarking (KNN / SVM / GMM)"
+        ],
+        "link": "#",
+        "repo": "#",
+        "availableProject": "False",
+        "availableRepo": "False"
+      },
+      {
+        "title": "Java Curling Game",
+        "description": "Desktop Java application packaged with Maven, real-time webcam input and multithreaded processing. Homography calibration and vision pipeline, game engine managing turns & scoring.",
+        "date": "10/2024 - 01/2025",
+        "location": "—",
+        "tech": ["Java", "Maven", "OpenCV", "Multithreading"],
+        "role": "Java Developer",
+        "highlights": [
+          "Real-time webcam acquisition",
+          "Homography & vision pipeline",
+          "Turn & scoring game logic"
+        ],
+        "link": "#",
+        "repo": "#",
+        "availableProject": "False",
+        "availableRepo": "False"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "category": "Languages",
+        "level": 92,
+        "years": 5,
+        "tech": ["PyTorch", "NumPy"],
+        "examples": [
+          "Image classification with CNN",
+          "ETL pipelines for preprocessing"
+        ],
+        "certs": [
+          { "title": "Deep Learning - Intro", "org": "Internal course", "year": 2022 }
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "category": "Languages",
+        "level": 85,
+        "years": 4,
+        "tech": ["React", "Node"],
+        "examples": ["React SPA for portfolio", "REST API with Node.js"],
+        "certs": []
+      },
+      {
+        "name": "Java",
+        "category": "Languages",
+        "level": 78,
+        "years": 4,
+        "tech": ["OOP", "Qt"],
+        "examples": ["Desktop applications with Qt"],
+        "certs": []
+      },
+      {
+        "name": "C/C++",
+        "category": "Languages",
+        "level": 74,
+        "years": 3,
+        "tech": ["Embedded", "Optimization"],
+        "examples": ["Embedded development for sensors"],
+        "certs": []
+      },
+      {
+        "name": "SQL",
+        "category": "Databases",
+        "level": 80,
+        "years": 3,
+        "tech": ["Postgres", "SQLite"],
+        "examples": ["Schema design and complex queries"],
+        "certs": []
+      },
+      {
+        "name": "PyTorch (Deep Learning)",
+        "category": "AI",
+        "level": 88,
+        "years": 3,
+        "tech": ["CNN", "Training"],
+        "examples": ["Model training for object detection"],
+        "certs": []
+      },
+      {
+        "name": "MATLAB",
+        "category": "Tools",
+        "level": 68,
+        "years": 2,
+        "tech": ["Simulations"],
+        "examples": [],
+        "certs": []
+      },
+      {
+        "name": "HTML",
+        "category": "Web",
+        "level": 86,
+        "years": 4,
+        "tech": ["Semantics"],
+        "examples": ["Semantic structuring of articles and landing pages"],
+        "certs": []
+      },
+      {
+        "name": "CSS",
+        "category": "Web",
+        "level": 82,
+        "years": 4,
+        "tech": ["Tailwind", "Responsive"],
+        "examples": ["Responsive design with Tailwind CSS"],
+        "certs": []
+      },
+      {
+        "name": "Qt (GUI)",
+        "category": "Tools",
+        "level": 70,
+        "years": 2,
+        "tech": ["Interfaces"],
+        "examples": [],
+        "certs": []
+      },
+      {
+        "name": "LaTeX",
+        "category": "Tools",
+        "level": 75,
+        "years": 4,
+        "tech": ["Docs", "Reports"],
+        "examples": ["Technical articles and reports writing"],
+        "certs": []
+      },
+      {
+        "name": "Git",
+        "category": "Tools",
+        "level": 90,
+        "years": 5,
+        "tech": ["Workflows"],
+        "examples": ["Branch management and Git workflows (feature/gitflow)"],
+        "certs": []
+      }
+    ],
+    "services": [
+      {
+        "title": "Website Creation",
+        "subtitle": "Showcase, portfolio, light e-commerce",
+        "link": "site-web",
+        "id": "site-web",
+        "description": "Modern, fast, and responsive websites, optimized for SEO and conversion. Custom design, CMS integration if needed.",
+        "benefits": ["Custom design", "SEO & performance", "Responsive & accessible"],
+        "icon": "site-web"
+      },
+      {
+        "title": "Application Development",
+        "subtitle": "Web & Desktop",
+        "link": "application",
+        "id": "application",
+        "description": "Robust applications (Python, Java, C++): APIs, backends, Qt interfaces, image processing, and ML pipelines.",
+        "benefits": ["Scalable architecture", "Code quality & tests", "Comprehensive documentation"],
+        "icon": "application"
+      },
+      {
+        "title": "AI & Optimization",
+        "subtitle": "Model integration, performance",
+        "link": "ia-optimisation",
+        "id": "ia-optimisation",
+        "description": "Integration of AI models (PyTorch, TensorFlow), optimization of existing algorithms, and custom ML solutions.",
+        "benefits": ["Custom model training", "Inference optimization", "Production deployment"],
+        "icon": "ia-optimisation"
+      },
+      {
+        "title": "Consulting & Support",
+        "subtitle": "Code review, architecture, monitoring",
+        "link": "conseil-accompagnement",
+        "id": "conseil-accompagnement",
+        "description": "Technical audit, architecture planning, code review, and quality monitoring for your projects.",
+        "benefits": ["Detailed code review", "Optimized architecture", "Pragmatic recommendations"],
+        "icon": "conseil-accompagnement"
+      }
+    ],
+    "serviceExamples": {
+      "site-web": {
+        "intro": "Examples from my React/Tailwind portfolio and SEO work.",
+        "projectExamples": [
+          "React/Tailwind portfolio deployed on GitHub Pages",
+          "On-page SEO improvements (Choisir mon Groupement)",
+          "Accessible, semantic landing pages"
+        ],
+        "deliverables": [
+          "Responsive (mobile-first) site ready to deploy",
+          "Technical SEO: tags, performance, sitemap",
+          "Contact form (EmailJS) + analytics",
+          "Light maintenance and editing guide"
+        ]
+      },
+      "application": {
+        "intro": "Focused on robust apps in Python/Java.",
+        "projectExamples": [
+          "Java game with real-time vision pipeline (OpenCV)",
+          "Python APIs/ETL for image processing",
+          "Qt/desktop interfaces ready to use"
+        ],
+        "deliverables": [
+          "Clear architecture (layers, tests)",
+          "REST API + docs (OpenAPI)",
+          "Basic CI and run scripts",
+          "Packaging (Maven/venv) and README"
+        ]
+      },
+      "ia-optimisation": {
+        "intro": "Rooted in my PyTorch, OpenCV, and Myakiatto projects.",
+        "projectExamples": [
+          "PyTorch cVAE (CelebA) for conditional generation",
+          "Image classification: SVM/KNN/GMM with features",
+          "Drone/satellite keypoint matching (SIFT/ORB, RANSAC)"
+        ],
+        "deliverables": [
+          "Reproducible training notebook/repo",
+          "Optimized inference pipeline",
+          "Experiment tracking and metrics",
+          "Light integration (API/CLI/Docker optional)"
+        ]
+      },
+      "conseil-accompagnement": {
+        "intro": "Pragmatic approach informed by my Quality role (Junior-Enterprise).",
+        "projectExamples": [
+          "Code/test audit with actionable recommendations",
+          "Web/ML architecture planning",
+          "Git workflow set-up"
+        ],
+        "deliverables": [
+          "Prioritized audit report",
+          "Action backlog and quick wins",
+          "Review session and follow-up"
+        ]
+      }
+    },
+    "education": [
+      {
+        "title": "Erasmus Semester",
+        "school": "University of Padua",
+        "degree": "Specializations: Artificial Intelligence, Machine Learning, Reinforcement Learning, Computer Vision, Innovation, Entrepreneurship, Finance",
+        "date": "09/2025 - 02/2026",
+        "location": "Padua, Italy",
+        "highlights": [
+          "Artificial Intelligence",
+          "Machine Learning & Reinforcement Learning",
+          "Computer Vision",
+          "Innovation & Entrepreneurship",
+          "Finance"
+        ]
+      },
+      {
+        "title": "Digital Engineering School",
+        "school": "Télécom Saint-Étienne",
+        "degree": "Engineering Degree - Specializations: Image Processing and Computer Science",
+        "date": "09/2023 - 08/2026",
+        "location": "Saint-Étienne (42), France",
+        "highlights": [
+          "Options: Optimization and Artificial Intelligence",
+          "Specialization in Image Processing and Computer Science",
+          "Digital engineering training"
+        ]
+      },
+      {
+        "title": "Preparatory Classes for Grandes Écoles",
+        "school": "Lycée ORT",
+        "degree": "MPSI/PSI",
+        "date": "09/2021 - 07/2023",
+        "location": "Strasbourg (67), France",
+        "highlights": [
+          "Mathematics, Physics and Engineering Sciences",
+          "Preparation for competitive entrance exams",
+          "Intensive scientific training"
+        ]
+      },
+      {
+        "title": "High School Diploma",
+        "school": "Lycée Adrien Zeller",
+        "degree": "With Honors - Specializations: Mathematics, Physics-Chemistry, Life Sciences",
+        "date": "09/2018 - 07/2021",
+        "location": "Bouxwiller (67), France",
+        "highlights": [
+          "Graduated with Honors",
+          "Scientific specializations",
+          "Strong general education foundation"
+        ]
+      }
+    ],
+    "experiences": [
+      {
+        "title": "Self-Employed in Artificial Intelligence & Computer Vision",
+        "description": "Consulting and development services in AI, Machine Learning, Deep Learning and Computer Vision.",
+        "date": "09/2025 - Present",
+        "location": "—",
+        "highlights": [
+          "Custom AI prototypes (detection, segmentation, tracking)",
+          "Rapid POC delivery in computer vision",
+          "Technical advisory and ML model integration"
+        ],
+        "tech": ["Python", "PyTorch", "OpenCV", "Docker"],
+        "link": "#",
+        "more": "False"
+      },
+      {
+        "title": "Engineering AI Project - Myakiatto",
+        "description": "Keypoint detection and matching between drone and satellite imagery using Deep Learning and Image Processing.",
+        "date": "03/2025 - Present",
+        "location": "Saint-Étienne (42)",
+        "highlights": [
+          "Keypoint matching (SIFT/ORB) & homography estimation (RANSAC)",
+          "CNN-based detection/segmentation + geospatial post-processing",
+          "GDAL integration and projection standardisation"
+        ],
+        "tech": ["Python", "PyTorch", "OpenCV", "GDAL"],
+        "link": "#",
+        "more": "False"
+      },
+      {
+        "title": "Quality Manager - Inspire Junior-Enterprise",
+        "description": "Implementation and monitoring of the QMS, procedures and quality KPIs, internal audits for continuous improvement.",
+        "date": "09/2023 - 04/2025",
+        "location": "Saint-Étienne (42)",
+        "highlights": [
+          "Definition of processes & quality indicators",
+          "Testing and review of client deliverables",
+          "Internal audits & continuous improvement"
+        ],
+        "tech": ["Git", "Testing", "Documentation"],
+        "link": "#",
+        "more": "False"
+      },
+      {
+        "title": "Software Developer - Choisir mon Groupement (Internship)",
+        "description": "SEO improvements, PHP project work and SQL database optimisation.",
+        "date": "06/2024 - 07/2024",
+        "location": "Schiltigheim (67)",
+        "highlights": [
+          "SQL query optimisation & refactoring",
+          "On-page SEO improvements",
+          "Contribution to a PHP codebase"
+        ],
+        "tech": ["PHP", "SQL", "SEO"],
+        "link": "#",
+        "more": "False"
+      }
+    ],
+    "certifications": [
+      {
+        "title": "NVIDIA Deep Learning Institute",
+        "provider": "NVIDIA - DLI",
+        "date": "2025",
+        "location": "Online",
+        "highlights": [
+          "Getting Started with Deep Learning",
+          "Introduction to Transformer-Based NLP",
+          "Generative AI with Diffusion Models"
+        ],
+        "link": "https://www.nvidia.com/en-us/training/",
+        "more": "False"
+      },
+      {
+        "title": "TOEIC – B2 Level",
+        "provider": "ETS Global",
+        "date": "04/2025 - 04/2027",
+        "location": "Saint-Étienne (42)",
+        "highlights": [
+          "B2 level certification",
+          "Reading comprehension",
+          "Listening skills",
+          "Professional communication"
+        ],
+        "link": "https://www.ets.org/toeic",
+        "more": "False"
+      },
+      {
+        "title": "Musical Training – Merit",
+        "provider": "LA MUSE School of Music and Dance",
+        "date": "2019",
+        "location": "Schweighouse (67)",
+        "highlights": [
+          "Music theory",
+          "Rhythm",
+          "Active listening",
+          "Merit distinction"
+        ],
+        "link": "#",
+        "more": "False"
+      }
+    ]
   }
 }

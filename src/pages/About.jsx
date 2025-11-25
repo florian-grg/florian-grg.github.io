@@ -2,16 +2,13 @@ import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
 import { useLanguage } from '../contexts/LanguageContext';
-import aboutFr from '../data/about-fr.json';
-import aboutEn from '../data/about-en.json';
 
 const About = () => {
-  const { t, language } = useLanguage();
-  const about = language === 'fr' ? aboutFr : aboutEn;
+  const { t } = useLanguage();
+  const about = t('data.about');
   
   return (
   <>
-    <Seo title={t('about.seo.title')} description={t('about.seo.description')} />
   <section id="about" className="w-full py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black">
       {/* Titre */}
       <motion.div

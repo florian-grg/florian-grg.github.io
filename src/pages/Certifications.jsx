@@ -2,8 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../animations/fadeIn';
 import { useLanguage } from '../contexts/LanguageContext';
-import certificationsFr from '../data/certifications-fr.json';
-import certificationsEn from '../data/certifications-en.json';
 import { FaCertificate, FaBookOpen, FaGlobe } from 'react-icons/fa';
 
 const ICON_MAP = {
@@ -21,7 +19,7 @@ const Badge = ({ children }) => (
 
 export default function Certifications() {
   const { t, language } = useLanguage();
-  const items = language === 'fr' ? certificationsFr : certificationsEn;
+  const items = t('data.certifications');
 
   return (
     <section className="w-full py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black">
