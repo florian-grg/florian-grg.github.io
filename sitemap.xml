@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <!-- 
     Note: Site uses HashRouter (#/route) for GitHub Pages compatibility.
     Search engines only index the root URL as hash fragments are not sent to servers.
     All content is a Single Page Application (SPA) served from the root.
+    The SPA includes: Accueil, Portfolio (Compétences, Expériences, Projets, Éducation, Certifications),
+    Services, Contact, and Mentions Légales.
   -->
   <url>
     <loc>https://florian-grg.github.io/</loc>
-    <lastmod>2025-11-15</lastmod>
+    <lastmod>2025-11-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://florian-grg.github.io/pp.png</image:loc>
+      <image:title>Florian GIURGIU - Développeur Web &amp; IA Freelance</image:title>
+      <image:caption>Photo de profil de Florian GIURGIU, développeur web freelance et ingénieur IA</image:caption>
+    </image:image>
   </url>
 </urlset>
