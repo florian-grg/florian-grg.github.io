@@ -3,7 +3,13 @@
     "home": "Home",
     "portfolio": "Portfolio",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "about": "About",
+    "skills": "Skills",
+    "experiences": "Experiences",
+    "projects": "Projects",
+    "education": "Education",
+    "certifications": "Certifications"
   },
   "header": {
     "greeting": "Hello, my name is",

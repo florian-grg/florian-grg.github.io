@@ -3,7 +3,13 @@
     "home": "Accueil",
     "portfolio": "Portfolio",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "about": "À propos",
+    "skills": "Compétences",
+    "experiences": "Expériences",
+    "projects": "Projets",
+    "education": "Éducation",
+    "certifications": "Certifications"
   },
   "header": {
     "greeting": "Bonjour, je m'appelle",
@@ -40,6 +46,14 @@
     "subtitle": "Technologies & Outils",
     "filter": {
       "all": "Tous"
+    },
+    "nav": {
+      "about": "À propos",
+      "skills": "Compétences",
+      "experiences": "Expériences",
+      "projects": "Projets",
+      "education": "Éducation",
+      "certifications": "Certifications"
     },
     "category": "Catégorie",
     "examples": "Exemples d'utilisation",

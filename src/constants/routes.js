@@ -10,7 +10,7 @@ export const ROUTES = {
 // Route configuration with hash anchors
 export const ROUTE_CONFIG = [
   { path: ROUTES.HOME, label: 'nav.home', hash: '#header' },
-  { path: ROUTES.PORTFOLIO, label: 'nav.portfolio', hash: '#about' },
+  { path: ROUTES.PORTFOLIO, label: 'nav.portfolio', hash: '#portfolio' },
   { path: ROUTES.SERVICES, label: 'nav.services', hash: '#services' },
   { path: ROUTES.CONTACT, label: 'nav.contact', hash: '#contact' }
 ];

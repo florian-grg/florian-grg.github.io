@@ -8,6 +8,7 @@ import { ROUTES } from './constants/routes';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ErrorBoundary from './components/ErrorBoundary';
+import PortfolioTabs from './components/PortfolioTabs';
 
 // Lazy load pages for better performance
 const Header = lazy(() => import('./pages/Header'));
@@ -67,21 +68,10 @@ function AnimatedRoutes() {
             <section id="portfolio">
               <HeaderPortfolio />
             </section>
-            <section id="education">
-              <Education />
-            </section>
-            <section id="skills">
-              <Skills />
-            </section>
-            <section id="experiences">
-              <Experiences />
-            </section>
-            <section id="projects">
-              <Projects />
-            </section>
-            <section id="certifications">
-              <Certifications />
-            </section>
+            {/* Anchor to allow header button to scroll here */}
+            <div id="portfolio-tabs"></div>
+            {/* Tabbed navigation below header, unchanged page components rendered inside */}
+            <PortfolioTabs />
             <Footer />
           </motion.div>
         } />

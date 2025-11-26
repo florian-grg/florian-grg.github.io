@@ -56,7 +56,7 @@ const Header = () => {
           </motion.div>
 
           <motion.div variants={fadeIn} className="mt-6 flex flex-wrap justify-center gap-4">
-            <button onClick={() => goTo('/portfolio', '#education')} className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-blue-600 to-purple-500 hover:from-blue-700 hover:to-purple-600 text-white shadow-lg shadow-blue-500/20 transition">
+            <button onClick={() => goTo('/portfolio', '#portfolio-tabs')} className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-blue-600 to-purple-500 hover:from-blue-700 hover:to-purple-600 text-white shadow-lg shadow-blue-500/20 transition">
               <span>{t('about.journey')}</span>
             </button>
             <a href="/CV_Florian_GIURGIU.pdf" target="_blank" rel="noopener noreferrer" download className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-slate-300 text-black hover:bg-slate-50 transition">
