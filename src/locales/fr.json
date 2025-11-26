@@ -31,6 +31,7 @@
   },
   "about": {
     "title": "À propos de moi",
+    "subtitle": "Qui suis-je ?",
     "keySkills": "Compétences clés",
     "journey": "Découvrir mon parcours",
     "downloadCv" :"Télécharger mon CV",
@@ -46,14 +47,6 @@
     "subtitle": "Technologies & Outils",
     "filter": {
       "all": "Tous"
-    },
-    "nav": {
-      "about": "À propos",
-      "skills": "Compétences",
-      "experiences": "Expériences",
-      "projects": "Projets",
-      "education": "Éducation",
-      "certifications": "Certifications"
     },
     "category": "Catégorie",
     "examples": "Exemples d'utilisation",
@@ -203,7 +196,7 @@
     },
     "seo": {
       "title": "Mentions Légales | Florian GIURGIU",
-      "description": "Mentions légales du portfolio d’ingénierie IA & web de Florian GIURGIU."
+      "description": "Mentions légales du portfolio d'ingénierie IA & web de Florian GIURGIU."
     }
   },
   "common": {
@@ -250,12 +243,12 @@
     },
     "legal": {
       "title": "Mentions Légales | Florian GIURGIU",
-      "description": "Mentions légales du portfolio d’ingénierie IA & web de Florian GIURGIU."
+      "description": "Mentions légales du portfolio d'ingénierie IA & web de Florian GIURGIU."
     }
   },
   "data": {
     "about": {
-      "name": "Qui suis-je ?",
+      "name": "Ma Présentation",
       "role": "Développeur Web & Auto-Entrepreneur",
       "intro": "Passionné par le développement web et les nouvelles technologies, je crée des solutions digitales modernes et performantes.",
       "paragraphs": [
@@ -284,8 +277,8 @@
     },
     "projects": [
       {
-        "title": "Développement d’un site web moderne avec React et Tailwind CSS",
-        "description": "Création d’une interface responsive présentant parcours, compétences et projets. Intégration d’un formulaire de contact et animations interactives.",
+        "title": "Développement d'un site web moderne avec React et Tailwind CSS",
+        "description": "Création d'une interface responsive présentant parcours, compétences et projets. Intégration d'un formulaire de contact et animations interactives.",
         "date": "08/2025 - Présent",
         "location": "—",
         "tech": ["React", "Tailwind CSS", "Framer Motion", "EmailJS"],
@@ -319,7 +312,7 @@
         "availableRepo": "False"
       },
       {
-        "title": "Classification d’images de pizzas",
+        "title": "Classification d'images de pizzas",
         "description": "Extraction de descripteurs couleur/texture, détection de formes (transformée de Hough). Implémentation et comparaison KNN, SVM et GMM.",
         "date": "02/2025 - 04/2025",
         "location": "—",
@@ -518,15 +511,15 @@
           "Site responsive (mobile-first) prêt à déployer",
           "SEO technique: balises, performances, sitemap",
           "Formulaire contact (EmailJS) + analytics",
-          "Maintenance légère et guide d’édition"
+          "Maintenance légère et guide d'édition"
         ]
       },
       "application": {
         "intro": "Focalisé sur des apps robustes en Python/Java.",
         "projectExamples": [
           "Jeu Java avec pipeline vision temps réel (OpenCV)",
-          "APIs/ETL Python pour traitement d’images",
-          "Interfaces Qt/desktop prêtes à l’emploi"
+          "APIs/ETL Python pour traitement d'images",
+          "Interfaces Qt/desktop prêtes à l'emploi"
         ],
         "deliverables": [
           "Architecture claire (couches, tests)",
@@ -543,8 +536,8 @@
           "Appariement keypoints drone/satellite (SIFT/ORB, RANSAC)"
         ],
         "deliverables": [
-          "Notebook/Repo d’entraînement reproductible",
-          "Pipeline d’inférence optimisé",
+          "Notebook/Repo d'entraînement reproductible",
+          "Pipeline d'inférence optimisé",
           "Suivi expérimental et métriques",
           "Intégration légère (API/CLI/Docker optionnel)"
         ]
@@ -553,12 +546,12 @@
         "intro": "Approche pragmatique issue de mon rôle Qualité (Junior-Entreprise).",
         "projectExamples": [
           "Audit code/tests et recommandations actionnables",
-          "Plan d’architecture web/ML",
+          "Plan d'architecture web/ML",
           "Mise en place de workflows Git"
         ],
         "deliverables": [
-          "Rapport d’audit priorisé",
-          "Backlog d’actions et quick wins",
+          "Rapport d'audit priorisé",
+          "Backlog d'actions et quick wins",
           "Séance de restitution et suivi"
         ]
       }
@@ -646,7 +639,7 @@
       },
       {
         "title": "Chargé Qualité - Inspire, Junior-Entreprise de Télécom Saint-Étienne",
-        "description": "Mise en place et suivi du SMQ, gestion des procédures et KPI qualité, et réalisation d’audits pour l’amélioration continue.",
+        "description": "Mise en place et suivi du SMQ, gestion des procédures et KPI qualité, et réalisation d'audits pour l'amélioration continue.",
         "date": "09/2023 - 04/2025",
         "location": "Saint-Étienne (42)",
         "highlights": [

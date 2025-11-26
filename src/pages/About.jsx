@@ -1,4 +1,3 @@
-import Seo from "../components/Seo";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
 import { useLanguage } from '../contexts/LanguageContext';
@@ -11,15 +10,12 @@ const About = () => {
   <>
   <section id="about" className="w-full py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black">
       {/* Titre */}
-      <motion.div
-        className="p-4 flex items-center justify-center mb-8"
-        variants={fadeIn}
-        initial="hidden"
-        animate="visible"
-        transition={{ duration: 0.5 }}
-      >
-  <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-12 text-center">{t('about.title')}</h1>
-      </motion.div>
+      <motion.h1 variants={fadeIn} className="text-4xl md:text-5xl font-extrabold mb-2 text-center text-black">
+        {t('about.title')}
+      </motion.h1>
+      <motion.p variants={fadeIn} className="text-black/70 mb-12 text-center max-w-3xl mx-auto">
+        {t('about.subtitle')}
+      </motion.p>
 
       {/* Contenu: texte plus large (3/4) et photo plus petite (1/4) sur md+ */}
       <motion.div

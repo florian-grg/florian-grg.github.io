@@ -15,7 +15,7 @@
     "greeting": "Hello, my name is",
     "title": "Florian GIURGIU",
     "subtitle": "Engineering Student & Freelancer",
-    "description": "I’m passionate about AI, computer vision, and software development.",
+    "description": "I'm passionate about AI, computer vision, and software development.",
     "description2": "I also provide freelance services to companies.",
     "cta": {
       "profile": "Explore my profile",
@@ -31,6 +31,7 @@
   },
   "about": {
     "title": "About Me",
+    "subtitle": "Who I am?",
     "keySkills": "Key skills",
     "journey": "Explore my journey",
     "downloadCv": "Download my CV",
@@ -124,7 +125,7 @@
   },
   "contact": {
     "title": "Want to discuss a project?",
-    "subtitle": "Let’s talk about your project",
+    "subtitle": "Let's talk about your project",
     "description": "Feel free to contact me by email or via the form below.",
     "form": {
       "name": "Name",
@@ -158,7 +159,7 @@
     },
     "seo": {
       "title": "Contact | Florian GIURGIU",
-      "description": "Let’s talk AI, computer vision, or web development. Quick response and first opinion free."
+      "description": "Let's talk AI, computer vision, or web development. Quick response and first opinion free."
     }
   },
   "footer": {
@@ -216,7 +217,7 @@
   },
   "notFound": {
     "title": "Page not found",
-    "description": "Sorry, the page you are looking for doesn’t exist or has been moved.",
+    "description": "Sorry, the page you are looking for doesn't exist or has been moved.",
     "home": "Back to home"
   },
   "seo": {
@@ -232,29 +233,13 @@
       "title": "About | Florian GIURGIU",
       "description": "Freelance engineer in AI, computer vision, and modern web development. A blend of academic rigor and production pragmatism."
     },
-    "projects": {
-      "title": "Projects | Florian GIURGIU",
-      "description": "Recent projects in AI, computer vision, and web development."
-    },
-    "skills": {
-      "title": "Skills | Florian GIURGIU",
-      "description": "Technologies, tools, examples and certifications."
-    },
     "services": {
       "title": "Services | Florian GIURGIU",
       "description": "Tailor-made services: AI model integration, vision pipelines, high‑performance web apps, and technical consulting."
     },
-    "education": {
-      "title": "Education | Florian GIURGIU",
-      "description": "Academic background and specializations."
-    },
-    "experiences": {
-      "title": "Experience | Florian GIURGIU",
-      "description": "Professional background and key missions."
-    },
     "contact": {
       "title": "Contact | Florian GIURGIU",
-      "description": "Let’s talk AI, computer vision, or web development. Quick response and first opinion free."
+      "description": "Let's talk AI, computer vision, or web development. Quick response and first opinion free."
     },
     "legal": {
       "title": "Legal Notice | Florian GIURGIU",
@@ -263,7 +248,7 @@
   },
   "data": {
     "about": {
-      "name": "Who am I?",
+      "name": "My Introduction",
       "role": "Web Developer & Entrepreneur",
       "intro": "Passionate about web development and new technologies, I create modern and high-performance digital solutions.",
       "paragraphs": [

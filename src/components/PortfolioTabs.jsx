@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { fadeIn } from '../animations/fadeIn';
 import { useLanguage } from '../contexts/LanguageContext';
 import About from '../pages/About.jsx';
 import Skills from '../pages/Skills.jsx';
@@ -15,14 +14,14 @@ export default function PortfolioTabs() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const TABS = [
+  const TABS = useMemo(() => [
     { id: 'about', label: t('nav.about'), component: About },
     { id: 'skills', label: t('nav.skills'), component: Skills },
     { id: 'experiences', label: t('nav.experiences'), component: Experiences },
     { id: 'projects', label: t('nav.projects'), component: Projects },
     { id: 'education', label: t('nav.education'), component: Education },
     { id: 'certifications', label: t('nav.certifications'), component: Certifications },
-  ];
+  ], [t]);
 
   const [activeId, setActiveId] = useState(TABS[0].id);
 
@@ -30,7 +29,7 @@ export default function PortfolioTabs() {
     const currentHash = location.hash?.replace('#', '') || TABS[0].id;
     const exists = TABS.find(t => t.id === currentHash);
     setActiveId(exists ? exists.id : TABS[0].id);
-  }, [location.hash]);
+  }, [location.hash, TABS]);
 
   const ActiveComponent = (TABS.find(t => t.id === activeId) || TABS[0]).component;
 
@@ -44,7 +43,7 @@ export default function PortfolioTabs() {
               key={tab.id}
               onClick={() => { setActiveId(tab.id); navigate('#' + tab.id); }}
               className={
-                `px-4 py-2 rounded-full text-sm transition ` +
+                `px-4 py-2 rounded-lg text-sm transition ` +
                 (activeId === tab.id
                   ? 'bg-gradient-to-r from-blue-600 to-purple-500 text-white shadow-lg shadow-blue-500/20'
                   : 'border border-slate-300 text-black hover:bg-slate-50')

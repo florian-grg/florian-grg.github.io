@@ -13,11 +13,6 @@ import PortfolioTabs from './components/PortfolioTabs';
 // Lazy load pages for better performance
 const Header = lazy(() => import('./pages/Header'));
 const HeaderPortfolio = lazy(() => import('./pages/HeaderPortfolio'));
-const Projects = lazy(() => import('./pages/Projects'));
-const Education = lazy(() => import('./pages/Education'));
-const Experiences = lazy(() => import('./pages/Experiences'));
-const Skills = lazy(() => import('./pages/Skills'));
-const Certifications = lazy(() => import('./pages/Certifications'));
 const HeaderServices = lazy(() => import('./pages/HeaderServices'));
 const Services = lazy(() => import('./pages/Services'));
 const Contact = lazy(() => import('./pages/Contact'));
@@ -68,8 +63,8 @@ function AnimatedRoutes() {
             <section id="portfolio">
               <HeaderPortfolio />
             </section>
-            {/* Anchor to allow header button to scroll here */}
-            <div id="portfolio-tabs"></div>
+            {/* Anchor to allow header button to scroll here; scroll margin keeps it visible below sticky navbar */}
+            <div id="portfolio-tabs" className="scroll-mt-16"></div>
             {/* Tabbed navigation below header, unchanged page components rendered inside */}
             <PortfolioTabs />
             <Footer />

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Seo from '../components/Seo';
 import { motion, AnimatePresence } from 'framer-motion';
 import { fadeIn } from '../animations/fadeIn';
 import { Link, useLocation } from 'react-router-dom';
@@ -7,7 +6,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Services() {
     const location = useLocation();
-    const { t, language } = useLanguage();
+    const { t } = useLanguage();
     const servicesData = t('data.services');
     // L'onglet actif, par défaut le premier service
     const [activeId, setActiveId] = useState(servicesData[0].id);
@@ -61,7 +60,7 @@ export default function Services() {
                         ))}
                     </div>
 
-                    {/* NOUVELLE ARCHITECTURE : Navigation par Onglets */}
+                    {/* Navigation par Onglets */}
                     <nav id="services-nav" className="flex flex-wrap justify-center gap-3 md:gap-4 mb-12">
                         {servicesData.map((s) => (
                             <motion.button

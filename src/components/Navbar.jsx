@@ -2,7 +2,6 @@ import { smoothScrollTo } from "../animations/smoothScrollTo";
 import React from "react";
 import { useNavigate, useLocation } from 'react-router-dom';
 import logo from '../logo.png';
-import logo_navbar from '../logo_navbar.jpg';
 import { useLanguage } from '../contexts/LanguageContext';
 import { ROUTE_CONFIG } from '../constants/routes';
 import { FaBars, FaTimes } from 'react-icons/fa';
