@@ -88,7 +88,7 @@ const Header = () => {
         >
           <button
             className="px-8 py-3.5 bg-transparent border-2 border-blue-600 text-blue-400 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-[1.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f1642]"
-            onClick={() => goTo('/portfolio', '#about')}
+            onClick={() => goTo('/portfolio', '#portfolio')}
             aria-label={t('header.cta.profile')}
           >
             <span className="flex items-center gap-2">
