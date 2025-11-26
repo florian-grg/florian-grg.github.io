@@ -1,14 +1,44 @@
-Florian GIURGIU
-Développeur Web Freelance & Ingénieur IA
+/* TEAM */
+
+Développeur & Créateur : Florian GIURGIU
+Titre : Développeur Web Freelance & Ingénieur IA
+Statut : Étudiant Ingénieur & Auto-entrepreneur
+Localisation : France
+Email : florian.giurgiu3@gmail.com
+Téléphone : +33 (0)6 29 15 80 54
+
+/* LIENS */
 
 Portfolio : https://florian-grg.github.io/
 LinkedIn : https://www.linkedin.com/in/florian-giurgiu/
 GitHub : https://github.com/florian-grg
-Email : florian.giurgiu3@gmail.com
 
-Spécialisations :
-- Intelligence Artificielle
-- Vision par Ordinateur  
-- Développement Web (React, JavaScript, Python)
-- Machine Learning
-- Optimisation et Performance
+/* COMPÉTENCES */
+
+Domaines d'expertise :
+- Intelligence Artificielle & Machine Learning
+- Vision par Ordinateur & Deep Learning
+- Développement Web Full-Stack (React, JavaScript, Python)
+- MLOps & Optimisation de Performance
+- Architecture Logicielle & Conseil Technique
+
+/* TECHNOLOGIES */
+
+Frontend : React 19, Tailwind CSS, Framer Motion
+Backend : Python, Node.js
+IA/ML : PyTorch, TensorFlow, Computer Vision
+Outils : Git, GitHub Pages, EmailJS
+Tests : Jest, React Testing Library
+
+/* SITE */
+
+Langues : Français, English
+Dernière mise à jour : 2025-11-26
+Standards : HTML5, CSS3, ES6+, WCAG 2.1
+Outils de build : React Scripts, PostCSS, Autoprefixer
+Analytics : Google Search Console, SEO optimisé
+
+/* REMERCIEMENTS */
+
+Merci de visiter mon portfolio !
+Pour toute collaboration ou question, n'hésitez pas à me contacter.
