@@ -3,7 +3,8 @@
 // - options: { behavior, timeout }
 // Returns a Promise that resolves when the scroll was attempted.
 export function smoothScrollTo(selector, options = {}) {
-  const { behavior = "smooth", timeout = 1200, pollInterval = 100 } = options;
+  // Default to instant scroll to avoid unnecessary smooth animations
+  const { behavior = "auto", timeout = 1200, pollInterval = 100 } = options;
 
   return new Promise((resolve) => {
     if (!selector) {

@@ -35,7 +35,14 @@ const PageLoader = () => {
 function AnimatedRoutes() {
   const location = useLocation();
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="wait" onExitComplete={() => {
+      // Set scrollbar to y=0 between exit fade and enter fade
+      try {
+        window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+      } catch {
+        window.scrollTo(0, 0);
+      }
+    }}>
       <Routes location={location} key={location.pathname}>
         
         {/* Main landing: header + services (one-page) */}

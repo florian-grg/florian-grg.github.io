@@ -50,12 +50,8 @@ export default function Navbar() {
     }`;
   };
 
-  // When the route (pathname) changes via the navbar, ensure viewport resets to top.
-  // This guarantees that clicking a navbar tab (navigate) shows the top of the new page.
+  // On route change: only close mobile menu, do not change scroll position
   React.useEffect(() => {
-    // use smooth scroll to top for a gentler transition
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-    // Ferme le menu mobile lors du changement de route
     setMobileMenuOpen(false);
   }, [location.pathname]);
 
