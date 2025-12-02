@@ -24,16 +24,16 @@ const Header = () => {
   return (
   <>
     <Seo title={t('seo.home.title')} description={t('seo.home.description')} />
-    <header role="banner" id="home" className="relative overflow-hidden bg-gradient-to-br from-[#000725ff] via-[#0a0e27] to-[#0f1642] min-h-[600px] lg:min-h-screen flex flex-col items-center justify-center">
+    <header role="banner" id="home" className="relative overflow-hidden bg-gradient-to-br from-[#000725ff] via-[#0a0e27] to-[#0f1642] min-h-screen flex flex-col items-center justify-center">
       <NeuralNetworkBackground />
       
       {/* Overlay subtil */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/40 z-0" />
 
-      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center px-4 sm:px-6 py-8 sm:py-12 lg:py-16">
+      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center px-6 py-16">
         {/* Salutation */}
         <motion.p
-          className="text-xs sm:text-sm md:text-base text-white mb-2 sm:mb-4 tracking-wide"
+          className="text-sm md:text-base text-white mb-4 tracking-wide"
           initial="hidden"
           animate="visible"
           variants={fadeIn}
@@ -45,7 +45,7 @@ const Header = () => {
 
         {/* Titre principal */}
         <motion.h1
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 sm:mb-4 lg:mb-6 tracking-tight text-white leading-tight"
+          className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight text-white"
           initial="hidden"
           animate="visible"
           variants={fadeIn}
@@ -56,7 +56,7 @@ const Header = () => {
 
         {/* Sous-titre */}
         <motion.h2
-          className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-3 sm:mb-4 lg:mb-6 text-gray-300 leading-snug"
+          className="text-2xl md:text-3xl lg:text-4xl mb-6 text-gray-300"
           initial="hidden"
           animate="visible"
           variants={fadeIn}
@@ -67,7 +67,7 @@ const Header = () => {
 
         {/* Description */}
         <motion.p
-          className="text-gray-400 text-sm sm:text-base md:text-lg max-w-2xl leading-relaxed mb-4 sm:mb-6 lg:mb-8"
+          className="text-gray-400 text-base md:text-lg max-w-2xl leading-relaxed mb-8"
           initial="hidden"
           animate="visible"
           variants={fadeIn}
@@ -80,19 +80,19 @@ const Header = () => {
 
         {/* Boutons d'action */}
         <motion.div
-          className="flex flex-col sm:flex-row gap-2 sm:gap-3 lg:gap-4 justify-center items-center mb-4 sm:mb-6 lg:mb-8"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
           initial="hidden"
           animate="visible"
           variants={fadeIn}
           transition={{ delay: 0.8, duration: 0.7 }}
         >
           <button
-            className="px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 lg:py-3.5 text-sm sm:text-base bg-transparent border-2 border-blue-600 text-blue-400 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-[1.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f1642]"
+            className="px-8 py-3.5 bg-transparent border-2 border-blue-600 text-blue-400 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-[1.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f1642]"
             onClick={() => goTo('/portfolio', '#portfolio')}
             aria-label={t('header.cta.profile')}
           >
-            <span className="flex items-center gap-1.5 sm:gap-2">
-              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <span className="flex items-center gap-2">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               {t('header.cta.profile')}
@@ -100,12 +100,12 @@ const Header = () => {
           </button>
           
           <button
-            className="px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 lg:py-3.5 text-sm sm:text-base bg-transparent border-2 border-blue-600 text-blue-400 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-[1.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f1642]"
+            className="px-8 py-3.5 bg-transparent border-2 border-blue-600 text-blue-400 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-[1.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f1642]"
             onClick={() => goTo('/services', '#services')}
             aria-label={t('header.cta.services')}
           >
-            <span className="flex items-center gap-1.5 sm:gap-2">
-              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <span className="flex items-center gap-2">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               {t('header.cta.services')}
@@ -114,12 +114,12 @@ const Header = () => {
           </button>
 
           <button
-            className="px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 lg:py-3.5 text-sm sm:text-base bg-transparent border-2 border-blue-600 text-blue-400 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-[1.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f1642]"
+            className="px-8 py-3.5 bg-transparent border-2 border-blue-600 text-blue-400 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-[1.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f1642]"
             onClick={() => goTo('/contact', '#contact')}
             aria-label={t('header.cta.quote')}
           >
-            <span className="flex items-center gap-1.5 sm:gap-2">
-              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <span className="flex items-center gap-2">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               {t('header.cta.quote')}
