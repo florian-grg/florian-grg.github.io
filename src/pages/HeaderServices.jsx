@@ -74,13 +74,13 @@ const Services = () => {
 								initial="hidden"
 								animate="visible"
 								transition={{ delay: idx * 0.08, duration: 0.5 }}
-								className="relative rounded-3xl overflow-hidden p-7 bg-white shadow-xl border border-slate-100 hover:scale-[1.03] hover:shadow-2xl transition-transform duration-300 flex flex-col justify-between group"
+								className="relative rounded-3xl overflow-hidden p-7 bg-white shadow-xl border border-slate-100 transition-transform duration-300 flex flex-col justify-between group"
 							>
 								<div>
-									<div className="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-600 to-purple-500 flex items-center justify-center mb-5 shadow-md group-hover:scale-110 transition-transform">
+									<div className="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-600 to-purple-500 flex items-center justify-center mb-5 shadow-md transition-transform">
 										{getServiceIcon(s.icon)}
 									</div>
-									<h3 className="text-2xl font-bold text-black mb-1 group-hover:text-blue-700 transition-colors">{s.title}</h3>
+									<h3 className="text-2xl font-bold text-black mb-1 transition-colors">{s.title}</h3>
 									<p className="text-base text-black mb-2 font-semibold">{s.subtitle}</p>
 									<p className="text-black mb-4">{s.description}</p>
 

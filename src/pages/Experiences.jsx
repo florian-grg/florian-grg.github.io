@@ -7,7 +7,7 @@ import { FaBriefcase, FaMapMarkerAlt } from "react-icons/fa";
 // Données importées depuis src/data/experiencesData.js
 
 const Badge = ({ children }) => (
-  <span className="inline-flex items-center text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 text-black mr-2 mb-2">
+  <span className="inline-flex items-center text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 text-black">
     {children}
   </span>
 );
@@ -45,7 +45,7 @@ const Experiences = () => {
                 initial={{ opacity: 0, y: 25 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.45, delay: idx * 0.07 }}
-                className="relative ml-10 bg-white rounded-2xl border border-slate-100 shadow hover:shadow-lg transition p-7"
+                className="relative ml-10 bg-white rounded-xl border border-slate-200 shadow-sm p-7"
               >
                 <div className="absolute -left-8 top-6 w-6 h-6 rounded-full bg-white ring-2 ring-blue-600 flex items-center justify-center">
                   <div className="w-2.5 h-2.5 rounded-full bg-purple-500" />
@@ -58,7 +58,7 @@ const Experiences = () => {
                         <h2 className="text-xl md:text-2xl font-bold text-black mb-1">{exp.title}</h2>
                         <p className="text-sm text-black/70 leading-relaxed mb-2">{exp.description}</p>
                         {exp.tech && (
-                          <div className="flex flex-wrap gap-1 mb-3">
+                          <div className="flex flex-wrap gap-2 mb-3">
                             {exp.tech.map((tTech) => (
                               <Badge key={tTech}>{tTech}</Badge>
                             ))}

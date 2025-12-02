@@ -97,8 +97,8 @@ export default function Services() {
                                 {/* Grille réutilisée de la v1, mais pour le service actif */}
                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
 
-                    {/* Carte de service principale "Glassmorphism" */}
-                    <div className="rounded-3xl p-10 md:p-12 bg-white shadow-sm border border-slate-100 h-full flex flex-col">
+                    {/* Carte de service principale */}
+                    <div className="rounded-xl p-10 md:p-12 bg-white shadow-sm border border-slate-200 h-full flex flex-col">
                         <h2 className="text-3xl md:text-4xl font-extrabold text-black">{activeService.title}</h2>
                         <p className="text-black mt-2">{activeService.subtitle}</p>
                         <p className="mt-6 text-black leading-relaxed">{activeService.description}</p>
@@ -119,8 +119,8 @@ export default function Services() {
                                         </div>
                                     </div>
 
-                                    {/* Carte "Exemples" avec style "incrusté" */}
-                                    <div className="rounded-3xl p-8 bg-white/50 shadow-inner shadow-black/10 h-full flex flex-col justify-center">
+                                    {/* Carte "Exemples" */}
+                                    <div className="rounded-xl p-8 bg-slate-50 border border-slate-200 shadow-sm h-full flex flex-col justify-center">
                                         <h3 className="text-2xl font-bold mb-4 text-black">{t('services.details.examples')}</h3>
                                         <p className="text-black">{examples.intro}</p>
 

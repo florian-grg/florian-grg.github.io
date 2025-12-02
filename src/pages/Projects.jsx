@@ -6,7 +6,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 // Données importées depuis src/data/projectsData.js
 
 const Badge = ({ children }) => (
-  <span className="inline-flex items-center text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 text-black mr-2 mb-2">
+  <span className="inline-flex items-center text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 text-black">
     {children}
   </span>
 );
@@ -29,13 +29,13 @@ const Projects = () => {
               initial="hidden"
               animate="visible"
               transition={{ delay: idx * 0.05, duration: 0.45 }}
-              className="relative flex flex-col p-6 rounded-2xl bg-white border border-slate-100 shadow hover:shadow-lg hover:scale-[1.01] transition"
+              className="relative flex flex-col p-6 rounded-xl border border-slate-200 bg-white shadow-sm h-full"
             >
               <div className="mb-4">
                 <h2 className="text-xl md:text-2xl font-bold text-black leading-snug mb-1">{project.title}</h2>
                 <div className="text-sm text-blue-600 mb-3">{project.date}</div>
                 <p className="text-sm text-black/70 leading-relaxed mb-4">{project.description}</p>
-                <div className="flex flex-wrap mb-4 gap-1">
+                <div className="flex flex-wrap mb-4 gap-2">
                   {project.tech.map((tTech) => (
                     <Badge key={tTech}>{tTech}</Badge>
                   ))}
@@ -69,8 +69,10 @@ const Projects = () => {
                   </a>
                 )}
               </div>
-              <div className="absolute top-3 right-3 px-2 py-1 rounded bg-blue-600/10 backdrop-blur text-xs text-blue-700 border border-blue-600/20">
-                {t('projects.badge')}
+              <div className="absolute top-4 right-4">
+                <svg className="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
               </div>
             </motion.article>
           ))}

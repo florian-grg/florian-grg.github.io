@@ -12,7 +12,7 @@ const ICON_MAP = {
 };
 
 const Badge = ({ children }) => (
-  <span className="inline-flex items-center text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 text-black mr-2 mb-2">
+  <span className="inline-flex items-center text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 text-black">
     {children}
   </span>
 );
@@ -47,7 +47,7 @@ export default function Certifications() {
                 initial="hidden"
                 animate="visible"
                 transition={{ delay: idx * 0.05, duration: 0.45 }}
-                className="relative flex flex-col p-6 rounded-2xl bg-white border border-slate-100 shadow hover:shadow-lg hover:scale-[1.01] transition"
+                className="relative flex flex-col p-6 rounded-xl border border-slate-200 bg-white shadow-sm h-full"
               >
                 <h2 className="text-lg md:text-xl font-bold text-black leading-snug mb-2 flex items-center gap-2">
                   <Icon className="text-blue-600" size={22} /> {c.title}
@@ -56,7 +56,7 @@ export default function Certifications() {
                 <div className="text-xs uppercase tracking-wide text-black/60 mb-3">
                   {c.provider} {c.location ? '· ' + c.location : ''}
                 </div>
-                <div className="flex flex-wrap mb-4 gap-1">
+                <div className="flex flex-wrap mb-4 gap-2">
                   {c.highlights.map((h, i) => <Badge key={i}>{h}</Badge>)}
                 </div>
                 <div className="mt-auto flex flex-wrap gap-3">
@@ -71,8 +71,10 @@ export default function Certifications() {
                     </a>
                   )}
                 </div>
-                <div className="absolute top-3 right-3 px-2 py-1 rounded bg-blue-600/10 backdrop-blur text-xs text-blue-700 border border-blue-600/20">
-                  {language === 'fr' ? 'Certif.' : 'Cert.'}
+                <div className="absolute top-4 right-4">
+                  <svg className="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  </svg>
                 </div>
               </motion.article>
             );

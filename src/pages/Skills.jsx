@@ -1,11 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../animations/fadeIn";
 import { useLanguage } from '../contexts/LanguageContext';
 
 // Données importées depuis src/data/skillsData.js
 
-const getUniqueCategories = (list, allLabel) => [allLabel, ...Array.from(new Set(list.map((s) => s.category)))];
+const groupByCategory = (skills) => {
+  const grouped = {};
+  skills.forEach((skill) => {
+    if (!grouped[skill.category]) {
+      grouped[skill.category] = [];
+    }
+    grouped[skill.category].push(skill);
+  });
+  return grouped;
+};
 
 const Logo = ({ name }) => {
   switch (name) {
@@ -91,123 +100,83 @@ const Logo = ({ name }) => {
 };
 
 const Skills = () => {
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
   const SKILLS = t('data.skills');
-  const allLabel = t('skills.filter.all');
-  const [category, setCategory] = useState(allLabel);
-  const categories = getUniqueCategories(SKILLS, allLabel);
-  const filtered = category === allLabel ? SKILLS : SKILLS.filter((s) => s.category === category);
-
-  // Réinitialise le filtre quand la langue change
-  useEffect(() => {
-    setCategory(allLabel);
-  }, [language, allLabel]);
+  const groupedSkills = groupByCategory(SKILLS);
+  const categories = Object.keys(groupedSkills);
 
   return (
     <>
-      <section className="w-full py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-3 text-center">{t('skills.title')}</h1>
-        <p className="text-center text-black/70 mb-12 max-w-2xl mx-auto">{t('skills.subtitle')}</p>
-        <div className="max-w-6xl mx-auto">
-          <div className="rounded-2xl shadow p-8 md:p-10 overflow-hidden bg-white border border-slate-100">
-            <div className="flex flex-col md:flex-row items-start md:items-center justify-center gap-6 mb-8">
-              <div className="flex items-center gap-2 flex-wrap">
-                {categories.map((cat) => (
-                  <button
-                    key={cat}
-                    type="button"
-                    onClick={() => setCategory(cat)}
-                    className={`px-3 py-1.5 rounded-full text-sm font-medium transition ${
-                      category === cat
-                        ? "bg-blue-600 text-white ring-2 ring-blue-600/30 shadow"
-                        : "bg-slate-100 text-black hover:bg-slate-200"
-                    }`}
-                    aria-pressed={category === cat}
-                  >
-                    {cat}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <motion.div
-              variants={fadeIn}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 0.4 }}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-            >
-              {filtered.map((s, idx) => (
-                <motion.article
-                  key={s.name}
-                  variants={fadeIn}
-                  initial="hidden"
-                  animate="visible"
-                  transition={{ delay: idx * 0.04, duration: 0.3 }}
-                  whileHover={{ y: -6 }}
-                  whileTap={{ scale: 0.985 }}
-                  className="flex flex-col gap-4 p-5 rounded-xl bg-white border border-slate-100 hover:shadow-lg transition h-full"
-                >
-                  <Logo name={s.name} />
-
-                  <div className="flex-1 min-w-0 flex flex-col">
-                      <div className="flex items-start gap-4">
-                        <div>
-                          <h3 className="text-lg font-semibold text-black leading-tight">{s.name}</h3>
-                          <div className="text-xs text-black">{t('skills.category')} • {s.category} • {s.years} {t('skills.years')}</div>
-                          {/* Decorative horizontal bar under title */}
-                          <div className="mt-3">
-                            <div aria-hidden className="h-0.5 w-24 rounded-full bg-gradient-to-r from-blue-600 via-purple-500 to-transparent" />
+      <section className="w-full py-16 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 text-black">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-2 text-center">{t('skills.title')}</h1>
+        <p className="text-center text-black/70 mb-10 max-w-2xl mx-auto">{t('skills.subtitle')}</p>
+        
+        <div className="max-w-7xl mx-auto">
+          <div className="columns-1 lg:columns-2 gap-6">
+            {categories.map((category, catIdx) => (
+              <motion.div
+                key={category}
+                variants={fadeIn}
+                initial="hidden"
+                animate="visible"
+                transition={{ delay: catIdx * 0.1, duration: 0.4 }}
+                className="rounded-xl shadow p-6 bg-white border border-slate-100 break-inside-avoid mb-6"
+              >
+                <h2 className="text-xl font-bold text-black mb-4 pb-2 border-b-2 border-blue-600">
+                  {category}
+                </h2>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {groupedSkills[category].map((s, idx) => (
+                    <motion.article
+                      key={s.name}
+                      variants={fadeIn}
+                      initial="hidden"
+                      animate="visible"
+                      transition={{ delay: catIdx * 0.1 + idx * 0.05, duration: 0.3 }}
+                      className="relative flex flex-col gap-2 p-3 rounded-lg border border-slate-200 bg-gradient-to-br from-white to-slate-50 hover:shadow-md transition-shadow"
+                    >
+                      <div className="flex items-center gap-2">
+                        <Logo name={s.name} />
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center justify-between gap-2">
+                            <h3 className="text-sm font-semibold text-black leading-tight truncate">{s.name}</h3>
+                            <div className="text-xs text-slate-500 whitespace-nowrap">{s.years} {t('skills.years')}</div>
                           </div>
                         </div>
                       </div>
 
-                    <div className="mt-1 flex-1 flex flex-col">
-                      <div className="mt-2 flex flex-wrap gap-2">
-                        {s.tech.map((t) => (
-                          <span key={t} className="text-xs bg-slate-100 text-black px-2 py-1 rounded-md">
-                            {t}
+                      <div className="flex flex-wrap gap-1.5">
+                        {s.tech.map((tech) => (
+                          <span key={tech} className="inline-flex items-center text-xs px-2 py-0.5 rounded-full bg-slate-100 text-black">
+                            {tech}
                           </span>
                         ))}
                       </div>
-                      {/* Examples */}
+                      
+                      {/* Examples - condensed */}
                       {s.examples && s.examples.length > 0 && (
-                        <motion.div className="mt-3" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: idx * 0.03 }}>
-                          <div className="text-xs font-medium text-blue-600">{t('skills.examples')}</div>
-                          <ul className="mt-1 text-xs text-black/70 list-disc list-inside space-y-1">
-                            {s.examples.map((ex) => (
-                              <li key={ex}>{ex}</li>
-                            ))}
-                          </ul>
-                        </motion.div>
+                        <div className="text-xs text-black/60">
+                          <span className="font-medium text-blue-600">{t('skills.examples')}:</span> {s.examples.join(', ')}
+                        </div>
                       )}
 
-                      {/* Certifications */}
+                      {/* Certifications - condensed */}
                       {s.certs && s.certs.length > 0 && (
-                        <motion.div className="mt-3" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: idx * 0.04 }}>
-                          <div className="text-xs font-medium text-blue-600">{t('skills.certifications')}</div>
-                          <ul className="mt-1 text-xs text-black/70 space-y-1">
-                            {s.certs.map((c, i) => (
-                              <li key={i}>
-                                <span className="font-medium">{c.title}</span>
-                                <span className="ml-2 text-slate-500">{c.org}{c.year ? ` — ${c.year}` : ""}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </motion.div>
+                        <div className="text-xs text-black/60">
+                          <span className="font-medium text-blue-600">{t('skills.certifications')}:</span> {s.certs.map(c => c.title).join(', ')}
+                        </div>
                       )}
-                    </div>
-                  </div>
-                </motion.article>
-              ))}
-            </motion.div>
+                    </motion.article>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
     </>
   );
 };
-
-// Note: qualitative labels removed by user request; small hover/tap micro-interactions added on cards.
 
 export default Skills;

@@ -43,22 +43,37 @@ const Header = () => {
             {about.portfolio.description}
           </motion.p>
 
-          <motion.div variants={fadeIn} className="mb-6">
-            <div className="text-xs uppercase tracking-wide text-black mb-3">{t('about.keySkills')}</div>
-            <div className="flex flex-wrap justify-center gap-3">
-              {about.portfolio.keySkills.map((skill, idx) => (
-                <div key={idx} className="inline-flex items-center gap-2 rounded-lg bg-slate-100 px-3 py-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-blue-600 to-purple-500" aria-hidden></span>
-                  <span className="text-sm text-black">{skill}</span>
-                </div>
-              ))}
-            </div>
-          </motion.div>
+          {/* Key skills removed as requested */}
 
           <motion.div variants={fadeIn} className="mt-6 flex flex-wrap justify-center gap-4">
             <button onClick={() => goTo('/portfolio', '#portfolio-tabs')} className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-blue-600 to-purple-500 hover:from-blue-700 hover:to-purple-600 text-white shadow-lg shadow-blue-500/20 transition">
               <span>{t('about.journey')}</span>
             </button>
+
+            {/* Social & Contact Links */}
+            <div className="flex items-center gap-4">
+              <a href="https://github.com/florian-grg" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="inline-flex items-center justify-center w-11 h-11 rounded-full border border-slate-300 text-black hover:bg-slate-50 transition">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5" aria-hidden>
+                  <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.41-1.35-1.78-1.35-1.78-1.1-.75.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.77-1.62-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.31 1.23a11.5 11.5 0 0 1 6.02 0c2.3-1.55 3.31-1.23 3.31-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.47 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/florian-giurgiu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="inline-flex items-center justify-center w-11 h-11 rounded-full border border-slate-300 text-black hover:bg-slate-50 transition">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5" aria-hidden>
+                  <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9h4v12H3V9Zm7 0h3.7v1.64h.05c.52-.93 1.78-1.9 3.66-1.9 3.92 0 4.64 2.58 4.64 5.93V21h-4v-5.28c0-1.26-.02-2.88-1.76-2.88-1.77 0-2.04 1.38-2.04 2.8V21h-4V9Z"/>
+                </svg>
+              </a>
+              <a href="tel:+33629158054" aria-label="Téléphone" className="inline-flex items-center justify-center w-11 h-11 rounded-full border border-slate-300 text-black hover:bg-slate-50 transition">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5" aria-hidden>
+                  <path d="M6.62 10.79a15.09 15.09 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.07 22 2 13.93 2 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z"/>
+                </svg>
+              </a>
+              <a href="mailto:florian.giurgiu3@gmail.com" aria-label="Email" className="inline-flex items-center justify-center w-11 h-11 rounded-full border border-slate-300 text-black hover:bg-slate-50 transition">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5" aria-hidden>
+                  <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/>
+                </svg>
+              </a>
+            </div>
+            
             <a href="/CV_Florian_GIURGIU.pdf" target="_blank" rel="noopener noreferrer" download className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-slate-300 text-black hover:bg-slate-50 transition">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
               <span>{t('about.downloadCv')}</span>

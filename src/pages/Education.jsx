@@ -39,7 +39,7 @@ const Education = () => {
                 initial={{ opacity: 0, y: 25 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.45, delay: idx * 0.07 }}
-                className="relative ml-10 bg-white rounded-2xl border border-slate-100 shadow hover:shadow-lg transition p-7"
+                className="relative ml-10 bg-white rounded-xl border border-slate-200 shadow-sm p-7"
               >
                 {/* Timeline node */}
                 <div className="absolute -left-8 top-6 w-6 h-6 rounded-full bg-white ring-2 ring-blue-600 flex items-center justify-center">

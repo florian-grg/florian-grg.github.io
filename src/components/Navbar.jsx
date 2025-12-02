@@ -58,11 +58,22 @@ export default function Navbar() {
   const handleNavClick = (e, path, hash) => {
     e.preventDefault();
     setMobileMenuOpen(false);
-    if (location.pathname === path) {
-      if (hash) smoothScrollTo(hash);
-    } else {
+    
+    // Si même page avec hash -> smooth scroll seulement
+    if (location.pathname === path && hash) {
+      smoothScrollTo(hash, { behavior: 'smooth' });
+      return;
+    }
+    
+    // Si changement de page
+    if (location.pathname !== path) {
       navigate(path);
-      if (hash) smoothScrollTo(hash);
+      // Si hash présent, scroll après navigation
+      if (hash) {
+        setTimeout(() => smoothScrollTo(hash, { behavior: 'smooth' }), 100);
+      } else {
+        // Scroll to top automatique géré par App.jsx
+      }
     }
   };
 
