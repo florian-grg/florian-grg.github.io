@@ -11,8 +11,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* Permanent scrollbar to avoid white jump on load */
-  overflow-y: scroll;
 }
 
 code {
